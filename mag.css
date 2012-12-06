@@ -668,9 +668,18 @@ a.wpm-button:hover {
   margin-right: 10px;
   border-radius: 50%;
 }
+.comments-area footer .comment-meta {
+  margin-left: 4px;
+}
 .comments-area footer .comment-meta,
 .comments-area footer .comment-meta a {
   color: #aaaaaa;
+  text-decoration: none;
+  font-size: 12px;
+}
+.comments-area footer .comment-meta:hover,
+.comments-area footer .comment-meta a:hover {
+  color: #117bb8;
 }
 .comments-area #respond {
   border-top: solid 1px #dddddd;
