@@ -520,14 +520,14 @@ article:hover .entry-title a {
   color: #aaaaaa;
 }
 .widget-area .widget_twitter a {
-  color: #aaaaaa;
+  color: #3a3a3a;
   text-decoration: none;
 }
 .widget-area .widget_twitter a:hover {
   color: #117bb8;
 }
 .widget-area .widget_twitter .timesince {
-  font-size: 11px;
+  color: #aaaaaa;
 }
 input[type="button"],
 input[type="reset"],
