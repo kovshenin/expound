@@ -142,6 +142,42 @@ a:hover {
   content: '';
   border: none;
 }
+.main-navigation ul.social {
+  padding: 0;
+  list-style: none;
+  float: right;
+  margin-right: 36px;
+  /* -4px bc of padding */
+
+}
+.main-navigation ul.social li a {
+  width: 24px;
+  padding-left: 0;
+  padding-right: 0;
+  background: url('images/social.png') 0 50% no-repeat;
+  color: transparent;
+  text-indent: -9999px;
+  padding-left: 4px;
+  opacity: 0.2;
+}
+.main-navigation ul.social li a:hover {
+  opacity: 0.5;
+}
+.main-navigation ul.social li.twitter a {
+  background-position: -205px 50%;
+}
+.main-navigation ul.social li.facebook a {
+  background-position: -12px 50%;
+}
+.main-navigation ul.social li.feed a {
+  background-position: -108px 50%;
+}
+.main-navigation ul.social li.vkontakte a {
+  background-position: -59px 50%;
+}
+.main-navigation ul.social li.google-plus a {
+  background-position: -157px 50%;
+}
 #primary {
   float: left;
   width: 740px;

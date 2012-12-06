@@ -36,6 +36,14 @@
 			<div class="assistive-text skip-link"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'mag' ); ?>"><?php _e( 'Skip to content', 'mag' ); ?></a></div>
 
 			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+
+			<ul class="social">
+				<li class="twitter"><a href="#">Twitter</a></li>
+				<li class="facebook"><a href="#">Facebook</a></li>
+				<li class="feed"><a href="#">Feed</a></li>
+				<li class="vkontakte"><a href="#">Vkontakte</a></li>
+				<li class="google-plus"><a href="#">Google+</a></li>
+			</ul>
 		</nav><!-- .site-navigation .main-navigation -->
 	</header><!-- #masthead .site-header -->
 

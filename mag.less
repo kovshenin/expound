@@ -143,6 +143,32 @@ a {
 		content: '';
 		border: none;
 	}
+
+	ul.social {
+		padding: 0;
+		list-style: none;
+		float: right;
+		margin-right: 36px; /* -4px bc of padding */
+
+		li a {
+			width: 24px;
+			padding-left: 0;
+			padding-right: 0;
+			background: url('images/social.png') 0 50% no-repeat;
+			color: transparent;
+			text-indent: -9999px;
+			padding-left: 4px;
+
+			opacity: 0.2;
+			&:hover { opacity: 0.5; }
+		}
+
+		li.twitter a { background-position: -205px 50%; }
+		li.facebook a { background-position: -12px 50%; }
+		li.feed a { background-position: -108px 50%; }
+		li.vkontakte a { background-position: -59px 50%; }
+		li.google-plus a { background-position: -157px 50%; }
+	}
 }
 
 #primary {
