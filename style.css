@@ -152,6 +152,7 @@ address {
 	margin: 0 0 1.5em;
 }
 pre {
+	/*
 	background: #eee;
 	font-family: "Courier 10 Pitch", Courier, monospace;
 	font-size: 15px;
@@ -161,9 +162,10 @@ pre {
 	padding: 1.6em;
 	overflow: auto;
 	max-width: 100%;
+	*/
 }
 code, kbd, tt, var {
-	font: 15px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+	/*font: 15px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;*/
 }
 abbr, acronym {
 	border-bottom: 1px dotted #666;
