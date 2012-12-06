@@ -130,7 +130,7 @@ function mag_pre_get_posts( $query ) {
 	if ( ! $query->is_main_query() )
 		return;
 
-	if ( ( $query->is_home() || $query->is_category() ) && ! $query->is_paged() ) { // condition should be same as in index.php
+	if ( $query->is_home() && ! $query->is_paged() ) { // condition should be same as in index.php
 		$query->set( 'ignore_sticky_posts', true );
 
 		$exclude_ids = array();
@@ -156,8 +156,8 @@ function mag_get_featured_posts() {
 		'ignore_sticky_posts' => true,
 	);
 
-	if ( is_category() )
-		$args['category_name'] = get_query_var( 'category_name' );
+	/*if ( is_category() )
+		$args['category_name'] = get_query_var( 'category_name' );*/
 
 	return new WP_Query( $args );
 }
