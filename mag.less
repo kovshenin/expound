@@ -11,7 +11,7 @@ body {
 
 	-webkit-background-size: cover;
 	background-size: cover;*/
-	background: #333;
+	background: #999;
 
 	font: 13px/20px "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: 300;
@@ -19,11 +19,10 @@ body {
 
 a {
 	color: @primary;
-	text-decoration: none;
 
-	&:hover { color: @text; }
 	&:visited { color: @primary; }
 	&:active { color: @primary; }
+	&:hover { color: @text; }
 }
 
 #page {
@@ -44,6 +43,7 @@ a {
 	font-size: 34px;
 	line-height: 34px;
 	a {
+		text-decoration: none;
 		color: @text;
 		&:hover { color: @primary; }
 	}
@@ -66,17 +66,32 @@ a {
 		color: white;
 		padding: 10px;
 		position: relative;
-
-		&:hover { background: lighten(@text, 3%); }
+		background: @text;
+		&:hover { background: lighten(@text, 5%); }
 	}
 
-	.current_page_item a,
-	.current-menu-item a {
+	ul > .current_page_item a,
+	ul > .current-menu-item a,
+	ul > .current-post-ancestor a,
+	ul > .current-menu-parent a,
+	ul > .current-post-parent a {
 		background: @primary;
 	}
 
-	.current_page_item a:after,
-	.current-menu-item a:after {
+	ul > .current_page_item ~ .current_page_item a,
+	ul > .current-menu-item ~ .current-menu-item a,
+	ul > .current-post-ancestor ~ .current-post-ancestor a,
+	ul > .current-menu-parent ~ .current-menu-parent a,
+	ul > .current-post-parent ~ .current-post-parent a {
+		background: @text;
+		&:hover { background: lighten(@text, 5%); }
+	}
+
+	ul > .current_page_item a:after,
+	ul > .current-menu-item a:after,
+	ul > .current-post-ancestor a:after,
+	ul > .current-menu-parent a:after,
+	ul > .current-post-parent a:after {
 		content: '';
 		font-size: 0px; line-height: 0%; width: 0px;
 		border-top: 6px solid @primary;
@@ -87,6 +102,15 @@ a {
 		bottom: -6px;
 		left: 50%;
 		margin-left: -6px;
+	}
+
+	ul > .current_page_item ~ .current_page_item a:after,
+	ul > .current-menu-item ~ .current-menu-item a:after,
+	ul > .current-post-ancestor ~ .current-post-ancestor a:after,
+	ul > .current-menu-parent ~ .current-menu-parent a:after,
+	ul > .current-post-parent ~ .current-post-parent a:after {
+		content: '';
+		border: none;
 	}
 }
 
@@ -137,6 +161,25 @@ h1, h2, h3 {
 	font-family: Georgia, "Times New Roman", serif;
 }
 
+.site-content .entry-content {
+	h1 { font-size: 34px; }
+	h2 { font-size: 20px; line-height: 28px; }
+	h3 { font-size: 16px; line-height: 18px; color: lighten(@text, 15%); }
+
+	h1, h2, h3 { margin-bottom: 10px; margin-top: 40px; }
+}
+
+.entry-title a {
+	text-decoration: none;
+}
+
+.single .site-content {
+	.entry-title {
+		font-size: 44px;
+		line-height: 54px;
+	}
+}
+
 .site-content {
 	article {
 		border-bottom: solid 1px @light;
@@ -164,12 +207,13 @@ h1, h2, h3 {
 
 	.entry-meta a {
 		color: @readableLight;
-
+		text-decoration: none;
 		&:hover { color: @primary }
 	}
 }
 
-.blog .site-content {
+.blog .site-content,
+.archive .site-content {
 
 	.has-post-thumbnail {
 
@@ -212,6 +256,7 @@ h1, h2, h3 {
 
 		padding-left: 30px + 10px;
 		padding-right: 30px + 10px;
+		border-bottom: solid 1px @light;
 	}
 
 	.entry-title {
@@ -252,6 +297,7 @@ h1, h2, h3 {
 }
 
 .featured-content-secondary {
+	margin-top: -1px; /* cover the bottom border of the main featured content area */
 	background: white url('images/absurdidad.png') 0 0 repeat;
 
 	article {
@@ -319,4 +365,27 @@ article:hover {
 	position: absolute;
 	left: 0px;
 	top: 24px;
+}
+
+.widget-area {
+	padding-top: 41px;
+	.widget {
+		margin-bottom: 40px;
+		margin-right: 40px;
+	}
+
+	.widget-title {
+		font-size: 16px;
+		margin-bottom: 20px;
+	}
+}
+
+.button-primary,
+a.button-primary {
+	background: @primary;
+	color: white;
+	text-decoration: none;
+	padding: 10px;
+
+	&:hover { background: lighten(@primary, 5%); }
 }

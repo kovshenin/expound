@@ -7,22 +7,21 @@ body {
 	-webkit-background-size: cover;
 	background-size: cover;*/
 
-  background: #333;
+  background: #999;
   font: 13px/20px "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
 }
 a {
   color: #117bb8;
-  text-decoration: none;
-}
-a:hover {
-  color: #3a3a3a;
 }
 a:visited {
   color: #117bb8;
 }
 a:active {
   color: #117bb8;
+}
+a:hover {
+  color: #3a3a3a;
 }
 #page {
   background: white;
@@ -40,6 +39,7 @@ a:active {
   line-height: 34px;
 }
 .site-title a {
+  text-decoration: none;
   color: #3a3a3a;
 }
 .site-title a:hover {
@@ -60,16 +60,37 @@ a:active {
   color: white;
   padding: 10px;
   position: relative;
+  background: #3a3a3a;
 }
 .main-navigation a:hover {
-  background: #424242;
+  background: #474747;
 }
-.main-navigation .current_page_item a,
-.main-navigation .current-menu-item a {
+.main-navigation ul > .current_page_item a,
+.main-navigation ul > .current-menu-item a,
+.main-navigation ul > .current-post-ancestor a,
+.main-navigation ul > .current-menu-parent a,
+.main-navigation ul > .current-post-parent a {
   background: #117bb8;
 }
-.main-navigation .current_page_item a:after,
-.main-navigation .current-menu-item a:after {
+.main-navigation ul > .current_page_item ~ .current_page_item a,
+.main-navigation ul > .current-menu-item ~ .current-menu-item a,
+.main-navigation ul > .current-post-ancestor ~ .current-post-ancestor a,
+.main-navigation ul > .current-menu-parent ~ .current-menu-parent a,
+.main-navigation ul > .current-post-parent ~ .current-post-parent a {
+  background: #3a3a3a;
+}
+.main-navigation ul > .current_page_item ~ .current_page_item a:hover,
+.main-navigation ul > .current-menu-item ~ .current-menu-item a:hover,
+.main-navigation ul > .current-post-ancestor ~ .current-post-ancestor a:hover,
+.main-navigation ul > .current-menu-parent ~ .current-menu-parent a:hover,
+.main-navigation ul > .current-post-parent ~ .current-post-parent a:hover {
+  background: #474747;
+}
+.main-navigation ul > .current_page_item a:after,
+.main-navigation ul > .current-menu-item a:after,
+.main-navigation ul > .current-post-ancestor a:after,
+.main-navigation ul > .current-menu-parent a:after,
+.main-navigation ul > .current-post-parent a:after {
   content: '';
   font-size: 0px;
   line-height: 0%;
@@ -81,6 +102,14 @@ a:active {
   bottom: -6px;
   left: 50%;
   margin-left: -6px;
+}
+.main-navigation ul > .current_page_item ~ .current_page_item a:after,
+.main-navigation ul > .current-menu-item ~ .current-menu-item a:after,
+.main-navigation ul > .current-post-ancestor ~ .current-post-ancestor a:after,
+.main-navigation ul > .current-menu-parent ~ .current-menu-parent a:after,
+.main-navigation ul > .current-post-parent ~ .current-post-parent a:after {
+  content: '';
+  border: none;
 }
 #primary {
   float: left;
@@ -121,6 +150,31 @@ h2,
 h3 {
   font-family: Georgia, "Times New Roman", serif;
 }
+.site-content .entry-content h1 {
+  font-size: 34px;
+}
+.site-content .entry-content h2 {
+  font-size: 20px;
+  line-height: 28px;
+}
+.site-content .entry-content h3 {
+  font-size: 16px;
+  line-height: 18px;
+  color: #606060;
+}
+.site-content .entry-content h1,
+.site-content .entry-content h2,
+.site-content .entry-content h3 {
+  margin-bottom: 10px;
+  margin-top: 40px;
+}
+.entry-title a {
+  text-decoration: none;
+}
+.single .site-content .entry-title {
+  font-size: 44px;
+  line-height: 54px;
+}
 .site-content article {
   border-bottom: solid 1px #dddddd;
   padding-left: 40px;
@@ -144,32 +198,41 @@ h3 {
 }
 .site-content .entry-meta a {
   color: #aaaaaa;
+  text-decoration: none;
 }
 .site-content .entry-meta a:hover {
   color: #117bb8;
 }
-.blog .site-content .has-post-thumbnail .entry-thumbnail {
+.blog .site-content .has-post-thumbnail .entry-thumbnail,
+.archive .site-content .has-post-thumbnail .entry-thumbnail {
   float: left;
 }
-.blog .site-content .has-post-thumbnail .entry-thumbnail img {
+.blog .site-content .has-post-thumbnail .entry-thumbnail img,
+.archive .site-content .has-post-thumbnail .entry-thumbnail img {
   float: left;
 }
-.blog .site-content .has-post-thumbnail .entry-title {
+.blog .site-content .has-post-thumbnail .entry-title,
+.archive .site-content .has-post-thumbnail .entry-title {
   clear: none;
   margin-top: -5px;
 }
-.blog .site-content .has-post-thumbnail .entry-meta {
+.blog .site-content .has-post-thumbnail .entry-meta,
+.archive .site-content .has-post-thumbnail .entry-meta {
   clear: none;
 }
-.blog .site-content .has-post-thumbnail .entry-meta:after {
+.blog .site-content .has-post-thumbnail .entry-meta:after,
+.archive .site-content .has-post-thumbnail .entry-meta:after {
   display: table;
   content: '';
   line-height: 0;
   clear: both;
 }
 .blog .site-content .has-post-thumbnail .entry-header,
+.archive .site-content .has-post-thumbnail .entry-header,
 .blog .site-content .has-post-thumbnail .entry-summary,
-.blog .site-content .has-post-thumbnail .entry-meta {
+.archive .site-content .has-post-thumbnail .entry-summary,
+.blog .site-content .has-post-thumbnail .entry-meta,
+.archive .site-content .has-post-thumbnail .entry-meta {
   margin-left: 240px;
 }
 .featured-content article {
@@ -177,6 +240,7 @@ h3 {
   padding-bottom: 40px;
   padding-left: 40px;
   padding-right: 40px;
+  border-bottom: solid 1px #dddddd;
 }
 .featured-content .entry-title {
   font-size: 20px;
@@ -208,6 +272,9 @@ h3 {
   clear: both;
 }
 .featured-content-secondary {
+  margin-top: -1px;
+  /* cover the bottom border of the main featured content area */
+
   background: #ffffff url('images/absurdidad.png') 0 0 repeat;
 }
 .featured-content-secondary article {
@@ -270,4 +337,26 @@ article:hover .entry-title a {
   position: absolute;
   left: 0px;
   top: 24px;
+}
+.widget-area {
+  padding-top: 41px;
+}
+.widget-area .widget {
+  margin-bottom: 40px;
+  margin-right: 40px;
+}
+.widget-area .widget-title {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.button-primary,
+a.button-primary {
+  background: #117bb8;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+.button-primary:hover,
+a.button-primary:hover {
+  background: #138bcf;
 }

@@ -24,7 +24,7 @@ get_header(); ?>
 		<?php endif; // home & not paged ?>
 
 		<?php
-			if ( is_home() && ! is_paged() ) // condition should be same as in pre_get_posts
+			if ( ( is_home() || is_category() ) && ! is_paged() ) // condition should be same as in pre_get_posts
 				get_template_part( 'featured-content' );
 		?>
 

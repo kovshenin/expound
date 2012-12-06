@@ -12,7 +12,7 @@
  * @since Mag 1.0
  */
 if ( ! isset( $content_width ) )
-	$content_width = 640; /* pixels */
+	$content_width = 610; /* pixels */
 
 if ( ! function_exists( 'mag_setup' ) ) :
 /**
@@ -130,7 +130,7 @@ function mag_pre_get_posts( $query ) {
 	if ( ! $query->is_main_query() )
 		return;
 
-	if ( $query->is_home() && ! $query->is_paged() ) { // condition should be same as in index.php
+	if ( ( $query->is_home() || $query->is_category() ) && ! $query->is_paged() ) { // condition should be same as in index.php
 		$query->set( 'ignore_sticky_posts', true );
 
 		$exclude_ids = array();
@@ -143,14 +143,21 @@ function mag_pre_get_posts( $query ) {
 }
 
 function mag_get_featured_posts() {
+	global $wp_query;
+
 	$sticky = get_option( 'sticky_posts' );
 
 	if ( empty( $sticky ) )
 		return new WP_Query();
 
-	return new WP_Query( array(
+	$args = array(
 		'posts_per_page' => 5,
 		'post__in' => $sticky,
 		'ignore_sticky_posts' => true,
-	) );
+	);
+
+	if ( is_category() )
+		$args['category_name'] = get_query_var( 'category_name' );
+
+	return new WP_Query( $args );
 }

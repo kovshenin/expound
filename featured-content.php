@@ -16,7 +16,7 @@
 
 		<div class="entry-summary">
 			<?php the_excerpt(); ?>
-			<p><a href="<?php the_permalink(); ?>">Read more &rarr;</a></p>
+			<p><a class="button-primary" href="<?php the_permalink(); ?>">Read more &rarr;</a></p>
 		</div><!-- .entry-summary -->
 	</article>
 

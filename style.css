@@ -468,9 +468,10 @@ img.size-full {
 	margin-top: 0;
 	padding: 0;
 }
+
 .wp-caption {
-	border: 1px solid #ccc;
 	max-width: 100%;
+	margin-bottom: 20px;
 }
 .wp-caption.aligncenter,
 .wp-caption.alignleft,
@@ -479,15 +480,20 @@ img.size-full {
 }
 .wp-caption img {
 	display: block;
-	margin: 1.2% auto 0;
-	max-width: 98%;
+	padding: 5px;
+	border: solid 1px #ccc;
 }
 .wp-caption-text {
 	text-align: center;
+	color: #999;
+	font-size: 13px;
 }
 .wp-caption .wp-caption-text {
-	margin: 0.8075em 0;
+	padding: 4px 1px;
+	width: 100%;
+	background: #efefef;
 }
+
 .site-content .gallery {
 	margin-bottom: 1.5em;
 }
