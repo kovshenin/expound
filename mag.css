@@ -510,8 +510,24 @@ article:hover .entry-title a {
   font-size: 16px;
   margin-bottom: 20px;
 }
+.widget-area .widget-title a {
+  color: #3a3a3a;
+}
+.widget-area .widget-title a:hover {
+  color: #117bb8;
+}
 .widget-area .widget_recent_entries .post-date {
   color: #aaaaaa;
+}
+.widget-area .widget_twitter a {
+  color: #aaaaaa;
+  text-decoration: none;
+}
+.widget-area .widget_twitter a:hover {
+  color: #117bb8;
+}
+.widget-area .widget_twitter .timesince {
+  font-size: 11px;
 }
 input[type="button"],
 input[type="reset"],

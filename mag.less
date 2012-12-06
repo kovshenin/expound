@@ -529,9 +529,23 @@ article:hover {
 		font-size: 16px;
 		margin-bottom: 20px;
 	}
+	.widget-title a {
+		color: @text;
+		&:hover { color: @primary; }
+	}
 
 	.widget_recent_entries .post-date {
 		color: @readableLight;
+	}
+
+	.widget_twitter a {
+		color: @readableLight;
+		text-decoration: none;
+		&:hover { color: @primary; }
+	}
+
+	.widget_twitter .timesince {
+		font-size: 11px;
 	}
 }
 
