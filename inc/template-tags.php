@@ -147,11 +147,24 @@ endif;
  * @todo fix l10n
  */
 function mag_posted_in() {
-	// translators: 1: when, 2: where (category)
-	printf( __( '%1$s in %2$s' ),
-		sprintf( '<a class="entry-date" href="%s">%s ago</a>', esc_url( get_permalink() ), esc_html( human_time_diff( get_the_time('U'), current_time('timestamp') ) ) ),
-		get_the_category_list( ', ' )
-	);
+
+	if ( ! is_single() ) {
+		// translators: 1: when, 2: where (category)
+		printf( __( '%1$s in %2$s.', 'mag' ),
+			sprintf( '<a class="entry-date" href="%s">%s ago</a>', esc_url( get_permalink() ), esc_html( human_time_diff( get_the_time('U'), current_time('timestamp') ) ) ),
+			get_the_category_list( ', ' )
+		);
+	} else {
+		// translators: 1: when, 2: where (category)
+		printf( __( '%1$s in %2$s.', 'mag' ),
+			sprintf( '<a class="entry-date" href="%s">%s</a>', esc_url( get_permalink() ), esc_html( get_the_time( get_option( 'date_format' ) ) ) ),
+			get_the_category_list( ', ' )
+		);
+
+		echo ' ';
+		the_tags( __( 'Tags: ', 'mag' ), ', ' );
+	}
+
 	return;
 	if ( 'post' == get_post_type() ) : // Hide category and tag text for pages on Search ?>
 			<?php
