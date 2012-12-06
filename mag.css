@@ -1,8 +1,5 @@
 body {
-  background: #333333 url('http://s0.wp.com/home.logged-out/images/pic-d.jpg?1');
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-attachment: fixed;
+  background: #333;
   -webkit-background-size: cover;
   background-size: cover;
   /*background: #999;*/

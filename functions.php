@@ -72,6 +72,8 @@ function mag_setup() {
 	 * Add support for the Aside Post Formats
 	 */
 	add_theme_support( 'post-formats', array( 'aside', ) );
+
+	add_theme_support( 'custom-background' );
 }
 endif; // mag_setup
 add_action( 'after_setup_theme', 'mag_setup' );
