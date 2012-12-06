@@ -151,7 +151,7 @@ function mag_posted_in() {
 	if ( ! is_single() ) {
 		// translators: 1: when, 2: where (category)
 		printf( __( '%1$s in %2$s.', 'mag' ),
-			sprintf( '<a class="entry-date" href="%s">%s ago</a>', esc_url( get_permalink() ), esc_html( human_time_diff( get_the_time('U'), current_time('timestamp') ) ) ),
+			sprintf( '<a class="entry-date" href="%s">%s %s</a>', esc_url( get_permalink() ), esc_html( human_time_diff( get_the_time('U'), current_time('timestamp') ) ), __( 'ago', 'mag' ) ),
 			get_the_category_list( ', ' )
 		);
 	} else {
