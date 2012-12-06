@@ -128,7 +128,7 @@ function mag_posted_on() {
 	// translators: 1: who, 2: when
 	printf( __( '%1$s / %2$s' ),
 		sprintf( '<a class="author" rel="author" href="%s">%s</a>', esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ), get_the_author() ),
-		sprintf( '<a class="entry-date" href="%s">%s ago</a>', esc_url( get_permalink() ), esc_html( human_time_diff( get_the_time('U'), current_time('timestamp') ) ) )
+		sprintf( '<a class="entry-date" href="%s">%s %s</a>', esc_url( get_permalink() ), esc_html( human_time_diff( get_the_time('U'), current_time('timestamp') ) ), __( 'ago', 'mag' ) )
 	);
 
 	/*printf( __( 'Posted on <a href="%1$s" title="%2$s" rel="bookmark"><time class="entry-date" datetime="%3$s" pubdate>%4$s</time></a><span class="byline"> by <span class="author vcard"><a class="url fn n" href="%5$s" title="%6$s" rel="author">%7$s</a></span></span>', 'mag' ),
