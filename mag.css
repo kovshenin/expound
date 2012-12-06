@@ -1,0 +1,125 @@
+body {
+  background: #333;
+  font: 13px/20px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+}
+a {
+  color: #117bb8;
+  text-decoration: none;
+}
+a:hover {
+  color: #3a3a3a;
+}
+a:visited {
+  color: #117bb8;
+}
+a:active {
+  color: #117bb8;
+}
+#page {
+  background: white;
+  width: 1020px;
+  margin: 40px auto;
+}
+#colophon {
+  clear: both;
+}
+.site-header hgroup {
+  padding: 50px 40px;
+}
+.site-title {
+  font-size: 34px;
+  line-height: 34px;
+}
+.site-title a {
+  color: #3a3a3a;
+}
+.site-title a:hover {
+  color: #117bb8;
+}
+.site-description {
+  font: 13px/20px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  color: #3a3a3a;
+}
+.main-navigation {
+  background: #3a3a3a;
+}
+.main-navigation ul {
+  margin: 0 30px;
+}
+.main-navigation a {
+  color: white;
+  padding: 10px;
+}
+.main-navigation .current_page_item a,
+.main-navigation .current-menu-item a {
+  background: #117bb8;
+}
+#primary {
+  float: left;
+  width: 740px;
+  margin-right: 10px;
+}
+#secondary {
+  float: right;
+  width: 260px;
+  margin-left: 10px;
+}
+h1,
+h2,
+h3 {
+  font-family: Georgia, "Times New Roman", serif;
+}
+.site-content article {
+  border-bottom: solid 1px #dddddd;
+  padding-left: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.site-content .entry-title {
+  font-size: 20px;
+  line-height: 28px;
+}
+.site-content .entry-title a {
+  color: #3a3a3a;
+}
+.site-content .entry-title a:hover {
+  color: #117bb8;
+}
+.site-content .entry-meta {
+  font-size: 11px;
+  line-height: 15px;
+  color: #aaaaaa;
+}
+.site-content .entry-meta a {
+  color: #aaaaaa;
+}
+.site-content .entry-meta a:hover {
+  color: #117bb8;
+}
+.blog .site-content .has-post-thumbnail .entry-thumbnail {
+  float: left;
+  width: 240px;
+}
+.blog .site-content .has-post-thumbnail .entry-thumbnail img {
+  float: left;
+}
+.blog .site-content .has-post-thumbnail .entry-title {
+  clear: none;
+  margin-top: -5px;
+}
+.blog .site-content .has-post-thumbnail .entry-meta {
+  clear: none;
+}
+.blog .site-content .has-post-thumbnail .entry-meta:after {
+  display: table;
+  content: '';
+  line-height: 0;
+  clear: both;
+}
+.blog .site-content .has-post-thumbnail .entry-header,
+.blog .site-content .has-post-thumbnail .entry-summary,
+.blog .site-content .has-post-thumbnail .entry-meta {
+  margin-left: 240px;
+}

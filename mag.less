@@ -1,0 +1,152 @@
+@text: #3a3a3a;
+@primary: #117bb8;
+@light: #ddd;
+@readableLight: #aaa;
+
+body {
+	background: #333;
+	font: 13px/20px "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 300;
+}
+
+a {
+	color: @primary;
+	text-decoration: none;
+
+	&:hover { color: @text; }
+	&:visited { color: @primary; }
+	&:active { color: @primary; }
+}
+
+#page {
+	background: white;
+	width: 960px + ( 30px * 2 );
+	margin: 40px auto;
+}
+
+#colophon {
+	clear: both;
+}
+
+.site-header hgroup {
+	padding: 50px 40px;
+}
+
+.site-title {
+	font-size: 34px;
+	line-height: 34px;
+	a {
+		color: @text;
+		&:hover { color: @primary; }
+	}
+}
+
+.site-description {
+	font: 13px/20px "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	color: @text;
+}
+
+.main-navigation {
+	background: @text;
+
+	ul {
+		margin: 0 30px;
+	}
+
+	a {
+		color: white;
+		padding: 10px;
+	}
+
+	.current_page_item a,
+	.current-menu-item a {
+		background: @primary;
+	}
+}
+
+#primary {
+	float: left;
+	width: 30px + 720px - 10px;
+	margin-right: 10px;
+}
+
+#secondary {
+	float: right;
+	width: 240px + 30px - 10px;
+	margin-left: 10px;
+}
+
+h1, h2, h3 {
+	font-family: Georgia, "Times New Roman", serif;
+}
+
+.site-content {
+	article {
+		border-bottom: solid 1px @light;
+		padding-left: 30px + 10px;
+
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+
+	.entry-title {
+		font-size: 20px;
+		line-height: 28px;
+	}
+
+	.entry-title a {
+		color: @text;
+
+		&:hover { color: @primary; }
+	}
+
+	.entry-meta {
+		font-size: 11px;
+		line-height: 15px;
+		color: @readableLight;
+	}
+
+	.entry-meta a {
+		color: @readableLight;
+
+		&:hover { color: @primary }
+	}
+}
+
+.blog .site-content {
+
+	.has-post-thumbnail {
+
+		.entry-thumbnail {
+			float: left;
+			width: 240px;
+		}
+
+		.entry-thumbnail img {
+			float: left;
+		}
+
+		.entry-title {
+			clear: none;
+			margin-top: -5px;
+		}
+
+		.entry-meta {
+			clear: none;
+		}
+
+		.entry-meta:after {
+			display: table;
+			content:'';
+			line-height: 0;
+			clear: both;
+		}
+
+		.entry-header,
+		.entry-summary,
+		.entry-meta {
+			margin-left: 220px + 20px;
+		}
+	}
+}
