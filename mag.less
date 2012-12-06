@@ -55,7 +55,7 @@ a {
 }
 
 .site-header hgroup {
-	padding: 50px 40px;
+	padding: 30px 40px 50px 40px;
 }
 
 .site-title {
@@ -68,10 +68,22 @@ a {
 	}
 }
 
+.site-title a {
+	color: transparent;
+	display: block;
+	background: url('images/wordpress-magazine.png') 0 0 no-repeat;
+	width: 266px;
+	height: 117px;
+	text-indent: -9999px;
+	margin-left: -83px;
+}
+
 .site-description {
 	font: 13px/20px "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: 300;
-	color: @text;
+	color: lighten(@text,30%);
+
+	margin-top: -40px;
 }
 
 .main-navigation {
