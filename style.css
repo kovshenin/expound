@@ -98,22 +98,12 @@ button,
 input,
 select,
 textarea {
-	color: #404040;
-	font-family: sans-serif;
-	font-size: 16px;
-	font-size: 1.6rem;
-	line-height: 1.5;
+	
 }
 
 /* Headings */
 h1,h2,h3,h4,h5,h6 {
 	clear: both;
-}
-hr {
-	background-color: #ccc;
-	border: 0;
-	height: 1px;
-	margin-bottom: 20px;
 }
 
 /* Text elements */
@@ -144,9 +134,6 @@ b, strong {
 }
 dfn, cite, em, i {
 	font-style: italic;
-}
-blockquote {
-	margin: 0 1.5em;
 }
 address {
 	margin: 0 0 1.5em;
@@ -209,6 +196,8 @@ button,
 input,
 select,
 textarea {
+	font: 13px/20px "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 300;
 	font-size: 100%; /* Corrects font size not being inherited in all browsers */
 	margin: 0; /* Addresses margins set differently in IE6/7, F3/4, S5, Chrome */
 	vertical-align: baseline; /* Improves appearance and consistency in all browsers */
@@ -223,30 +212,13 @@ button,
 html input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-	border: 1px solid #ccc;
-	border-color: #ccc #ccc #bbb #ccc;
-	border-radius: 3px;
-	background: #e6e6e6;
-	-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.5), inset 0 15px 17px rgba(255,255,255,0.5), inset 0 -5px 12px rgba(0,0,0,0.05);
-	-moz-box-shadow: inset 0 1px 0 rgba(255,255,255,0.5), inset 0 15px 17px rgba(255,255,255,0.5), inset 0 -5px 12px rgba(0,0,0,0.05);
-	box-shadow: inset 0 1px 0 rgba(255,255,255,0.5), inset 0 15px 17px rgba(255,255,255,0.5), inset 0 -5px 12px rgba(0,0,0,0.05);
-	color: rgba(0,0,0,.8);
-	cursor: pointer; /* Improves usability and consistency of cursor style between image-type 'input' and others */
-	-webkit-appearance: button; /* Corrects inability to style clickable 'input' types in iOS */
-	font-size: 12px;
-	font-size: 1.4rem;
-	line-height: 1;
-	padding: 1.12em 1.5em 1em;
-	text-shadow: 0 1px 0 rgba(255,255,255,.8);
+
 }
 button:hover,
 html input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
-	border-color: #ccc #bbb #aaa #bbb;
-	-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.8), inset 0 15px 17px rgba(255,255,255,0.8), inset 0 -5px 12px rgba(0,0,0,0.02);
-	-moz-box-shadow: inset 0 1px 0 rgba(255,255,255,0.8), inset 0 15px 17px rgba(255,255,255,0.8), inset 0 -5px 12px rgba(0,0,0,0.02);
-	box-shadow: inset 0 1px 0 rgba(255,255,255,0.8), inset 0 15px 17px rgba(255,255,255,0.8), inset 0 -5px 12px rgba(0,0,0,0.02);
+
 }
 button:focus,
 html input[type="button"]:focus,
@@ -256,10 +228,7 @@ button:active,
 html input[type="button"]:active,
 input[type="reset"]:active,
 input[type="submit"]:active {
-	border-color: #aaa #bbb #bbb #bbb;
-	-webkit-box-shadow: inset 0 -1px 0 rgba(255,255,255,0.5), inset 0 2px 5px rgba(0,0,0,0.15);
-	-moz-box-shadow: inset 0 -1px 0 rgba(255,255,255,0.5), inset 0 2px 5px rgba(0,0,0,0.15);
-	box-shadow: inset 0 -1px 0 rgba(255,255,255,0.5), inset 0 2px 5px rgba(0,0,0,0.15);
+
 }
 input[type="checkbox"],
 input[type="radio"] {
@@ -320,17 +289,17 @@ a:active {
 .alignleft {
 	display: inline;
 	float: left;
-	margin-right: 1.5em;
+	margin-right: 20px;
 }
 .alignright {
 	display: inline;
 	float: right;
-	margin-left: 1.5em;
+	margin-left: 20px;
 }
 .aligncenter {
 	clear: both;
 	display: block;
-	margin: 0 auto;
+	margin: 20px auto;
 }
 
 /* Text meant only for screen readers */
@@ -425,11 +394,11 @@ a:active {
 }
 .entry-content,
 .entry-summary {
-	margin: 1.5em 0 0;
+	margin: 20px 0 0;
 }
 .page-links {
 	clear: both;
-	margin: 0 0 1.5em;
+	margin: 0 0 20px;
 }
 
 
@@ -461,7 +430,7 @@ img[class*="wp-image-"] {
 .entry-content img,
 img.size-full {
 	max-width: 100%;
-	width: auto; /* Prevent stretching of full-size images with height and width attributes in IE8 */
+	/*width: auto;*/ /* Prevent stretching of full-size images with height and width attributes in IE8 */
 }
 .entry-content img.wp-smiley,
 .comment-content img.wp-smiley {
@@ -478,7 +447,7 @@ img.size-full {
 .wp-caption.aligncenter,
 .wp-caption.alignleft,
 .wp-caption.alignright {
-	margin-bottom: 1.5em;
+	margin-bottom: 20px;
 }
 .wp-caption img {
 	display: block;
@@ -497,7 +466,7 @@ img.size-full {
 }
 
 .site-content .gallery {
-	margin-bottom: 1.5em;
+	margin-bottom: 20px;
 }
 .gallery-caption {
 }
@@ -526,7 +495,7 @@ object {
 ----------------------------------------------- */
 
 .site-content .site-navigation {
-	margin: 0 0 1.5em;
+	margin: 0 0 20px;
 	overflow: hidden;
 }
 .site-content .nav-previous {
@@ -543,16 +512,4 @@ object {
 ----------------------------------------------- */
 
 .bypostauthor {
-}
-
-/* =Widgets
------------------------------------------------ */
-
-.widget {
-	margin: 0 0 1.5em;
-}
-
-/* Search widget */
-#searchsubmit {
-	display: none;
 }

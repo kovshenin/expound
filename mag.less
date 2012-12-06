@@ -43,8 +43,15 @@ a {
 	margin: 40px auto;
 }
 
-#colophon {
+.site-footer {
 	clear: both;
+	padding: 40px 40px;
+	color: @readableLight;
+}
+
+.site-footer a {
+	color: @readableLight;
+	&:hover { color: @primary; }
 }
 
 .site-header hgroup {
@@ -148,6 +155,29 @@ a {
 	line-height: 28px;
 }
 
+.page-header {
+	float: left;
+	width: 940px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+
+	padding-left: 40px;
+	padding-right: 40px;
+
+	background: white url('images/absurdidad.png') 0 0 repeat;
+}
+
+.page-header h1 {
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 20px;
+	line-height: 28px;
+}
+
+.page-header p {
+	margin-bottom: 0;
+	margin-top: 10px;
+}
+
 .featured-content {
 	float: left;
 	width: 960px + ( 30px * 2 );
@@ -173,12 +203,61 @@ h1, h2, h3 {
 	font-family: Georgia, "Times New Roman", serif;
 }
 
-.site-content .entry-content {
+.site-content .entry-content,
+.site-content .comment-content {
 	h1 { font-size: 34px; }
 	h2 { font-size: 20px; line-height: 28px; }
 	h3 { font-size: 16px; line-height: 18px; color: lighten(@text, 15%); }
 
 	h1, h2, h3 { margin-bottom: 10px; margin-top: 40px; }
+
+	hr {
+		background-color: @light;
+		border: 0;
+		height: 1px;
+		margin-bottom: 20px;
+	}
+
+	table {
+		margin-bottom: 20px;
+	}
+
+	th, td {
+		padding: 8px 8px;
+		border-bottom: solid 1px @light;
+	}
+
+	tr:hover td {
+		background: lighten(@light, 10%);
+	}
+
+	ul, ol {
+		margin-bottom: 20px;
+	}
+
+	blockquote {
+		margin-left: -40px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		padding-top: 20px;
+		padding-bottom: 1px;
+		padding-right: 20px;
+		padding-left: 80px;
+		background: lighten(@light, 10%);
+		position: relative;
+	}
+	blockquote:before {
+		content:'\0201C';
+		font-family: Georgia, 'Times New Roman', serif;
+		font-size: 50px;
+		position: absolute;
+		left: 40px;
+		top: 32px;
+		color: @readableLight;
+	}
+	blockquote cite:before {
+		content: '\02014  ';
+	}
 }
 
 .entry-title a {
@@ -189,6 +268,7 @@ h1, h2, h3 {
 	.entry-title {
 		font-size: 44px;
 		line-height: 54px;
+		margin-bottom: 20px;
 	}
 }
 
@@ -212,7 +292,7 @@ h1, h2, h3 {
 	}
 
 	.entry-meta {
-		font-size: 11px;
+		font-size: 12px;
 		line-height: 15px;
 		color: @readableLight;
 	}
@@ -221,6 +301,17 @@ h1, h2, h3 {
 		color: @readableLight;
 		text-decoration: none;
 		&:hover { color: @primary }
+	}
+
+	.entry-header {
+		.entry-meta {
+			font-size: 12px;
+
+			.author {
+				color: @text;
+				font-weight: 600;
+			}
+		}
 	}
 }
 
@@ -358,7 +449,7 @@ article:hover {
 	color: #777;
 
 	&:hover {
-		background: @primary; 
+		background: @primary;
 		&:before {
 			border-top: 6px solid darken(@primary, 10%);
 		}
@@ -367,6 +458,7 @@ article:hover {
 
 .entry-thumbnail-category a {
 	color: white;
+	text-decoration: none;
 }
 
 .entry-thumbnail-category:before {
@@ -384,20 +476,149 @@ article:hover {
 	.widget {
 		margin-bottom: 40px;
 		margin-right: 40px;
+
+		ul {
+			list-style: none;
+			margin-left: 0;
+		}
+
+		ul li {
+			padding-bottom: 8px;
+		}
 	}
 
 	.widget-title {
 		font-size: 16px;
 		margin-bottom: 20px;
 	}
+
+	.widget_recent_entries .post-date {
+		color: @readableLight;
+	}
 }
 
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
 .button-primary,
-a.button-primary {
+a.button-primary,
+.wpm-button-primary,
+a.wpm-button-primary {
+	display: inline-block;
 	background: @primary;
 	color: white;
 	text-decoration: none;
 	padding: 10px;
+	border: none;
+	font-weight: 300;
 
-	&:hover { background: lighten(@primary, 5%); }
+	&:hover, &:focus, &:active { background: lighten(@primary, 5%); }
+}
+
+.button,
+a.button,
+.wpm-button,
+a.wpm-button {
+	display: inline-block;
+	background: @text;
+	color: white;
+	text-decoration: none;
+	padding: 10px;
+
+	&:hover { background: lighten(@text, 5%); }
+}
+
+.paging-navigation,
+.post-navigation {
+	padding-left: 40px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-right: 10px;
+	background: lighten(@light, 10%);
+}
+
+.comments-area {
+	padding-left: 40px;
+	margin-top: 40px;
+
+	.comments-title {
+		font-size: 20px;
+		line-height: 28px;
+	}
+
+	.commentlist {
+		list-style: none;
+		padding: 0;
+		margin: 40px 0 0 0;
+	}
+
+	ul.children {
+		list-style: none;
+		padding-left: 56px;
+		margin: 0;
+	}
+
+	article {
+		margin: 0;
+		padding: 20px 0;
+		border-top: solid 1px @light;
+		border-bottom: none;
+	}
+
+	.comment-content {
+		h1 { font-size: 16px; }
+		h2, h3, h4, h5, h6 { font-size: 13px; }
+		h1, h2, h3, h4, h5 { margin: 20px 0; }
+		blockquote { background: none; }
+	}
+
+	.comment-content,
+	.reply,
+	li.comment #respond {
+		margin-left: 56px;
+	}
+
+	footer {
+		margin-bottom: 20px;
+		.comment-author,
+		.comment-meta {
+			display: inline-block;
+		}
+		cite { font-style: normal; }
+		.says { display: none; }
+
+		.comment-author {
+			font-family: Georgia, "Times New Roman", serif;
+			font-size: 20px;
+			line-height: 28px;
+
+			a {
+				text-decoration: none;
+				color: @text;
+				&:hover { color: @primary; }
+			}
+
+			.avatar {
+				position: relative;
+				top: 12px;
+				margin-right: 10px;
+				border-radius: 50%;
+			}
+		}
+
+		.comment-meta,
+		.comment-meta a {
+			color: @readableLight;
+		}
+	}
+
+	#respond {
+		border-top: solid 1px @light;
+		padding-top: 40px;
+	}
+
+	#reply-title {
+		font-size: 20px;
+		line-height: 28px;
+	}
 }

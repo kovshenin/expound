@@ -120,10 +120,18 @@ if ( ! function_exists( 'mag_posted_on' ) ) :
 /**
  * Prints HTML with meta information for the current post-date/time and author.
  *
+ * @todo Fix l10n
  * @since Mag 1.0
  */
 function mag_posted_on() {
-	printf( __( 'Posted on <a href="%1$s" title="%2$s" rel="bookmark"><time class="entry-date" datetime="%3$s" pubdate>%4$s</time></a><span class="byline"> by <span class="author vcard"><a class="url fn n" href="%5$s" title="%6$s" rel="author">%7$s</a></span></span>', 'mag' ),
+
+	// translators: 1: who, 2: when
+	printf( __( '%1$s / %2$s' ),
+		sprintf( '<a class="author" rel="author" href="%s">%s</a>', esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ), get_the_author() ),
+		sprintf( '<a class="entry-date" href="%s">%s ago</a>', esc_url( get_permalink() ), esc_html( human_time_diff( get_the_time('U'), current_time('timestamp') ) ) )
+	);
+
+	/*printf( __( 'Posted on <a href="%1$s" title="%2$s" rel="bookmark"><time class="entry-date" datetime="%3$s" pubdate>%4$s</time></a><span class="byline"> by <span class="author vcard"><a class="url fn n" href="%5$s" title="%6$s" rel="author">%7$s</a></span></span>', 'mag' ),
 		esc_url( get_permalink() ),
 		esc_attr( get_the_time() ),
 		esc_attr( get_the_date( 'c' ) ),
@@ -131,9 +139,50 @@ function mag_posted_on() {
 		esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
 		esc_attr( sprintf( __( 'View all posts by %s', 'mag' ), get_the_author() ) ),
 		esc_html( get_the_author() )
-	);
+	);*/
 }
 endif;
+
+/**
+ * @todo fix l10n
+ */
+function mag_posted_in() {
+	// translators: 1: when, 2: where (category)
+	printf( __( '%1$s in %2$s' ),
+		sprintf( '<a class="entry-date" href="%s">%s ago</a>', esc_url( get_permalink() ), esc_html( human_time_diff( get_the_time('U'), current_time('timestamp') ) ) ),
+		get_the_category_list( ', ' )
+	);
+	return;
+	if ( 'post' == get_post_type() ) : // Hide category and tag text for pages on Search ?>
+			<?php
+				/* translators: used between list items, there is a space after the comma */
+				$categories_list = get_the_category_list( __( ', ', 'mag' ) );
+				if ( $categories_list && mag_categorized_blog() ) :
+			?>
+			<span class="cat-links">
+				<?php printf( __( 'Posted in %1$s', 'mag' ), $categories_list ); ?>
+			</span>
+			<?php endif; // End if categories ?>
+
+			<?php
+				/* translators: used between list items, there is a space after the comma */
+				$tags_list = get_the_tag_list( '', __( ', ', 'mag' ) );
+				if ( $tags_list ) :
+			?>
+			<span class="sep"> | </span>
+			<span class="tags-links">
+				<?php printf( __( 'Tagged %1$s', 'mag' ), $tags_list ); ?>
+			</span>
+			<?php endif; // End if $tags_list ?>
+		<?php endif; // End if 'post' == get_post_type() ?>
+
+		<?php if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) : ?>
+		<span class="sep"> | </span>
+		<span class="comments-link"><?php comments_popup_link( __( 'Leave a comment', 'mag' ), __( '1 Comment', 'mag' ), __( '% Comments', 'mag' ) ); ?></span>
+		<?php endif; ?>
+
+		<?php edit_post_link( __( 'Edit', 'mag' ), '<span class="sep"> | </span><span class="edit-link">', '</span>' );
+}
 
 /**
  * Returns true if a blog has more than 1 category

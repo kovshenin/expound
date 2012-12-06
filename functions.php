@@ -161,3 +161,9 @@ function mag_get_featured_posts() {
 
 	return new WP_Query( $args );
 }
+
+
+function mag_display_credits() {
+	echo '&copy; ' . date( 'Y' ) . ' Копирование материалов без разрешения автора запрещено. WordPress и WordCamp являются зарегистрированными торговыми марками и принадлежат фонду <a href="http://wordpressfoundation.org">WordPress Foundation</a>. Читайте правила использования торговых марок. Работает на <a href="http://wordpress.org">WordPress</a>.';
+}
+add_action( 'mag_credits', 'mag_display_credits' );

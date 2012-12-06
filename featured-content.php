@@ -18,6 +18,7 @@
 			<?php the_excerpt(); ?>
 			<p><a class="button-primary" href="<?php the_permalink(); ?>">Read more &rarr;</a></p>
 		</div><!-- .entry-summary -->
+
 	</article>
 
 </div><!-- .featured-content -->
