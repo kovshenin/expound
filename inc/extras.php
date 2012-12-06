@@ -77,3 +77,8 @@ function mag_wp_title( $title, $sep ) {
 	return $title;
 }
 add_filter( 'wp_title', 'mag_wp_title', 10, 2 );
+
+function mag_excerpt_more( $more ) {
+	return '&hellip;';
+}
+add_filter( 'excerpt_more', 'mag_excerpt_more' );
