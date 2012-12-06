@@ -59,6 +59,7 @@ function mag_setup() {
 	 */
 	add_theme_support( 'post-thumbnails' );
 	set_post_thumbnail_size( 220, 126, true );
+	add_image_size( 'mag-featured', 460, 260, true );
 
 	/**
 	 * This theme uses wp_nav_menu() in one location.
@@ -126,5 +127,30 @@ function mag_post_class( $classes ) {
 
 add_action( 'pre_get_posts', 'mag_pre_get_posts' );
 function mag_pre_get_posts( $query ) {
-	
+	if ( ! $query->is_main_query() )
+		return;
+
+	if ( $query->is_home() && ! $query->is_paged() ) { // condition should be same as in index.php
+		$query->set( 'ignore_sticky_posts', true );
+
+		$exclude_ids = array();
+		$featured_posts = mag_get_featured_posts();
+		foreach ( $featured_posts->posts as $post )
+			$exclude_ids[] = $post->ID;
+
+		$query->set( 'post__not_in', $exclude_ids );
+	}
+}
+
+function mag_get_featured_posts() {
+	$sticky = get_option( 'sticky_posts' );
+
+	if ( empty( $sticky ) )
+		return new WP_Query();
+
+	return new WP_Query( array(
+		'posts_per_page' => 5,
+		'post__in' => $sticky,
+		'ignore_sticky_posts' => true,
+	) );
 }

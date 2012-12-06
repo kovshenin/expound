@@ -4,7 +4,15 @@
 @readableLight: #aaa;
 
 body {
+	/*background: #333 url('http://s0.wp.com/home.logged-out/images/pic-d.jpg?1');
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-attachment: fixed;
+
+	-webkit-background-size: cover;
+	background-size: cover;*/
 	background: #333;
+
 	font: 13px/20px "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: 300;
 }
@@ -57,11 +65,28 @@ a {
 	a {
 		color: white;
 		padding: 10px;
+		position: relative;
+
+		&:hover { background: lighten(@text, 3%); }
 	}
 
 	.current_page_item a,
 	.current-menu-item a {
 		background: @primary;
+	}
+
+	.current_page_item a:after,
+	.current-menu-item a:after {
+		content: '';
+		font-size: 0px; line-height: 0%; width: 0px;
+		border-top: 6px solid @primary;
+		border-left: 6px solid transparent;
+		border-right: 6px solid transparent;
+
+		position: absolute;
+		bottom: -6px;
+		left: 50%;
+		margin-left: -6px;
 	}
 }
 
@@ -69,6 +94,21 @@ a {
 	float: left;
 	width: 30px + 720px - 10px;
 	margin-right: 10px;
+}
+
+.featured-content {
+	float: left;
+	width: 960px + ( 30px * 2 );
+}
+
+.featured-content-secondary {
+	float: left;
+	width: 960px;
+	padding-top: 40px;
+	padding-bottom: 40px - 20px;
+
+	padding-left: 30px;
+	padding-right: 30px;
 }
 
 #secondary {
@@ -97,7 +137,6 @@ h1, h2, h3 {
 
 	.entry-title a {
 		color: @text;
-
 		&:hover { color: @primary; }
 	}
 
@@ -120,7 +159,6 @@ h1, h2, h3 {
 
 		.entry-thumbnail {
 			float: left;
-			width: 240px;
 		}
 
 		.entry-thumbnail img {
@@ -149,4 +187,120 @@ h1, h2, h3 {
 			margin-left: 220px + 20px;
 		}
 	}
+}
+
+.featured-content {
+	article {
+		padding-top: 40px;
+		padding-bottom: 40px;
+
+		padding-left: 30px + 10px;
+		padding-right: 30px + 10px;
+	}
+
+	.entry-title {
+		font-size: 20px;
+		line-height: 28px;
+	}
+
+	.entry-title a {
+		color: @text;
+		&:hover { color: @primary; }
+	}
+
+	.has-post-thumbnail {
+
+		.entry-thumbnail,
+		.entry-thumbnail img {
+			float: left;
+		}
+
+		.entry-title {
+			clear: none;
+			margin-top: -5px;
+		}
+
+		.entry-header,
+		.entry-summary,
+		.entry-meta {
+			margin-left: 460px + 20px;
+		}
+
+		.entry-summary:after {
+			display: table;
+			content:'';
+			line-height: 0;
+			clear: both;
+		}
+	}
+}
+
+.featured-content-secondary {
+	background: white url('images/absurdidad.png') 0 0 repeat;
+
+	article {
+		margin-left: 10px;
+		margin-right: 10px;
+		width: 220px;
+		float: left;
+	}
+
+	.entry-thumbnail {
+		margin-bottom: 20px;
+	}
+
+	.entry-title {
+		font-size: 20px;
+		line-height: 28px;
+	}
+
+	.entry-title a {
+		color: @text;
+		&:hover { color: @primary; }
+	}
+}
+
+article:hover {
+	.entry-thumbnail img { opacity: 0.9; }
+	.entry-title a { color: @primary; }
+}
+
+.entry-thumbnail {
+	position: relative;
+}
+
+.entry-thumbnail img {
+	box-shadow: 0px 0px 3px rgba(0,0,0,0.2);
+}
+
+.entry-thumbnail-category {
+	position: absolute;
+	left: -6px;
+	top: 8px;
+	background: @text;
+	padding: 2px 8px;
+	font-size: 8px;
+	text-transform: uppercase;
+	color: #777;
+
+	&:hover {
+		background: @primary; 
+		&:before {
+			border-top: 6px solid darken(@primary, 10%);
+		}
+	}
+}
+
+.entry-thumbnail-category a {
+	color: white;
+}
+
+.entry-thumbnail-category:before {
+	content:'';
+	font-size: 0px; line-height: 0%; width: 0px;
+	border-top: 6px solid darken(@text, 10%);
+	border-left: 6px solid transparent;
+	position: absolute;
+	left: 0px;
+	top: 24px;
 }

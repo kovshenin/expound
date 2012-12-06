@@ -1,4 +1,12 @@
 body {
+  /*background: #333 url('http://s0.wp.com/home.logged-out/images/pic-d.jpg?1');
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-attachment: fixed;
+
+	-webkit-background-size: cover;
+	background-size: cover;*/
+
   background: #333;
   font: 13px/20px "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
@@ -51,15 +59,45 @@ a:active {
 .main-navigation a {
   color: white;
   padding: 10px;
+  position: relative;
+}
+.main-navigation a:hover {
+  background: #424242;
 }
 .main-navigation .current_page_item a,
 .main-navigation .current-menu-item a {
   background: #117bb8;
 }
+.main-navigation .current_page_item a:after,
+.main-navigation .current-menu-item a:after {
+  content: '';
+  font-size: 0px;
+  line-height: 0%;
+  width: 0px;
+  border-top: 6px solid #117bb8;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  margin-left: -6px;
+}
 #primary {
   float: left;
   width: 740px;
   margin-right: 10px;
+}
+.featured-content {
+  float: left;
+  width: 1020px;
+}
+.featured-content-secondary {
+  float: left;
+  width: 960px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 #secondary {
   float: right;
@@ -100,7 +138,6 @@ h3 {
 }
 .blog .site-content .has-post-thumbnail .entry-thumbnail {
   float: left;
-  width: 240px;
 }
 .blog .site-content .has-post-thumbnail .entry-thumbnail img {
   float: left;
@@ -122,4 +159,103 @@ h3 {
 .blog .site-content .has-post-thumbnail .entry-summary,
 .blog .site-content .has-post-thumbnail .entry-meta {
   margin-left: 240px;
+}
+.featured-content article {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.featured-content .entry-title {
+  font-size: 20px;
+  line-height: 28px;
+}
+.featured-content .entry-title a {
+  color: #3a3a3a;
+}
+.featured-content .entry-title a:hover {
+  color: #117bb8;
+}
+.featured-content .has-post-thumbnail .entry-thumbnail,
+.featured-content .has-post-thumbnail .entry-thumbnail img {
+  float: left;
+}
+.featured-content .has-post-thumbnail .entry-title {
+  clear: none;
+  margin-top: -5px;
+}
+.featured-content .has-post-thumbnail .entry-header,
+.featured-content .has-post-thumbnail .entry-summary,
+.featured-content .has-post-thumbnail .entry-meta {
+  margin-left: 480px;
+}
+.featured-content .has-post-thumbnail .entry-summary:after {
+  display: table;
+  content: '';
+  line-height: 0;
+  clear: both;
+}
+.featured-content-secondary {
+  background: #ffffff url('images/absurdidad.png') 0 0 repeat;
+}
+.featured-content-secondary article {
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 220px;
+  float: left;
+}
+.featured-content-secondary .entry-thumbnail {
+  margin-bottom: 20px;
+}
+.featured-content-secondary .entry-title {
+  font-size: 20px;
+  line-height: 28px;
+}
+.featured-content-secondary .entry-title a {
+  color: #3a3a3a;
+}
+.featured-content-secondary .entry-title a:hover {
+  color: #117bb8;
+}
+article:hover .entry-thumbnail img {
+  opacity: 0.9;
+}
+article:hover .entry-title a {
+  color: #117bb8;
+}
+.entry-thumbnail {
+  position: relative;
+}
+.entry-thumbnail img {
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
+}
+.entry-thumbnail-category {
+  position: absolute;
+  left: -6px;
+  top: 8px;
+  background: #3a3a3a;
+  padding: 2px 8px;
+  font-size: 8px;
+  text-transform: uppercase;
+  color: #777;
+}
+.entry-thumbnail-category:hover {
+  background: #117bb8;
+}
+.entry-thumbnail-category:hover:before {
+  border-top: 6px solid #0d5c89;
+}
+.entry-thumbnail-category a {
+  color: white;
+}
+.entry-thumbnail-category:before {
+  content: '';
+  font-size: 0px;
+  line-height: 0%;
+  width: 0px;
+  border-top: 6px solid #212121;
+  border-left: 6px solid transparent;
+  position: absolute;
+  left: 0px;
+  top: 24px;
 }

@@ -113,12 +113,12 @@ hr {
 	background-color: #ccc;
 	border: 0;
 	height: 1px;
-	margin-bottom: 1.5em;
+	margin-bottom: 20px;
 }
 
 /* Text elements */
 p {
-	margin-bottom: 1.5em;
+	margin-bottom: 20px;
 }
 ul, ol {
 	margin: 0 0 1.5em 3em;
