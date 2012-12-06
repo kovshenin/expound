@@ -12,7 +12,7 @@
  * @since Mag 1.0
  */
 if ( ! isset( $content_width ) )
-	$content_width = 610; /* pixels */
+	$content_width = 700; /* pixels */
 
 if ( ! function_exists( 'mag_setup' ) ) :
 /**
