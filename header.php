@@ -38,11 +38,11 @@
 			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 
 			<ul class="social">
-				<li class="twitter"><a href="#">Twitter</a></li>
-				<li class="facebook"><a href="#">Facebook</a></li>
-				<li class="feed"><a href="#">Feed</a></li>
-				<li class="vkontakte"><a href="#">Vkontakte</a></li>
-				<li class="google-plus"><a href="#">Google+</a></li>
+				<li class="twitter"><a target="_blank" href="http://twitter.com/wpmagru">Twitter</a></li>
+				<li class="facebook"><a target="_blank" href="http://facebook.com/wpmagru">Facebook</a></li>
+				<li class="feed"><a target="_blank" href="http://wpmag.ru/feed/">Feed</a></li>
+				<li class="vkontakte"><a target="_blank" href="http://vk.com/wpmag">Vkontakte</a></li>
+				<!--<li class="google-plus"><a target="_blank" href="https://plus.google.com/108553372817411783434/posts">Google+</a></li>-->
 			</ul>
 		</nav><!-- .site-navigation .main-navigation -->
 	</header><!-- #masthead .site-header -->
