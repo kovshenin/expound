@@ -60,6 +60,7 @@ function mag_setup() {
 	add_theme_support( 'post-thumbnails' );
 	set_post_thumbnail_size( 220, 126, true );
 	add_image_size( 'mag-featured', 460, 260, true );
+	add_image_size( 'mag-mini', 50, 50, true );
 
 	/**
 	 * This theme uses wp_nav_menu() in one location.
@@ -100,7 +101,7 @@ add_action( 'widgets_init', 'mag_widgets_init' );
  */
 function mag_scripts() {
 	wp_enqueue_style( 'style', get_stylesheet_uri() );
-	wp_enqueue_style( 'style-less', get_stylesheet_directory_uri() . '/mag.css' );
+	wp_enqueue_style( 'style-less', get_stylesheet_directory_uri() . '/mag.css', array(), 1 );
 
 	wp_enqueue_script( 'small-menu', get_template_directory_uri() . '/js/small-menu.js', array( 'jquery' ), '20120206', true );
 
@@ -160,6 +161,30 @@ function mag_get_featured_posts() {
 
 	/*if ( is_category() )
 		$args['category_name'] = get_query_var( 'category_name' );*/
+
+	return new WP_Query( $args );
+}
+
+function wpmag_get_related_posts() {
+	global $post;
+
+	$args = array(
+		'posts_per_page' => 3,
+		'ignore_sticky_posts' => true,
+		'post__not_in' => array( $post->ID ),
+	);
+
+	$categories = get_the_category();
+	if ( ! empty( $categories ) ) {
+		$category = array_shift( $categories );
+		$args['tax_query'] = array(
+			array(
+				'taxonomy' => 'category',
+				'field' => 'id',
+				'terms' => $category->term_id,
+			),
+		);
+	}
 
 	return new WP_Query( $args );
 }
