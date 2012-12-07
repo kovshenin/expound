@@ -132,7 +132,7 @@ function mag_pre_get_posts( $query ) {
 	if ( ! $query->is_main_query() )
 		return;
 
-	if ( $query->is_home() && ! $query->is_paged() ) { // condition should be same as in index.php
+	if ( $query->is_home() ) { // condition should be (almost) the same as in index.php
 		$query->set( 'ignore_sticky_posts', true );
 
 		$exclude_ids = array();
