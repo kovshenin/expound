@@ -1,6 +1,7 @@
 <?php $related_posts = wpmag_get_related_posts(); ?>
 <?php if ( $related_posts->have_posts() ) : ?>
 <div class="related-content">
+		<h3 class="related-content-title">Читайте так же</h3>
 		<?php while ( $related_posts->have_posts() ) : $related_posts->the_post(); ?>
 
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>

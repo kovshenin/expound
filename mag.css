@@ -226,7 +226,13 @@ a:hover {
   float: left;
   width: 720px;
   padding-left: 20px;
+  padding-top: 20px;
   border-bottom: solid 1px #dddddd;
+}
+.single .site-content .related-content .related-content-title {
+  font-size: 16px;
+  margin-bottom: 0px;
+  margin-left: 20px;
 }
 .single .site-content .related-content article {
   float: left;
