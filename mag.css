@@ -561,6 +561,13 @@ article:hover .entry-title a {
 .widget-area .widget_twitter .timesince {
   color: #aaaaaa;
 }
+.widget-area .widget_twitter .tweets li {
+  padding: 20px 0;
+  border-bottom: solid 1px #dddddd;
+}
+.widget-area .widget_twitter .tweets li:last-child {
+  border-bottom: none;
+}
 input[type="button"],
 input[type="reset"],
 input[type="submit"],
