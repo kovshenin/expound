@@ -20,4 +20,5 @@
 
 	<?php endwhile; ?>
 </div>
+<?php wp_reset_postdata(); ?>
 <?php endif; // have_posts() ?>
