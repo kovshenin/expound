@@ -219,8 +219,7 @@ a:hover {
   overflow: hidden;
 }
 .single .site-content .related-content {
-  float: left;
-  width: 720px;
+  overflow: hidden;
   padding-left: 20px;
   padding-top: 20px;
   border-bottom: solid 1px #dddddd;
@@ -774,6 +773,9 @@ a.wpm-button:hover {
     clear: none;
     margin-top: -5px;
   }
+  .single .site-content .related-content article {
+    width: 200px;
+  }
 }
 @media (max-width: 1020px) {
   #page {
@@ -782,6 +784,9 @@ a.wpm-button:hover {
   #primary {
     width: 620px;
   }
+  .single .site-content .related-content article {
+    width: 180px;
+  }
 }
 @media (max-width: 960px) {
   #page {
@@ -789,6 +794,9 @@ a.wpm-button:hover {
   }
   #primary {
     width: 560px;
+  }
+  .single .site-content .related-content article {
+    width: 160px;
   }
 }
 @media (max-width: 900px) {

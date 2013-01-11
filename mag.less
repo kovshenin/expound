@@ -224,8 +224,7 @@ a {
 }
 
 .single .site-content .related-content {
-	float: left;
-	width: 720px;
+	overflow: hidden;
 	padding-left: 20px;
 	padding-top: 20px;
 	border-bottom: solid 1px @light;
@@ -774,16 +773,28 @@ a.wpm-button {
 		clear: none;
 		margin-top: -5px;
 	}
+
+	.single .site-content .related-content article {
+		width: 220px - 20px * 1;
+	}
 }
 
 @media (max-width: 1020px) {
 	#page { width: 1020px - 60px * 2; }
 	#primary { width: 740px - 60px * 2; }
+
+	.single .site-content .related-content article {
+		width: 220px - 20px * 2;
+	}
 }
 
 @media (max-width: 960px) {
 	#page { width: 1020px - 60px * 3; }
 	#primary { width: 740px - 60px * 3; }
+
+	.single .site-content .related-content article {
+		width: 220px - 20px * 3;
+	}
 }
 
 @media (max-width: 900px) {
