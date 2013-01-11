@@ -793,7 +793,7 @@ a.wpm-button:hover {
 }
 @media (max-width: 900px) {
   #page {
-    width: 90%;
+    width: 87%;
   }
   #primary {
     width: 100%;
@@ -819,5 +819,10 @@ a.wpm-button:hover {
   }
   .widget-area .widget {
     margin-left: 40px;
+  }
+}
+@media (max-width: 600px) {
+  #page {
+    width: 85%;
   }
 }
