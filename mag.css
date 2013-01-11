@@ -175,14 +175,17 @@ a:hover {
 .main-navigation ul.social li.google-plus a {
   background-position: -157px 50%;
 }
+.site-main {
+  float: left;
+  width: 100%;
+  clear: both;
+}
 #primary {
   float: left;
   width: 740px;
   margin-right: 10px;
 }
 .site-intro {
-  float: left;
-  width: 940px;
   padding-top: 40px;
   padding-bottom: 20px;
   padding-left: 40px;
@@ -193,8 +196,6 @@ a:hover {
   line-height: 28px;
 }
 .page-header {
-  float: left;
-  width: 940px;
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 40px;
@@ -210,17 +211,12 @@ a:hover {
   margin-bottom: 0;
   margin-top: 10px;
 }
-.featured-content {
-  float: left;
-  width: 1020px;
-}
 .featured-content-secondary {
-  float: left;
-  width: 960px;
   padding-top: 40px;
   padding-bottom: 20px;
   padding-left: 30px;
   padding-right: 30px;
+  overflow: hidden;
 }
 .single .site-content .related-content {
   float: left;
@@ -438,8 +434,18 @@ h3 {
   color: #117bb8;
 }
 .featured-content .has-post-thumbnail .entry-thumbnail,
+.featured-content .has-post-thumbnail .entry-thumbnail a,
 .featured-content .has-post-thumbnail .entry-thumbnail img {
   float: left;
+}
+.featured-content .has-post-thumbnail .entry-thumbnail {
+  width: 50%;
+}
+.featured-content .has-post-thumbnail .entry-thumbnail a {
+  margin-right: 10px;
+}
+.featured-content .has-post-thumbnail .entry-thumbnail img {
+  width: 100%;
 }
 .featured-content .has-post-thumbnail .entry-title {
   clear: none;
@@ -448,7 +454,8 @@ h3 {
 .featured-content .has-post-thumbnail .entry-header,
 .featured-content .has-post-thumbnail .entry-summary,
 .featured-content .has-post-thumbnail .entry-meta {
-  margin-left: 480px;
+  margin-left: 50%;
+  padding-left: 10px;
 }
 .featured-content .has-post-thumbnail .entry-summary:after {
   display: table;
@@ -492,6 +499,8 @@ article:hover .entry-title a {
 }
 .entry-thumbnail img {
   box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
+  max-width: 100%;
+  height: auto;
 }
 .entry-thumbnail-category {
   position: absolute;
@@ -732,4 +741,83 @@ a.wpm-button:hover {
 .comments-area #reply-title {
   font-size: 20px;
   line-height: 28px;
+}
+@media (max-width: 1080px) {
+  #page {
+    width: 960px;
+  }
+  #primary {
+    width: 680px;
+  }
+  .featured-content-secondary {
+    padding-top: 20px;
+    padding-bottom: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .featured-content-secondary article {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .featured-content-secondary .entry-thumbnail {
+    float: left;
+    margin-bottom: 0;
+  }
+  .featured-content-secondary .has-post-thumbnail .entry-header,
+  .featured-content-secondary .has-post-thumbnail .entry-summary {
+    margin-left: 240px;
+  }
+  .featured-content-secondary .has-post-thumbnail .entry-title {
+    clear: none;
+    margin-top: -5px;
+  }
+}
+@media (max-width: 1020px) {
+  #page {
+    width: 900px;
+  }
+  #primary {
+    width: 620px;
+  }
+}
+@media (max-width: 960px) {
+  #page {
+    width: 840px;
+  }
+  #primary {
+    width: 560px;
+  }
+}
+@media (max-width: 900px) {
+  #page {
+    width: 90%;
+  }
+  #primary {
+    width: 100%;
+    margin-right: 0;
+  }
+  #secondary {
+    width: 100%;
+    margin-left: 0;
+  }
+  .featured-content .has-post-thumbnail .entry-thumbnail {
+    width: 220px;
+  }
+  .featured-content .has-post-thumbnail .entry-thumbnail a {
+    margin-right: 0;
+  }
+  .featured-content .has-post-thumbnail .entry-header,
+  .featured-content .has-post-thumbnail .entry-summary {
+    margin-left: 240px;
+    padding-left: 0;
+  }
+  .site-content article {
+    padding-right: 40px;
+  }
+  .widget-area .widget {
+    margin-left: 40px;
+  }
 }
