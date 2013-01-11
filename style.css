@@ -429,7 +429,8 @@ img[class*="wp-image-"] {
 .site-header img,
 .entry-content img,
 img.size-full {
-	max-width: 98.5%;
+	max-width: 100%;
+	/*max-width: 98.5%;*/
 	/*width: auto;*/ /* Prevent stretching of full-size images with height and width attributes in IE8 */
 }
 .entry-content img.wp-smiley,
@@ -441,7 +442,7 @@ img.size-full {
 }
 
 .wp-caption {
-	max-width: 100%;
+	max-width: 98.3%;
 	margin-bottom: 20px;
 }
 .wp-caption.aligncenter,
