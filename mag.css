@@ -218,6 +218,13 @@ a:hover {
   padding-right: 30px;
   overflow: hidden;
 }
+.widget_recent_entries .entry-thumbnail,
+.widget_recent_entries .entry-thumbnail img {
+  float: left;
+}
+.widget_recent_entries .has-post-thumbnail .entry-title {
+  margin-left: 60px;
+}
 .single .site-content .related-content {
   overflow: hidden;
   padding-left: 20px;

@@ -455,15 +455,20 @@ img.size-full {
 	padding: 5px;
 	border: solid 1px #ccc;
 }
+.wp-caption img.size-full,
+.wp-caption img.size-large {
+	width: 98.5%;
+}
 .wp-caption-text {
 	text-align: center;
 	color: #999;
 	font-size: 13px;
 }
 .wp-caption .wp-caption-text {
-	padding: 4px 6px;
 	width: 100%;
+	display: block;
 	background: #efefef;
+	padding: 4px 1px;
 }
 
 .site-content .gallery {

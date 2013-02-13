@@ -130,7 +130,7 @@ function mag_post_class( $classes ) {
 
 add_action( 'pre_get_posts', 'mag_pre_get_posts' );
 function mag_pre_get_posts( $query ) {
-	if ( ! $query->is_main_query() )
+	if ( ! $query->is_main_query() || is_admin() )
 		return;
 
 	if ( $query->is_home() ) { // condition should be (almost) the same as in index.php
@@ -138,8 +138,10 @@ function mag_pre_get_posts( $query ) {
 
 		$exclude_ids = array();
 		$featured_posts = mag_get_featured_posts();
-		foreach ( $featured_posts->posts as $post )
-			$exclude_ids[] = $post->ID;
+
+		if ( $featured_posts->have_posts() )
+			foreach ( $featured_posts->posts as $post )
+				$exclude_ids[] = $post->ID;
 
 		$query->set( 'post__not_in', $exclude_ids );
 	}
