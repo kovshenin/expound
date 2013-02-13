@@ -457,7 +457,7 @@ img.size-full {
 }
 .wp-caption img.size-full,
 .wp-caption img.size-large {
-	width: 98.5%;
+	max-width: 98.5%;
 }
 .wp-caption-text {
 	text-align: center;
