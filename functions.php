@@ -104,7 +104,7 @@ add_action( 'widgets_init', 'mag_widgets_init' );
  */
 function mag_scripts() {
 	wp_enqueue_style( 'mag-style', get_stylesheet_uri(), array(), 2 );
-	wp_enqueue_style( 'style-less', get_stylesheet_directory_uri() . '/mag.css', array( 'mag-style' ), 2 );
+	wp_enqueue_style( 'style-less', get_stylesheet_directory_uri() . '/mag.css', array( 'mag-style' ), 3 );
 
 	wp_enqueue_script( 'mag-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
@@ -196,8 +196,10 @@ function wpmag_get_related_posts() {
 	return new WP_Query( $args );
 }
 
-
 function mag_display_credits() {
-	echo '&copy; ' . date( 'Y' ) . ' Копирование материалов без разрешения автора запрещено. WordPress и WordCamp являются зарегистрированными торговыми марками и принадлежат фонду <a href="http://wordpressfoundation.org">WordPress Foundation</a>. Читайте правила использования торговых марок. Работает на <a href="http://wordpress.org">WordPress</a>.';
+	$text = '<a href="http://wordpress.org/ rel="generator">' . sprintf( __( 'Proudly powered by %s', 'mag' ), 'WordPress' ) . '</a>';
+	$text .= '<span class="sep"> | </span>';
+	$text .= sprintf( __( 'Theme: %1$s by %2$s', 'mag' ), 'Mag', '<a href="http://kovshenin.com/" rel="designer">Konstantin Kovshenin</a>' );
+	echo apply_filters( 'mag_credits_text', $text );
 }
 add_action( 'mag_credits', 'mag_display_credits' );

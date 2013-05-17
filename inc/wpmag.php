@@ -24,3 +24,8 @@ function wpmag_navigation_after() {
 	</ul>
 	<?php
 }
+
+add_filter( 'mag_credits_text', 'wpmag_credits_text' );
+function wpmag_credits_text( $text ) {
+	return '&copy; ' . date( 'Y' ) . ' Копирование материалов без разрешения автора запрещено. WordPress и WordCamp являются зарегистрированными торговыми марками и принадлежат фонду <a href="http://wordpressfoundation.org">WordPress Foundation</a>. Читайте правила использования торговых марок. Работает на <a href="http://wordpress.org">WordPress</a>.';
+}

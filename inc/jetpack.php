@@ -16,4 +16,4 @@ function mag_infinite_scroll_setup() {
 		'footer'    => 'page',
 	) );
 }
-add_action( 'after_setup_theme', 'mag_infinite_scroll_setup' );
+// add_action( 'after_setup_theme', 'mag_infinite_scroll_setup' );
