@@ -124,7 +124,6 @@ add_action( 'wp_enqueue_scripts', 'mag_scripts' );
  * Implement the Custom Header feature
  */
 //require( get_template_directory() . '/inc/custom-header.php' );
-require( get_template_directory() . '/inc/wpmag.php' );
 
 add_filter('post_class', 'mag_post_class' );
 function mag_post_class( $classes ) {
