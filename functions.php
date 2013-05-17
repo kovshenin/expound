@@ -121,18 +121,18 @@ function mag_scripts() {
 add_action( 'wp_enqueue_scripts', 'mag_scripts' );
 
 /**
- * Implement the Custom Header feature
+ * Additional helper post classes
  */
-//require( get_template_directory() . '/inc/custom-header.php' );
-
-add_filter('post_class', 'mag_post_class' );
 function mag_post_class( $classes ) {
 	if ( has_post_thumbnail() )
 		$classes[] = 'has-post-thumbnail';
 	return $classes;
 }
+add_filter('post_class', 'mag_post_class' );
 
-add_action( 'pre_get_posts', 'mag_pre_get_posts' );
+/**
+ * Ignore and exclude featured posts on the home page.
+ */
 function mag_pre_get_posts( $query ) {
 	if ( ! $query->is_main_query() || is_admin() )
 		return;
@@ -150,11 +150,15 @@ function mag_pre_get_posts( $query ) {
 		$query->set( 'post__not_in', $exclude_ids );
 	}
 }
+add_action( 'pre_get_posts', 'mag_pre_get_posts' );
 
+/**
+ * Returns a new WP_Query with featured posts.
+ */
 function mag_get_featured_posts() {
 	global $wp_query;
 
-	$sticky = get_option( 'sticky_posts' );
+	$sticky = (array) get_option( 'sticky_posts', array() );
 
 	if ( empty( $sticky ) )
 		return new WP_Query();
@@ -165,14 +169,14 @@ function mag_get_featured_posts() {
 		'ignore_sticky_posts' => true,
 	);
 
-	/*if ( is_category() )
-		$args['category_name'] = get_query_var( 'category_name' );*/
-
 	return new WP_Query( $args );
 }
 
+/**
+ * Returns a new WP_Query with related posts.
+ */
 function wpmag_get_related_posts() {
-	global $post;
+	$post = get_post();
 
 	$args = array(
 		'posts_per_page' => 3,
@@ -180,6 +184,7 @@ function wpmag_get_related_posts() {
 		'post__not_in' => array( $post->ID ),
 	);
 
+	// Get posts from the same category.
 	$categories = get_the_category();
 	if ( ! empty( $categories ) ) {
 		$category = array_shift( $categories );
@@ -195,6 +200,9 @@ function wpmag_get_related_posts() {
 	return new WP_Query( $args );
 }
 
+/**
+ * Footer credits.
+ */
 function mag_display_credits() {
 	$text = '<a href="http://wordpress.org/ rel="generator">' . sprintf( __( 'Proudly powered by %s', 'mag' ), 'WordPress' ) . '</a>';
 	$text .= '<span class="sep"> | </span>';
@@ -203,6 +211,9 @@ function mag_display_credits() {
 }
 add_action( 'mag_credits', 'mag_display_credits' );
 
+/**
+ * Decrease caption width for non-full-width images. Pixelus perfectus!
+ */
 function mag_shortcode_atts_caption( $attr ) {
 	global $content_width;
 
