@@ -203,3 +203,13 @@ function mag_display_credits() {
 	echo apply_filters( 'mag_credits_text', $text );
 }
 add_action( 'mag_credits', 'mag_display_credits' );
+
+function mag_shortcode_atts_caption( $attr ) {
+	global $content_width;
+
+	if ( isset( $attr['width'] ) && $attr['width'] < $content_width )
+		$attr['width'] -= 4;
+
+	return $attr;
+}
+add_filter( 'shortcode_atts_caption', 'mag_shortcode_atts_caption' );
