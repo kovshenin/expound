@@ -175,7 +175,7 @@ function mag_get_featured_posts() {
 /**
  * Returns a new WP_Query with related posts.
  */
-function wpmag_get_related_posts() {
+function mag_get_related_posts() {
 	$post = get_post();
 
 	$args = array(
