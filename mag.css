@@ -49,7 +49,7 @@ a:hover {
 .site-footer a:hover {
   color: #117bb8;
 }
-.site-header hgroup {
+.site-header .site-branding {
   padding: 30px 40px 50px 40px;
 }
 .site-title {
@@ -78,47 +78,47 @@ a:hover {
   color: #878787;
   margin-top: -40px;
 }
-.main-navigation {
+.navigation-main {
   background: #3a3a3a;
 }
-.main-navigation ul {
+.navigation-main ul {
   margin: 0 30px;
 }
-.main-navigation a {
+.navigation-main a {
   color: white;
   padding: 10px;
   position: relative;
   background: #3a3a3a;
 }
-.main-navigation a:hover {
+.navigation-main a:hover {
   background: #474747;
 }
-.main-navigation ul > .current_page_item a,
-.main-navigation ul > .current-menu-item a,
-.main-navigation ul > .current-post-ancestor a,
-.main-navigation ul > .current-menu-parent a,
-.main-navigation ul > .current-post-parent a {
+.navigation-main ul > .current_page_item a,
+.navigation-main ul > .current-menu-item a,
+.navigation-main ul > .current-post-ancestor a,
+.navigation-main ul > .current-menu-parent a,
+.navigation-main ul > .current-post-parent a {
   background: #117bb8;
 }
-.main-navigation ul > .current_page_item ~ .current_page_item a,
-.main-navigation ul > .current-menu-item ~ .current-menu-item a,
-.main-navigation ul > .current-post-ancestor ~ .current-post-ancestor a,
-.main-navigation ul > .current-menu-parent ~ .current-menu-parent a,
-.main-navigation ul > .current-post-parent ~ .current-post-parent a {
+.navigation-main ul > .current_page_item ~ .current_page_item a,
+.navigation-main ul > .current-menu-item ~ .current-menu-item a,
+.navigation-main ul > .current-post-ancestor ~ .current-post-ancestor a,
+.navigation-main ul > .current-menu-parent ~ .current-menu-parent a,
+.navigation-main ul > .current-post-parent ~ .current-post-parent a {
   background: #3a3a3a;
 }
-.main-navigation ul > .current_page_item ~ .current_page_item a:hover,
-.main-navigation ul > .current-menu-item ~ .current-menu-item a:hover,
-.main-navigation ul > .current-post-ancestor ~ .current-post-ancestor a:hover,
-.main-navigation ul > .current-menu-parent ~ .current-menu-parent a:hover,
-.main-navigation ul > .current-post-parent ~ .current-post-parent a:hover {
+.navigation-main ul > .current_page_item ~ .current_page_item a:hover,
+.navigation-main ul > .current-menu-item ~ .current-menu-item a:hover,
+.navigation-main ul > .current-post-ancestor ~ .current-post-ancestor a:hover,
+.navigation-main ul > .current-menu-parent ~ .current-menu-parent a:hover,
+.navigation-main ul > .current-post-parent ~ .current-post-parent a:hover {
   background: #474747;
 }
-.main-navigation ul > .current_page_item a:after,
-.main-navigation ul > .current-menu-item a:after,
-.main-navigation ul > .current-post-ancestor a:after,
-.main-navigation ul > .current-menu-parent a:after,
-.main-navigation ul > .current-post-parent a:after {
+.navigation-main ul > .current_page_item a:after,
+.navigation-main ul > .current-menu-item a:after,
+.navigation-main ul > .current-post-ancestor a:after,
+.navigation-main ul > .current-menu-parent a:after,
+.navigation-main ul > .current-post-parent a:after {
   content: '';
   font-size: 0px;
   line-height: 0%;
@@ -131,15 +131,15 @@ a:hover {
   left: 50%;
   margin-left: -6px;
 }
-.main-navigation ul > .current_page_item ~ .current_page_item a:after,
-.main-navigation ul > .current-menu-item ~ .current-menu-item a:after,
-.main-navigation ul > .current-post-ancestor ~ .current-post-ancestor a:after,
-.main-navigation ul > .current-menu-parent ~ .current-menu-parent a:after,
-.main-navigation ul > .current-post-parent ~ .current-post-parent a:after {
+.navigation-main ul > .current_page_item ~ .current_page_item a:after,
+.navigation-main ul > .current-menu-item ~ .current-menu-item a:after,
+.navigation-main ul > .current-post-ancestor ~ .current-post-ancestor a:after,
+.navigation-main ul > .current-menu-parent ~ .current-menu-parent a:after,
+.navigation-main ul > .current-post-parent ~ .current-post-parent a:after {
   content: '';
   border: none;
 }
-.main-navigation ul.social {
+.navigation-main ul.social {
   padding: 0;
   list-style: none;
   float: right;
@@ -147,7 +147,7 @@ a:hover {
   /* -4px bc of padding */
 
 }
-.main-navigation ul.social li a {
+.navigation-main ul.social li a {
   width: 24px;
   padding-left: 0;
   padding-right: 0;
@@ -157,22 +157,22 @@ a:hover {
   padding-left: 4px;
   opacity: 0.2;
 }
-.main-navigation ul.social li a:hover {
+.navigation-main ul.social li a:hover {
   opacity: 0.5;
 }
-.main-navigation ul.social li.twitter a {
+.navigation-main ul.social li.twitter a {
   background-position: -205px 50%;
 }
-.main-navigation ul.social li.facebook a {
+.navigation-main ul.social li.facebook a {
   background-position: -12px 50%;
 }
-.main-navigation ul.social li.feed a {
+.navigation-main ul.social li.feed a {
   background-position: -108px 50%;
 }
-.main-navigation ul.social li.vkontakte a {
+.navigation-main ul.social li.vkontakte a {
   background-position: -59px 50%;
 }
-.main-navigation ul.social li.google-plus a {
+.navigation-main ul.social li.google-plus a {
   background-position: -157px 50%;
 }
 .site-main {
@@ -358,6 +358,7 @@ h3 {
 .site-content article {
   border-bottom: solid 1px #dddddd;
   padding-left: 40px;
+  margin: 0;
   padding-top: 40px;
   padding-bottom: 40px;
 }
@@ -539,6 +540,25 @@ article:hover .entry-title a {
   left: 0px;
   top: 24px;
 }
+.wp-caption {
+  border: none;
+}
+.wp-caption .wp-caption-text {
+  max-width: 98%;
+  width: 100%;
+  display: block;
+  background: #efefef;
+  border: solid 1px #efefef;
+  margin: 0;
+  padding: 5px;
+  color: #999;
+}
+.wp-caption img,
+.wp-caption img[class*="wp-image-"] {
+  border: solid 1px #ccc;
+  padding: 5px;
+  margin: 0;
+}
 .widget-area {
   padding-top: 41px;
 }
@@ -583,6 +603,12 @@ article:hover .entry-title a {
 .widget-area .widget_twitter .tweets li:last-child {
   border-bottom: none;
 }
+input,
+textarea {
+  font: 13px/20px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 100%;
+}
+button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"],
@@ -597,7 +623,10 @@ a.wpm-button-primary {
   padding: 10px;
   border: none;
   font-weight: 300;
+  cursor: pointer;
+  font-size: 100%;
 }
+button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover,
@@ -605,6 +634,7 @@ input[type="submit"]:hover,
 a.button-primary:hover,
 .wpm-button-primary:hover,
 a.wpm-button-primary:hover,
+button:focus,
 input[type="button"]:focus,
 input[type="reset"]:focus,
 input[type="submit"]:focus,
@@ -612,6 +642,7 @@ input[type="submit"]:focus,
 a.button-primary:focus,
 .wpm-button-primary:focus,
 a.wpm-button-primary:focus,
+button:active,
 input[type="button"]:active,
 input[type="reset"]:active,
 input[type="submit"]:active,
@@ -637,8 +668,8 @@ a.button:hover,
 a.wpm-button:hover {
   background: #474747;
 }
-.paging-navigation,
-.post-navigation {
+.navigation-paging,
+.navigation-post {
   padding-left: 40px;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -653,7 +684,7 @@ a.wpm-button:hover {
   font-size: 20px;
   line-height: 28px;
 }
-.comments-area .commentlist {
+.comments-area .comment-list {
   list-style: none;
   padding: 0;
   margin: 40px 0 0 0;

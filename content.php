@@ -1,7 +1,6 @@
 <?php
 /**
  * @package Mag
- * @since Mag 1.0
  */
 ?>
 
@@ -14,7 +13,7 @@
 	<?php endif; ?>
 
 	<header class="entry-header">
-		<h1 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( __( 'Permalink to %s', 'mag' ), the_title_attribute( 'echo=0' ) ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
+		<h1 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
 	</header><!-- .entry-header -->
 
 	<div class="entry-summary">
@@ -24,4 +23,4 @@
 	<footer class="entry-meta">
 		<?php mag_posted_in(); ?>
 	</footer><!-- .entry-meta -->
-</article><!-- #post-<?php the_ID(); ?> -->
+</article><!-- #post-## -->

@@ -50,7 +50,7 @@ a {
 	&:hover { color: @primary; }
 }
 
-.site-header hgroup {
+.site-header .site-branding {
 	padding: 30px 40px 50px 40px;
 }
 
@@ -82,7 +82,7 @@ a {
 	margin-top: -40px;
 }
 
-.main-navigation {
+.navigation-main {
 	background: @text;
 
 	ul {
@@ -357,7 +357,7 @@ h1, h2, h3 {
 	article {
 		border-bottom: solid 1px @light;
 		padding-left: 30px + 10px;
-
+		margin: 0;
 		padding-top: 40px;
 		padding-bottom: 40px;
 	}
@@ -568,6 +568,28 @@ article:hover {
 	top: 24px;
 }
 
+.wp-caption {
+	border: none;
+}
+
+.wp-caption .wp-caption-text {
+	max-width: 98%;
+	width: 100%;
+	display: block;
+	background: #efefef;
+	border: solid 1px #efefef;
+	margin: 0;
+	padding: 5px;
+	color: #999;
+}
+
+.wp-caption img,
+.wp-caption img[class*="wp-image-"] {
+	border: solid 1px #ccc;
+	padding: 5px;
+	margin: 0;
+}
+
 .widget-area {
 	padding-top: 41px;
 	.widget {
@@ -617,6 +639,13 @@ article:hover {
 	}
 }
 
+input,
+textarea {
+	font: 13px/20px "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 100%;
+}
+
+button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"],
@@ -631,6 +660,8 @@ a.wpm-button-primary {
 	padding: 10px;
 	border: none;
 	font-weight: 300;
+	cursor: pointer;
+	font-size: 100%;
 
 	&:hover, &:focus, &:active { background: lighten(@primary, 5%); }
 }
@@ -648,8 +679,8 @@ a.wpm-button {
 	&:hover { background: lighten(@text, 5%); }
 }
 
-.paging-navigation,
-.post-navigation {
+.navigation-paging,
+.navigation-post {
 	padding-left: 40px;
 	padding-top: 15px;
 	padding-bottom: 15px;
@@ -666,7 +697,7 @@ a.wpm-button {
 		line-height: 28px;
 	}
 
-	.commentlist {
+	.comment-list {
 		list-style: none;
 		padding: 0;
 		margin: 40px 0 0 0;

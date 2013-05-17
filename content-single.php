@@ -1,7 +1,6 @@
 <?php
 /**
  * @package Mag
- * @since Mag 1.0
  */
 ?>
 
@@ -16,10 +15,15 @@
 
 	<div class="entry-content">
 		<?php the_content(); ?>
-		<?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'mag' ), 'after' => '</div>' ) ); ?>
+		<?php
+			wp_link_pages( array(
+				'before' => '<div class="page-links">' . __( 'Pages:', 'mag' ),
+				'after'  => '</div>',
+			) );
+		?>
 	</div><!-- .entry-content -->
 
 	<footer class="entry-meta">
 		<?php mag_posted_in(); ?>
 	</footer><!-- .entry-meta -->
-</article><!-- #post-<?php the_ID(); ?> -->
+</article><!-- #post-## -->

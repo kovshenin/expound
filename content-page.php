@@ -3,7 +3,6 @@
  * The template used for displaying page content in page.php
  *
  * @package Mag
- * @since Mag 1.0
  */
 ?>
 
@@ -14,7 +13,11 @@
 
 	<div class="entry-content">
 		<?php the_content(); ?>
-		<?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'mag' ), 'after' => '</div>' ) ); ?>
-		<?php edit_post_link( __( 'Edit', 'mag' ), '<span class="edit-link">', '</span>' ); ?>
+		<?php
+			wp_link_pages( array(
+				'before' => '<div class="page-links">' . __( 'Pages:', 'mag' ),
+				'after'  => '</div>',
+			) );
+		?>
 	</div><!-- .entry-content -->
-</article><!-- #post-<?php the_ID(); ?> -->
+</article><!-- #post-## -->

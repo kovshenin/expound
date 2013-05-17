@@ -5,14 +5,11 @@
  * Eventually, some of the functionality here could be replaced by core features
  *
  * @package Mag
- * @since Mag 1.0
  */
 
 if ( ! function_exists( 'mag_content_nav' ) ) :
 /**
  * Display navigation to next/previous pages when applicable
- *
- * @since Mag 1.0
  */
 function mag_content_nav( $nav_id ) {
 	global $wp_query, $post;
@@ -30,13 +27,11 @@ function mag_content_nav( $nav_id ) {
 	if ( $wp_query->max_num_pages < 2 && ( is_home() || is_archive() || is_search() ) )
 		return;
 
-	$nav_class = 'site-navigation paging-navigation';
-	if ( is_single() )
-		$nav_class = 'site-navigation post-navigation';
+	$nav_class = ( is_single() ) ? 'navigation-post' : 'navigation-paging';
 
 	?>
-	<nav role="navigation" id="<?php echo $nav_id; ?>" class="<?php echo $nav_class; ?>">
-		<h1 class="assistive-text"><?php _e( 'Post navigation', 'mag' ); ?></h1>
+	<nav role="navigation" id="<?php echo esc_attr( $nav_id ); ?>" class="<?php echo $nav_class; ?>">
+		<h1 class="screen-reader-text"><?php _e( 'Post navigation', 'mag' ); ?></h1>
 
 	<?php if ( is_single() ) : // navigation links for single posts ?>
 
@@ -55,7 +50,7 @@ function mag_content_nav( $nav_id ) {
 
 	<?php endif; ?>
 
-	</nav><!-- #<?php echo $nav_id; ?> -->
+	</nav><!-- #<?php echo esc_html( $nav_id ); ?> -->
 	<?php
 }
 endif; // mag_content_nav
@@ -65,8 +60,6 @@ if ( ! function_exists( 'mag_comment' ) ) :
  * Template for comments and pingbacks.
  *
  * Used as a callback by wp_list_comments() for displaying the comments.
- *
- * @since Mag 1.0
  */
 function mag_comment( $comment, $args, $depth ) {
 	$GLOBALS['comment'] = $comment;
@@ -75,7 +68,7 @@ function mag_comment( $comment, $args, $depth ) {
 		case 'trackback' :
 	?>
 	<li class="post pingback">
-		<p><?php _e( 'Pingback:', 'mag' ); ?> <?php comment_author_link(); ?><?php edit_comment_link( __( '(Edit)', 'mag' ), ' ' ); ?></p>
+		<p><?php _e( 'Pingback:', 'mag' ); ?> <?php comment_author_link(); ?><?php edit_comment_link( __( 'Edit', 'mag' ), '<span class="edit-link">', '<span>' ); ?></p>
 	<?php
 			break;
 		default :
@@ -93,20 +86,22 @@ function mag_comment( $comment, $args, $depth ) {
 				<?php endif; ?>
 
 				<div class="comment-meta commentmetadata">
-					<a href="<?php echo esc_url( get_comment_link( $comment->comment_ID ) ); ?>"><time pubdate datetime="<?php comment_time( 'c' ); ?>">
-					<?php
-						/* translators: 1: date, 2: time */
-						printf( __( '%1$s at %2$s', 'mag' ), get_comment_date(), get_comment_time() ); ?>
+					<a href="<?php echo esc_url( get_comment_link( $comment->comment_ID ) ); ?>"><time datetime="<?php comment_time( 'c' ); ?>">
+					<?php printf( _x( '%1$s at %2$s', '1: date, 2: time', 'mag' ), get_comment_date(), get_comment_time() ); ?>
 					</time></a>
-					<?php edit_comment_link( __( '(Edit)', 'mag' ), ' ' );
-					?>
+					<?php edit_comment_link( __( 'Edit', 'mag' ), '<span class="edit-link">', '<span>' ); ?>
 				</div><!-- .comment-meta .commentmetadata -->
 			</footer>
 
 			<div class="comment-content"><?php comment_text(); ?></div>
 
 			<div class="reply">
-				<?php comment_reply_link( array_merge( $args, array( 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
+			<?php
+				comment_reply_link( array_merge( $args,array(
+					'depth'     => $depth,
+					'max_depth' => $args['max_depth'],
+				) ) );
+			?>
 			</div><!-- .reply -->
 		</article><!-- #comment-## -->
 
@@ -119,27 +114,13 @@ endif; // ends check for mag_comment()
 if ( ! function_exists( 'mag_posted_on' ) ) :
 /**
  * Prints HTML with meta information for the current post-date/time and author.
- *
- * @todo Fix l10n
- * @since Mag 1.0
  */
 function mag_posted_on() {
-
 	// translators: 1: who, 2: when
 	printf( __( '%1$s / %2$s' ),
 		sprintf( '<a class="author" rel="author" href="%s">%s</a>', esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ), get_the_author() ),
 		sprintf( '<a class="entry-date" href="%s">%s %s</a>', esc_url( get_permalink() ), esc_html( human_time_diff( get_the_time('U'), current_time('timestamp') ) ), __( 'ago', 'mag' ) )
 	);
-
-	/*printf( __( 'Posted on <a href="%1$s" title="%2$s" rel="bookmark"><time class="entry-date" datetime="%3$s" pubdate>%4$s</time></a><span class="byline"> by <span class="author vcard"><a class="url fn n" href="%5$s" title="%6$s" rel="author">%7$s</a></span></span>', 'mag' ),
-		esc_url( get_permalink() ),
-		esc_attr( get_the_time() ),
-		esc_attr( get_the_date( 'c' ) ),
-		esc_html( get_the_date() ),
-		esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
-		esc_attr( sprintf( __( 'View all posts by %s', 'mag' ), get_the_author() ) ),
-		esc_html( get_the_author() )
-	);*/
 }
 endif;
 
@@ -162,45 +143,12 @@ function mag_posted_in() {
 		);
 
 		echo ' ';
-		the_tags( __( 'Tags: ', 'mag' ), ', ' );
+			the_tags( __( 'Tags: ', 'mag' ), ', ' );
 	}
-
-	return;
-	if ( 'post' == get_post_type() ) : // Hide category and tag text for pages on Search ?>
-			<?php
-				/* translators: used between list items, there is a space after the comma */
-				$categories_list = get_the_category_list( __( ', ', 'mag' ) );
-				if ( $categories_list && mag_categorized_blog() ) :
-			?>
-			<span class="cat-links">
-				<?php printf( __( 'Posted in %1$s', 'mag' ), $categories_list ); ?>
-			</span>
-			<?php endif; // End if categories ?>
-
-			<?php
-				/* translators: used between list items, there is a space after the comma */
-				$tags_list = get_the_tag_list( '', __( ', ', 'mag' ) );
-				if ( $tags_list ) :
-			?>
-			<span class="sep"> | </span>
-			<span class="tags-links">
-				<?php printf( __( 'Tagged %1$s', 'mag' ), $tags_list ); ?>
-			</span>
-			<?php endif; // End if $tags_list ?>
-		<?php endif; // End if 'post' == get_post_type() ?>
-
-		<?php if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) : ?>
-		<span class="sep"> | </span>
-		<span class="comments-link"><?php comments_popup_link( __( 'Leave a comment', 'mag' ), __( '1 Comment', 'mag' ), __( '% Comments', 'mag' ) ); ?></span>
-		<?php endif; ?>
-
-		<?php edit_post_link( __( 'Edit', 'mag' ), '<span class="sep"> | </span><span class="edit-link">', '</span>' );
 }
 
 /**
  * Returns true if a blog has more than 1 category
- *
- * @since Mag 1.0
  */
 function mag_categorized_blog() {
 	if ( false === ( $all_the_cool_cats = get_transient( 'all_the_cool_cats' ) ) ) {
@@ -226,8 +174,6 @@ function mag_categorized_blog() {
 
 /**
  * Flush out the transients used in mag_categorized_blog
- *
- * @since Mag 1.0
  */
 function mag_category_transient_flusher() {
 	// Like, beat it. Dig?
