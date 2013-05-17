@@ -103,8 +103,8 @@ add_action( 'widgets_init', 'mag_widgets_init' );
  * Enqueue scripts and styles
  */
 function mag_scripts() {
-	wp_enqueue_style( 'mag-style', get_stylesheet_uri() );
-	wp_enqueue_style( 'style-less', get_stylesheet_directory_uri() . '/mag.css', array( 'mag-style' ), 1 );
+	wp_enqueue_style( 'mag-style', get_stylesheet_uri(), array(), 2 );
+	wp_enqueue_style( 'style-less', get_stylesheet_directory_uri() . '/mag.css', array( 'mag-style' ), 2 );
 
 	wp_enqueue_script( 'mag-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
