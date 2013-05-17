@@ -14,12 +14,7 @@
 get_header(); ?>
 
 	<?php if ( is_home() && ! is_paged() ) : ?>
-		<div class="site-intro">
-			<p>
-				WP Magazine — это онлайн журнал посвящённый системе управления контентом WordPress. Здесь вы найдёте
-				много полезной информации, как для начинающих, так и для опытных разработчиков.
-			</p>
-		</div>
+		<?php do_action( 'mag_home_title' ); ?>
 	<?php elseif ( is_archive() ) : // home & not paged ?>
 		<header class="page-header">
 			<h1 class="page-title">

@@ -125,7 +125,7 @@ function mag_posted_on() {
 		$output_time = $regular_time;
 
 	// translators: 1: who, 2: when
-	printf( __( '%1$s / %2$s' ),
+	printf( __( '%1$s / %2$s', 'mag' ),
 		sprintf( '<a class="author" rel="author" href="%s">%s</a>', esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ), get_the_author() ),
 		sprintf( '<a class="entry-date" href="%s">%s</a>', esc_url( get_permalink() ), $output_time )
 	);
