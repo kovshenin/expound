@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying search forms in Mag
+ * The template for displaying search forms
  *
  * @package Expound
  */

@@ -1,6 +1,6 @@
 <?php
 /**
- * Mag Theme Customizer
+ * Theme Customizer
  *
  * @package Expound
  */

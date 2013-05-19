@@ -1,6 +1,6 @@
 <?php
 /**
- * Mag functions and definitions
+ * Expound functions and definitions
  *
  * @package Expound
  */
