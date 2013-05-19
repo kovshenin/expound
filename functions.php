@@ -2,7 +2,7 @@
 /**
  * Mag functions and definitions
  *
- * @package Mag
+ * @package Expound
  */
 
 /**
@@ -16,7 +16,7 @@ if ( ! isset( $content_width ) )
  */
 require( get_template_directory() . '/inc/jetpack.php' );
 
-if ( ! function_exists( 'mag_setup' ) ) :
+if ( ! function_exists( 'expound_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  *
@@ -24,7 +24,7 @@ if ( ! function_exists( 'mag_setup' ) ) :
  * before the init hook. The init hook is too late for some features, such as indicating
  * support post thumbnails.
  */
-function mag_setup() {
+function expound_setup() {
 
 	/**
 	 * Custom template tags for this theme.
@@ -45,9 +45,9 @@ function mag_setup() {
 	 * Make theme available for translation
 	 * Translations can be filed in the /languages/ directory
 	 * If you're building a theme based on Mag, use a find and replace
-	 * to change 'mag' to the name of your theme in all the template files
+	 * to change 'expound' to the name of your theme in all the template files
 	 */
-	load_theme_textdomain( 'mag', get_template_directory() . '/languages' );
+	load_theme_textdomain( 'expound', get_template_directory() . '/languages' );
 
 	/**
 	 * Add default posts and comments RSS feed links to head
@@ -61,14 +61,14 @@ function mag_setup() {
 	 */
 	add_theme_support( 'post-thumbnails' );
 	set_post_thumbnail_size( 220, 126, true );
-	add_image_size( 'mag-featured', 460, 260, true );
-	add_image_size( 'mag-mini', 50, 50, true );
+	add_image_size( 'expound-featured', 460, 260, true );
+	add_image_size( 'expound-mini', 50, 50, true );
 
 	/**
 	 * This theme uses wp_nav_menu() in one location.
 	 */
 	register_nav_menus( array(
-		'primary' => __( 'Primary Menu', 'mag' ),
+		'primary' => __( 'Primary Menu', 'expound' ),
 	) );
 
 	/**
@@ -81,15 +81,15 @@ function mag_setup() {
 	 */
 	add_theme_support( 'custom-background' );
 }
-endif; // mag_setup
-add_action( 'after_setup_theme', 'mag_setup' );
+endif; // expound_setup
+add_action( 'after_setup_theme', 'expound_setup' );
 
 /**
  * Register widgetized area and update sidebar with default widgets
  */
-function mag_widgets_init() {
+function expound_widgets_init() {
 	register_sidebar( array(
-		'name'          => __( 'Sidebar', 'mag' ),
+		'name'          => __( 'Sidebar', 'expound' ),
 		'id'            => 'sidebar-1',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
@@ -97,43 +97,43 @@ function mag_widgets_init() {
 		'after_title'   => '</h1>',
 	) );
 }
-add_action( 'widgets_init', 'mag_widgets_init' );
+add_action( 'widgets_init', 'expound_widgets_init' );
 
 /**
  * Enqueue scripts and styles
  */
-function mag_scripts() {
-	wp_enqueue_style( 'mag-style', get_stylesheet_uri(), array(), 2 );
-	wp_enqueue_style( 'mag-less', get_template_directory_uri() . '/mag.css', array( 'mag-style' ), 3 );
+function expound_scripts() {
+	wp_enqueue_style( 'expound-style', get_stylesheet_uri(), array(), 2 );
+	wp_enqueue_style( 'expound-less', get_template_directory_uri() . '/expound.css', array( 'expound-style' ), 3 );
 
-	wp_enqueue_script( 'mag-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
+	wp_enqueue_script( 'expound-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
-	wp_enqueue_script( 'mag-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
+	wp_enqueue_script( 'expound-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 
 	if ( is_singular() && wp_attachment_is_image() ) {
-		wp_enqueue_script( 'mag-keyboard-image-navigation', get_template_directory_uri() . '/js/keyboard-image-navigation.js', array( 'jquery' ), '20120202' );
+		wp_enqueue_script( 'expound-keyboard-image-navigation', get_template_directory_uri() . '/js/keyboard-image-navigation.js', array( 'jquery' ), '20120202' );
 	}
 }
-add_action( 'wp_enqueue_scripts', 'mag_scripts' );
+add_action( 'wp_enqueue_scripts', 'expound_scripts' );
 
 /**
  * Additional helper post classes
  */
-function mag_post_class( $classes ) {
+function expound_post_class( $classes ) {
 	if ( has_post_thumbnail() )
 		$classes[] = 'has-post-thumbnail';
 	return $classes;
 }
-add_filter('post_class', 'mag_post_class' );
+add_filter('post_class', 'expound_post_class' );
 
 /**
  * Ignore and exclude featured posts on the home page.
  */
-function mag_pre_get_posts( $query ) {
+function expound_pre_get_posts( $query ) {
 	if ( ! $query->is_main_query() || is_admin() )
 		return;
 
@@ -141,7 +141,7 @@ function mag_pre_get_posts( $query ) {
 		$query->set( 'ignore_sticky_posts', true );
 
 		$exclude_ids = array();
-		$featured_posts = mag_get_featured_posts();
+		$featured_posts = expound_get_featured_posts();
 
 		if ( $featured_posts->have_posts() )
 			foreach ( $featured_posts->posts as $post )
@@ -150,12 +150,12 @@ function mag_pre_get_posts( $query ) {
 		$query->set( 'post__not_in', $exclude_ids );
 	}
 }
-add_action( 'pre_get_posts', 'mag_pre_get_posts' );
+add_action( 'pre_get_posts', 'expound_pre_get_posts' );
 
 /**
  * Returns a new WP_Query with featured posts.
  */
-function mag_get_featured_posts() {
+function expound_get_featured_posts() {
 	global $wp_query;
 
 	$sticky = (array) get_option( 'sticky_posts', array() );
@@ -175,7 +175,7 @@ function mag_get_featured_posts() {
 /**
  * Returns a new WP_Query with related posts.
  */
-function mag_get_related_posts() {
+function expound_get_related_posts() {
 	$post = get_post();
 
 	$args = array(
@@ -203,18 +203,18 @@ function mag_get_related_posts() {
 /**
  * Footer credits.
  */
-function mag_display_credits() {
-	$text = '<a href="http://wordpress.org/ rel="generator">' . sprintf( __( 'Proudly powered by %s', 'mag' ), 'WordPress' ) . '</a>';
+function expound_display_credits() {
+	$text = '<a href="http://wordpress.org/ rel="generator">' . sprintf( __( 'Proudly powered by %s', 'expound' ), 'WordPress' ) . '</a>';
 	$text .= '<span class="sep"> | </span>';
-	$text .= sprintf( __( 'Theme: %1$s by %2$s', 'mag' ), 'Mag', '<a href="http://kovshenin.com/" rel="designer">Konstantin Kovshenin</a>' );
-	echo apply_filters( 'mag_credits_text', $text );
+	$text .= sprintf( __( 'Theme: %1$s by %2$s', 'expound' ), 'expound', '<a href="http://kovshenin.com/" rel="designer">Konstantin Kovshenin</a>' );
+	echo apply_filters( 'expound_credits_text', $text );
 }
-add_action( 'mag_credits', 'mag_display_credits' );
+add_action( 'expound_credits', 'expound_display_credits' );
 
 /**
  * Decrease caption width for non-full-width images. Pixelus perfectus!
  */
-function mag_shortcode_atts_caption( $attr ) {
+function expound_shortcode_atts_caption( $attr ) {
 	global $content_width;
 
 	if ( isset( $attr['width'] ) && $attr['width'] < $content_width )
@@ -222,4 +222,4 @@ function mag_shortcode_atts_caption( $attr ) {
 
 	return $attr;
 }
-add_filter( 'shortcode_atts_caption', 'mag_shortcode_atts_caption' );
+add_filter( 'shortcode_atts_caption', 'expound_shortcode_atts_caption' );

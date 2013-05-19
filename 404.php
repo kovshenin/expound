@@ -2,7 +2,7 @@
 /**
  * The template for displaying 404 pages (Not Found).
  *
- * @package Mag
+ * @package Expound
  */
 
 get_header(); ?>
@@ -12,19 +12,19 @@ get_header(); ?>
 
 			<article id="post-0" class="post error404 not-found">
 				<header class="entry-header">
-					<h1 class="entry-title"><?php _e( 'Oops! That page can&rsquo;t be found.', 'mag' ); ?></h1>
+					<h1 class="entry-title"><?php _e( 'Oops! That page can&rsquo;t be found.', 'expound' ); ?></h1>
 				</header><!-- .entry-header -->
 
 				<div class="entry-content">
-					<p><?php _e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'mag' ); ?></p>
+					<p><?php _e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'expound' ); ?></p>
 
 					<?php get_search_form(); ?>
 
 					<?php the_widget( 'WP_Widget_Recent_Posts' ); ?>
 
-					<?php if ( mag_categorized_blog() ) : // Only show the widget if site has multiple categories. ?>
+					<?php if ( expound_categorized_blog() ) : // Only show the widget if site has multiple categories. ?>
 					<div class="widget widget_categories">
-						<h2 class="widgettitle"><?php _e( 'Most Used Categories', 'mag' ); ?></h2>
+						<h2 class="widgettitle"><?php _e( 'Most Used Categories', 'expound' ); ?></h2>
 						<ul>
 						<?php
 							wp_list_categories( array(
@@ -41,7 +41,7 @@ get_header(); ?>
 
 					<?php
 					/* translators: %1$s: smiley */
-					$archive_content = '<p>' . sprintf( __( 'Try looking in the monthly archives. %1$s', 'mag' ), convert_smilies( ':)' ) ) . '</p>';
+					$archive_content = '<p>' . sprintf( __( 'Try looking in the monthly archives. %1$s', 'expound' ), convert_smilies( ':)' ) ) . '</p>';
 					the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$archive_content" );
 					?>
 

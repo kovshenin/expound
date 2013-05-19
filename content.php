@@ -1,6 +1,6 @@
 <?php
 /**
- * @package Mag
+ * @package Expound
  */
 ?>
 
@@ -21,6 +21,6 @@
 	</div><!-- .entry-summary -->
 
 	<footer class="entry-meta">
-		<?php mag_posted_in(); ?>
+		<?php expound_posted_in(); ?>
 	</footer><!-- .entry-meta -->
 </article><!-- #post-## -->

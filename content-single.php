@@ -1,6 +1,6 @@
 <?php
 /**
- * @package Mag
+ * @package Expound
  */
 ?>
 
@@ -9,7 +9,7 @@
 		<h1 class="entry-title"><?php the_title(); ?></h1>
 
 		<div class="entry-meta">
-			<?php mag_posted_on(); ?>
+			<?php expound_posted_on(); ?>
 		</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->
 
@@ -17,13 +17,13 @@
 		<?php the_content(); ?>
 		<?php
 			wp_link_pages( array(
-				'before' => '<div class="page-links">' . __( 'Pages:', 'mag' ),
+				'before' => '<div class="page-links">' . __( 'Pages:', 'expound' ),
 				'after'  => '</div>',
 			) );
 		?>
 	</div><!-- .entry-content -->
 
 	<footer class="entry-meta">
-		<?php mag_posted_in(); ?>
+		<?php expound_posted_in(); ?>
 	</footer><!-- .entry-meta -->
 </article><!-- #post-## -->

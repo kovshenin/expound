@@ -4,7 +4,7 @@
  *
  * Displays all of the <head> section and everything up till <div id="main">
  *
- * @package Mag
+ * @package Expound
  */
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -31,11 +31,11 @@
 		</div>
 
 		<nav id="site-navigation" class="navigation-main" role="navigation">
-			<h1 class="menu-toggle"><?php _e( 'Menu', 'mag' ); ?></h1>
-			<div class="screen-reader-text skip-link"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'mag' ); ?>"><?php _e( 'Skip to content', 'mag' ); ?></a></div>
+			<h1 class="menu-toggle"><?php _e( 'Menu', 'expound' ); ?></h1>
+			<div class="screen-reader-text skip-link"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'expound' ); ?>"><?php _e( 'Skip to content', 'expound' ); ?></a></div>
 
 			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-			<?php do_action( 'mag_navigation_after' ); ?>
+			<?php do_action( 'expound_navigation_after' ); ?>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 
