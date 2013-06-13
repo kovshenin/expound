@@ -71,6 +71,46 @@ a:hover {
   font-weight: 300;
   color: #878787;
 }
+.site-header .menu-toggle {
+  background: #3a3a3a;
+  color: white;
+  font: 13px/20px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  padding: 10px 22px;
+  margin: 0;
+}
+.site-header .menu-toggle:hover {
+  background: #474747;
+}
+.site-header .menu-toggle:before {
+  content: '\2261';
+  font-size: 14px;
+  margin-right: 10px;
+}
+.main-small-navigation .menu-toggle {
+  background: #474747;
+}
+.main-small-navigation ul {
+  margin: 0;
+  list-style: none;
+}
+.main-small-navigation a {
+  display: block;
+  color: white;
+  padding: 10px 40px;
+  background: #3a3a3a;
+  text-decoration: none;
+}
+.main-small-navigation a:hover {
+  background: #474747;
+}
+.main-small-navigation ul > .current_page_item a,
+.main-small-navigation ul > .current-menu-item a,
+.main-small-navigation ul > .current-post-ancestor a,
+.main-small-navigation ul > .current-menu-parent a,
+.main-small-navigation ul > .current-post-parent a {
+  background: #117bb8;
+}
 .navigation-main {
   background: #3a3a3a;
 }

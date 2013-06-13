@@ -74,6 +74,53 @@ a {
 	color: lighten(@text,30%);
 }
 
+.site-header {
+	.menu-toggle {
+		background: @text;
+		color: white;
+		font: 13px/20px "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-weight: 300;
+		padding: 10px 22px;
+		margin: 0;
+
+		&:hover { background: lighten(@text, 5%); }
+
+		&:before {
+			content: '\2261';
+			font-size: 14px;
+			margin-right: 10px;
+		}
+	}
+}
+
+.main-small-navigation {
+	.menu-toggle {
+		background: lighten(@text, 5%);
+	}
+
+	ul {
+		margin: 0;
+		list-style: none;
+	}
+
+	a {
+		display: block;
+		color: white;
+		padding: 10px 40px;
+		background: @text;
+		text-decoration: none;
+		&:hover { background: lighten(@text, 5%); }
+	}
+
+	ul > .current_page_item a,
+	ul > .current-menu-item a,
+	ul > .current-post-ancestor a,
+	ul > .current-menu-parent a,
+	ul > .current-post-parent a {
+		background: @primary;
+	}
+}
+
 .navigation-main {
 	background: @text;
 
