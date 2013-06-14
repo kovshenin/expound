@@ -905,6 +905,27 @@ a.wpm-button {
 	}
 }
 
+@media (max-width: 700px) {
+	.featured-content .has-post-thumbnail .entry-thumbnail,
+	.featured-content-secondary .has-post-thumbnail .entry-thumbnail,
+	.has-post-thumbnail .entry-thumbnail {
+		float: left;
+		display: block;
+		width: 100%;
+		margin-bottom: 30px;
+	}
+
+	.featured-content .has-post-thumbnail .entry-header,
+	.featured-content .has-post-thumbnail .entry-summary,
+	.featured-content-secondary .has-post-thumbnail .entry-header,
+	.featured-content-secondary .has-post-thumbnail .entry-summary,
+	.blog .site-content .has-post-thumbnail .entry-header,
+	.blog .site-content .has-post-thumbnail .entry-summary,
+	.blog .site-content .has-post-thumbnail .entry-meta {
+		margin-left: 0;
+	}
+}
+
 @media (max-width: 600px) {
 	#page { width: 85%; }
 }
