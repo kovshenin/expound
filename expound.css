@@ -416,7 +416,8 @@ h3 {
   color: #117bb8;
 }
 .site-content .entry-content,
-.site-content .entry-header {
+.site-content .entry-header,
+.site-content .entry-summary {
   -ms-word-wrap: break-word;
   word-wrap: break-word;
 }
