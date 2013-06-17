@@ -1,7 +1,5 @@
 body {
   background: #333;
-  -webkit-background-size: cover;
-  background-size: cover;
   /*background: #999;*/
 
   font: 13px/20px "Helvetica Neue", Helvetica, Arial, sans-serif;
