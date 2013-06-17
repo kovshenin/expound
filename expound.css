@@ -415,6 +415,11 @@ h3 {
 .site-content .entry-meta a:hover {
   color: #117bb8;
 }
+.site-content .entry-content,
+.site-content .entry-header {
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+}
 .site-content .entry-header .entry-meta {
   font-size: 12px;
 }
