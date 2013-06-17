@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mag\n"
 "POT-Creation-Date: 2013-06-10 14:23+0400\n"
-"PO-Revision-Date: 2013-06-10 14:25+0400\n"
+"PO-Revision-Date: 2013-06-17 17:40+0400\n"
 "Last-Translator: Konstantin Kovshenin <kovshenin@gmail.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -285,12 +285,6 @@ msgstr "%1$s в рубрике %2$s."
 #: ../inc/template-tags.php:162
 msgid "Tags: "
 msgstr "Метки: "
-
-#~ msgid "One ugly thought on &ldquo;%2$s&rdquo;"
-#~ msgstr "Буум %2$s"
-
-#~ msgid "Yo"
-#~ msgstr "Что такое"
 
 #~ msgid "&larr; Previous"
 #~ msgstr "&larr; Назад"
