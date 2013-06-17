@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Expound\n"
-"POT-Creation-Date: 2013-06-10 14:23+0400\n"
-"PO-Revision-Date: 2013-06-17 17:40+0400\n"
+"POT-Creation-Date: 2013-06-17 17:41+0400\n"
+"PO-Revision-Date: 2013-06-17 17:41+0400\n"
 "Last-Translator: Konstantin Kovshenin <kovshenin@gmail.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -12,101 +12,91 @@ msgstr ""
 "X-Poedit-KeywordsList: _n:1,2;_;gettext;gettext_noop;__;_e;_x;esc_attr_e;"
 "_nx:1,2,4c\n"
 "X-Poedit-Basepath: .\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Poedit-SearchPath-0: ..\n"
 
 #: ../404.php:15
 msgid "Oops! That page can&rsquo;t be found."
-msgstr "Страница не найдена."
+msgstr ""
 
 #: ../404.php:19
 msgid ""
 "It looks like nothing was found at this location. Maybe try one of the links "
 "below or a search?"
 msgstr ""
-"Страница не найдена. Попробуйте воспользоваться ссылками ниже или поиском."
 
 #: ../404.php:27
 msgid "Most Used Categories"
-msgstr "Популярные рубрики"
+msgstr ""
 
 #: ../404.php:44
 #, php-format
 msgid "Try looking in the monthly archives. %1$s"
-msgstr "Посмотрите в архивах по месяцам. %1$s"
+msgstr ""
 
 #: ../comments.php:29
 #, php-format
 msgctxt "comments title"
 msgid "One thought on &ldquo;%2$s&rdquo;"
 msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
-msgstr[0] "<!-- %1$s -->Один комментарий к записи &laquo;%2$s&raquo;"
-msgstr[1] "%1$s комментария к записи &laquo;%2$s&raquo;"
-msgstr[2] "%1$s комментариев к записи &laquo;%2$s&raquo;"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 
-#: ../comments.php:32
-msgid "Singular"
-msgid_plural "Plural"
-msgstr[0] "Один"
-msgstr[1] "Два"
-msgstr[2] "Пять"
+#: ../comments.php:36 ../comments.php:56
+msgid "Comment navigation"
+msgstr ""
 
 #: ../comments.php:37 ../comments.php:57
-msgid "Comment navigation"
-msgstr "Навигация"
+msgid "&larr; Older Comments"
+msgstr ""
 
 #: ../comments.php:38 ../comments.php:58
-msgid "&larr; Older Comments"
-msgstr "&larr; Старые комментарии"
-
-#: ../comments.php:39 ../comments.php:59
 msgid "Newer Comments &rarr;"
-msgstr "Новые комментарии &rarr;"
+msgstr ""
 
-#: ../comments.php:69
+#: ../comments.php:68
 msgid "Comments are closed."
-msgstr "Комментарии закрыты."
+msgstr ""
 
 #: ../content-page.php:18 ../content-single.php:20 ../image.php:95
 msgid "Pages:"
-msgstr "Страницы:"
+msgstr ""
 
 #: ../featured-content.php:14 ../featured-content.php:43
 #: ../related-content.php:16
 #, php-format
 msgid "Permalink to %s"
-msgstr "Ссылка на %s"
+msgstr ""
 
 #: ../featured-content.php:19
 msgid "Continue reading &rarr;"
-msgstr "Читать далее &rarr;"
+msgstr ""
 
 #: ../functions.php:71
 msgid "Primary Menu"
-msgstr "Основное меню"
+msgstr ""
 
 #: ../functions.php:92
 msgid "Sidebar"
-msgstr "Боковая колонка"
+msgstr ""
 
 #: ../functions.php:207
 #, php-format
 msgid "Proudly powered by %s"
-msgstr "Работает на %s"
+msgstr ""
 
 #: ../functions.php:209
 #, php-format
 msgid "Theme: %1$s by %2$s"
-msgstr "Тема: %1$s, автор: %2$s"
+msgstr ""
 
 #: ../header.php:34
 msgid "Menu"
-msgstr "Меню"
+msgstr ""
 
 #: ../header.php:35
 msgid "Skip to content"
-msgstr "Перейти к содержимому"
+msgstr ""
 
 #: ../image.php:23
 #, php-format
@@ -120,15 +110,15 @@ msgstr ""
 #: ../image.php:34 ../image.php:112 ../inc/template-tags.php:71
 #: ../inc/template-tags.php:92
 msgid "Edit"
-msgstr "Редактировать"
+msgstr ""
 
 #: ../image.php:38
 msgid "<span class=\"meta-nav\">&larr;</span> Previous"
-msgstr "<span class=\"meta-nav\">&larr;</span> Старые записи"
+msgstr ""
 
 #: ../image.php:39
 msgid "Next <span class=\"meta-nav\">&rarr;</span>"
-msgstr "Новые записи <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
 
 #: ../image.php:104
 #, php-format
@@ -154,45 +144,45 @@ msgstr ""
 
 #: ../image.php:110
 msgid "Both comments and trackbacks are currently closed."
-msgstr "Комментарии закрыты."
+msgstr ""
 
 #: ../index.php:23
 #, php-format
 msgid "%s"
-msgstr "%s"
+msgstr ""
 
 #: ../index.php:26
 #, php-format
 msgid "Tag Archives: %s"
-msgstr "Архивы метки: %s"
+msgstr ""
 
 #: ../index.php:33
 #, php-format
 msgid "Author Archives: %s"
-msgstr "Архивы автора: %s"
+msgstr ""
 
 #: ../index.php:41
 #, php-format
 msgid "Daily Archives: %s"
-msgstr "Архивы по дням: %s"
+msgstr ""
 
 #: ../index.php:43
 #, php-format
 msgid "Monthly Archives: %s"
-msgstr "Архивы по месяцам: %s"
+msgstr ""
 
 #: ../index.php:45
 #, php-format
 msgid "Yearly Archives: %s"
-msgstr "Архивы по годам: %s"
+msgstr ""
 
 #: ../index.php:47 ../sidebar.php:17
 msgid "Archives"
-msgstr "Архивы"
+msgstr ""
 
 #: ../no-results.php:13
 msgid "Nothing Found"
-msgstr "Не найдено"
+msgstr ""
 
 #: ../no-results.php:19
 #, php-format
@@ -204,87 +194,87 @@ msgstr ""
 msgid ""
 "Sorry, but nothing matched your search terms. Please try again with some "
 "different keywords."
-msgstr "Ничего не найдено по вашему запросу. Попробуйте другие ключевые слова."
+msgstr ""
 
 #: ../no-results.php:28
 msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 "searching can help."
-msgstr "Ничего не найдено, попробуйте воспользоваться поиском."
+msgstr ""
 
 #: ../related-content.php:4
 msgid "Related posts"
-msgstr "Читайте так же"
+msgstr ""
 
 #: ../search.php:16
 #, php-format
 msgid "Search Results for: %s"
-msgstr "Результаты поиска: %s"
+msgstr ""
 
 #: ../sidebar.php:24
 msgid "Meta"
-msgstr "Мета"
+msgstr ""
 
 #: ../inc/extras.php:66
 #, php-format
 msgid "Page %s"
-msgstr "Страница %s"
+msgstr ""
 
 #: ../inc/template-tags.php:34
 msgid "Post navigation"
-msgstr "Навигация"
+msgstr ""
 
 #: ../inc/template-tags.php:38
 msgid "&larr;"
-msgstr "&larr;"
+msgstr ""
 
 #: ../inc/template-tags.php:39
 msgid "&rarr;"
-msgstr "&rarr;"
+msgstr ""
 
 #: ../inc/template-tags.php:44
 msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
-msgstr "<span class=\"meta-nav\">&larr;</span> Старые записи"
+msgstr ""
 
 #: ../inc/template-tags.php:48
 msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
-msgstr "Новые записи <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
 
 #: ../inc/template-tags.php:71
 msgid "Pingback:"
-msgstr "Пингбэк:"
+msgstr ""
 
 #: ../inc/template-tags.php:81
 #, php-format
 msgid "%s <span class=\"says\">says:</span>"
-msgstr "%s <span class=\"says\">сказал(а):</span>"
+msgstr ""
 
 #: ../inc/template-tags.php:84
 msgid "Your comment is awaiting moderation."
-msgstr "Ваш комментарий ожидает модерации."
+msgstr ""
 
 #: ../inc/template-tags.php:90
 #, php-format
 msgid "%1$s at %2$s"
-msgstr "%1$s в %2$s"
+msgstr ""
 
 #: ../inc/template-tags.php:119 ../inc/template-tags.php:140
 msgid "ago"
-msgstr "назад"
+msgstr ""
 
 #: ../inc/template-tags.php:128
 #, php-format
 msgid "%1$s / %2$s"
-msgstr "%1$s / %2$s"
+msgstr ""
 
 #: ../inc/template-tags.php:150 ../inc/template-tags.php:156
 #, php-format
 msgid "%1$s in %2$s."
-msgstr "%1$s в рубрике %2$s."
+msgstr ""
 
 #: ../inc/template-tags.php:162
 msgid "Tags: "
-msgstr "Метки: "
+msgstr ""
 
 #~ msgid "&larr; Previous"
 #~ msgstr "&larr; Назад"
