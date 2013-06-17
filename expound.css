@@ -924,6 +924,7 @@ a.wpm-button:hover {
   .archive .site-content .has-post-thumbnail .entry-summary,
   .archive .site-content .has-post-thumbnail .entry-meta {
     margin-left: 0;
+    clear: both;
   }
   .single .site-content .entry-title,
   .site-content .entry-content h1,
