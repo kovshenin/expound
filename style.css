@@ -501,7 +501,7 @@ a:active {
 	margin: 0.8075em 0;
 }
 .site-content .gallery {
-	margin-bottom: 1.5em;
+	margin-bottom: 1.5em !important;
 }
 .gallery-caption {
 }
