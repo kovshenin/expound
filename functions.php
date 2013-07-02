@@ -158,7 +158,10 @@ add_action( 'pre_get_posts', 'expound_pre_get_posts' );
 function expound_get_featured_posts() {
 	global $wp_query;
 
-	$sticky = (array) get_option( 'sticky_posts', array() );
+	$sticky = apply_filters( 'expound_get_featured_posts', array() );
+
+	if ( empty( $sticky ) )
+		$sticky = (array) get_option( 'sticky_posts', array() );
 
 	if ( empty( $sticky ) )
 		return new WP_Query();
