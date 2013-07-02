@@ -163,9 +163,6 @@ function expound_get_featured_posts() {
 	if ( ! empty( $sticky ) )
 		$sticky = wp_list_pluck( $sticky, 'ID' );
 
-	if ( ! empty( $sticky ) )
-		return $sticky;
-
 	if ( empty( $sticky ) )
 		$sticky = (array) get_option( 'sticky_posts', array() );
 
