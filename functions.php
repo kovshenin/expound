@@ -158,7 +158,10 @@ add_action( 'pre_get_posts', 'expound_pre_get_posts' );
 function expound_get_featured_posts() {
 	global $wp_query;
 
+	// Jetpack Featured Content support
 	$sticky = apply_filters( 'expound_get_featured_posts', array() );
+	if ( ! empty( $sticky ) )
+		$sticky = wp_list_pluck( $sticky, 'ID' );
 
 	if ( empty( $sticky ) )
 		$sticky = (array) get_option( 'sticky_posts', array() );
