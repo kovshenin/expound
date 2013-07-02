@@ -844,6 +844,12 @@ a.wpm-button:hover {
   font-size: 20px;
   line-height: 28px;
 }
+#commentform label {
+  display: block;
+}
+#commentform label .required {
+  color: red;
+}
 @media (max-width: 1080px) {
   #page {
     width: 960px;
