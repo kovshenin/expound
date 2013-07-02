@@ -160,7 +160,7 @@ function expound_get_featured_posts() {
 
 	$sticky = apply_filters( 'expound_get_featured_posts', array() );
 
-	if ( empty( $sticky ) )
+	if ( ! empty( $sticky ) )
 		return $sticky;
 
 	if ( empty( $sticky ) )
