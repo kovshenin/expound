@@ -129,16 +129,21 @@ a {
 		color: white;
 		padding: 10px;
 		position: relative;
+	}
+
+	li {
 		background: @text;
 		&:hover { background: lighten(@text, 5%); }
 	}
 
-	ul > .current_page_item a,
-	ul > .current-menu-item a,
-	ul > .current-post-ancestor a,
-	ul > .current-menu-parent a,
-	ul > .current-post-parent a {
+	ul > .current_page_item,
+	ul > .current-menu-item,
+	ul > .current-post-ancestor,
+	ul > .current-menu-ancestor,
+	ul > .current-menu-parent,
+	ul > .current-post-parent {
 		background: @primary;
+		&:hover { background: lighten(@primary, 5%); }
 	}
 
 	ul > .current_page_item ~ .current_page_item a,
@@ -171,9 +176,15 @@ a {
 	ul > .current-menu-item ~ .current-menu-item a:after,
 	ul > .current-post-ancestor ~ .current-post-ancestor a:after,
 	ul > .current-menu-parent ~ .current-menu-parent a:after,
-	ul > .current-post-parent ~ .current-post-parent a:after {
+	ul > .current-post-parent ~ .current-post-parent a:after,
+	ul ul li a:after {
 		content: '';
-		border: none;
+		border: none !important;
+	}
+
+	ul ul {
+		margin: 0;
+		top: 40px;
 	}
 
 	ul.social {

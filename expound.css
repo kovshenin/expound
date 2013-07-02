@@ -119,17 +119,28 @@ a:hover {
   color: white;
   padding: 10px;
   position: relative;
+}
+.navigation-main li {
   background: #3a3a3a;
 }
-.navigation-main a:hover {
+.navigation-main li:hover {
   background: #474747;
 }
-.navigation-main ul > .current_page_item a,
-.navigation-main ul > .current-menu-item a,
-.navigation-main ul > .current-post-ancestor a,
-.navigation-main ul > .current-menu-parent a,
-.navigation-main ul > .current-post-parent a {
+.navigation-main ul > .current_page_item,
+.navigation-main ul > .current-menu-item,
+.navigation-main ul > .current-post-ancestor,
+.navigation-main ul > .current-menu-ancestor,
+.navigation-main ul > .current-menu-parent,
+.navigation-main ul > .current-post-parent {
   background: #117bb8;
+}
+.navigation-main ul > .current_page_item:hover,
+.navigation-main ul > .current-menu-item:hover,
+.navigation-main ul > .current-post-ancestor:hover,
+.navigation-main ul > .current-menu-ancestor:hover,
+.navigation-main ul > .current-menu-parent:hover,
+.navigation-main ul > .current-post-parent:hover {
+  background: #138bcf;
 }
 .navigation-main ul > .current_page_item ~ .current_page_item a,
 .navigation-main ul > .current-menu-item ~ .current-menu-item a,
@@ -166,9 +177,14 @@ a:hover {
 .navigation-main ul > .current-menu-item ~ .current-menu-item a:after,
 .navigation-main ul > .current-post-ancestor ~ .current-post-ancestor a:after,
 .navigation-main ul > .current-menu-parent ~ .current-menu-parent a:after,
-.navigation-main ul > .current-post-parent ~ .current-post-parent a:after {
+.navigation-main ul > .current-post-parent ~ .current-post-parent a:after,
+.navigation-main ul ul li a:after {
   content: '';
-  border: none;
+  border: none !important;
+}
+.navigation-main ul ul {
+  margin: 0;
+  top: 40px;
 }
 .navigation-main ul.social {
   padding: 0;
