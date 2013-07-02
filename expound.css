@@ -85,6 +85,12 @@ a:hover {
   font-size: 14px;
   margin-right: 10px;
 }
+.main-small-navigation > ul {
+  display: none;
+}
+.main-small-navigation ul ul {
+  display: block;
+}
 .main-small-navigation .menu-toggle {
   background: #474747;
 }
@@ -96,17 +102,22 @@ a:hover {
   display: block;
   color: white;
   padding: 10px 40px;
-  background: #3a3a3a;
   text-decoration: none;
 }
-.main-small-navigation a:hover {
+.main-small-navigation li {
+  background: #3a3a3a;
+}
+.main-small-navigation li:hover {
   background: #474747;
 }
-.main-small-navigation ul > .current_page_item a,
-.main-small-navigation ul > .current-menu-item a,
-.main-small-navigation ul > .current-post-ancestor a,
-.main-small-navigation ul > .current-menu-parent a,
-.main-small-navigation ul > .current-post-parent a {
+.main-small-navigation ul ul a {
+  padding-left: 60px;
+}
+.main-small-navigation ul ul ul a {
+  padding-left: 80px;
+}
+.main-small-navigation ul > .current_page_item,
+.main-small-navigation ul > .current-menu-item {
   background: #117bb8;
 }
 .navigation-main {

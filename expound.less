@@ -90,6 +90,14 @@ a {
 	}
 }
 
+.main-small-navigation > ul {
+	display: none;
+}
+
+.main-small-navigation ul ul {
+	display: block;
+}
+
 .main-small-navigation {
 	.menu-toggle {
 		background: lighten(@text, 5%);
@@ -104,16 +112,24 @@ a {
 		display: block;
 		color: white;
 		padding: 10px 40px;
-		background: @text;
 		text-decoration: none;
+	}
+
+	li {
+		background: @text;
 		&:hover { background: lighten(@text, 5%); }
 	}
 
-	ul > .current_page_item a,
-	ul > .current-menu-item a,
-	ul > .current-post-ancestor a,
-	ul > .current-menu-parent a,
-	ul > .current-post-parent a {
+	ul ul a {
+		padding-left: 60px;
+	}
+
+	ul ul ul a {
+		padding-left: 80px;
+	}
+
+	ul > .current_page_item,
+	ul > .current-menu-item {
 		background: @primary;
 	}
 }
