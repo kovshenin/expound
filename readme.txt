@@ -9,4 +9,4 @@ For more information about the Underscores (_s) starter theme visit: http://unde
 = FAQ =
 
 Q: How do you set featured posts?
-A: Use sticky posts: http://codex.wordpress.org/Sticky_Posts
+A: Use sticky posts: http://codex.wordpress.org/Sticky_Posts or use the Jetpack plugin along with its Featured Content module: http://jetpack.me/support/featured-content/

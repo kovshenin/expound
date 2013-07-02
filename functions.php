@@ -166,8 +166,12 @@ function expound_get_featured_posts() {
 	if ( empty( $sticky ) )
 		$sticky = (array) get_option( 'sticky_posts', array() );
 
-	if ( empty( $sticky ) )
-		return new WP_Query();
+	if ( empty( $sticky ) ) {
+		return new WP_Query( array(
+			'posts_per_page' => 5,
+			'ignore_sticky_posts' => true,
+		) );
+	}
 
 	$args = array(
 		'posts_per_page' => 5,
