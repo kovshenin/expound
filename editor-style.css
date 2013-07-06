@@ -4,6 +4,7 @@
 body {
 	background: none;
 	margin: 40px;
+	max-width: 700px;
 }
 
 .mceItemTable, .mceItemTable td, .mceItemTable th, .mceItemTable caption, .mceItemVisualAid {
