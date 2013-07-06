@@ -328,59 +328,73 @@ h3 {
   font-family: Georgia, "Times New Roman", serif;
 }
 .site-content .entry-content h1,
-.site-content .comment-content h1 {
+.site-content .comment-content h1,
+#tinymce h1 {
   font-size: 34px;
 }
 .site-content .entry-content h2,
-.site-content .comment-content h2 {
+.site-content .comment-content h2,
+#tinymce h2 {
   font-size: 20px;
   line-height: 28px;
 }
 .site-content .entry-content h3,
-.site-content .comment-content h3 {
+.site-content .comment-content h3,
+#tinymce h3 {
   font-size: 16px;
   line-height: 18px;
   color: #606060;
 }
 .site-content .entry-content h1,
 .site-content .comment-content h1,
+#tinymce h1,
 .site-content .entry-content h2,
 .site-content .comment-content h2,
+#tinymce h2,
 .site-content .entry-content h3,
-.site-content .comment-content h3 {
+.site-content .comment-content h3,
+#tinymce h3 {
   margin-bottom: 10px;
   margin-top: 40px;
 }
 .site-content .entry-content hr,
-.site-content .comment-content hr {
+.site-content .comment-content hr,
+#tinymce hr {
   background-color: #dddddd;
   border: 0;
   height: 1px;
   margin-bottom: 20px;
 }
 .site-content .entry-content table,
-.site-content .comment-content table {
+.site-content .comment-content table,
+#tinymce table {
   margin-bottom: 20px;
 }
 .site-content .entry-content th,
 .site-content .comment-content th,
+#tinymce th,
 .site-content .entry-content td,
-.site-content .comment-content td {
+.site-content .comment-content td,
+#tinymce td {
   padding: 8px 8px;
   border-bottom: solid 1px #dddddd;
 }
 .site-content .entry-content tr:hover td,
-.site-content .comment-content tr:hover td {
+.site-content .comment-content tr:hover td,
+#tinymce tr:hover td {
   background: #f7f7f7;
 }
 .site-content .entry-content ul,
 .site-content .comment-content ul,
+#tinymce ul,
 .site-content .entry-content ol,
-.site-content .comment-content ol {
+.site-content .comment-content ol,
+#tinymce ol {
   margin-bottom: 20px;
 }
 .site-content .entry-content blockquote,
-.site-content .comment-content blockquote {
+.site-content .comment-content blockquote,
+#tinymce blockquote {
   margin-left: -40px;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -392,7 +406,8 @@ h3 {
   position: relative;
 }
 .site-content .entry-content blockquote:before,
-.site-content .comment-content blockquote:before {
+.site-content .comment-content blockquote:before,
+#tinymce blockquote:before {
   content: '\0201C';
   font-family: Georgia, 'Times New Roman', serif;
   font-size: 50px;
@@ -402,7 +417,8 @@ h3 {
   color: #aaaaaa;
 }
 .site-content .entry-content blockquote cite:before,
-.site-content .comment-content blockquote cite:before {
+.site-content .comment-content blockquote cite:before,
+#tinymce blockquote cite:before {
   content: '\02014  ';
 }
 .entry-title a {

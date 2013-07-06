@@ -55,6 +55,11 @@ function expound_setup() {
 	add_theme_support( 'automatic-feed-links' );
 
 	/**
+	 * Editor styles for the win
+	 */
+	add_editor_style();
+
+	/**
 	 * Enable support for Post Thumbnails on posts and pages
 	 *
 	 * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
