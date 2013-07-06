@@ -7,6 +7,16 @@ body {
 	max-width: 700px;
 }
 
-.mceItemTable, .mceItemTable td, .mceItemTable th, .mceItemTable caption, .mceItemVisualAid {
+.mceItemTable,
+.mceItemTable td,
+.mceItemTable th,
+.mceItemTable caption,
+.mceItemVisualAid {
 	border: none;
+}
+
+img.mce-wp-nextpage,
+img.mce-wp-more {
+	width: 100%;
+	margin: 20px 0;
 }
