@@ -163,6 +163,7 @@ function expound_header_style() {
 
 	<?php else : // not blank ?>
         .site-title a,
+        .site-title a:hover,
         .site-description {
 			color: #<?php echo $color; ?>;
         }
