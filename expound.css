@@ -227,6 +227,9 @@ a:hover {
   /* -4px bc of padding */
 
 }
+.navigation-main ul.social li:hover {
+  background: none;
+}
 .navigation-main ul.social li a {
   width: 24px;
   padding-left: 0;
