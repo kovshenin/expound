@@ -90,9 +90,17 @@ get_header(); ?>
 
 			<?php expound_content_nav( 'nav-below' ); ?>
 
-		<?php else : ?>
+		<?php elseif ( ! is_home() || is_paged() ) : ?>
 
 			<?php get_template_part( 'no-results', 'index' ); ?>
+
+		<?php else : ?>
+
+			<?php
+				$featured_posts = expound_get_featured_posts();
+				if ( ! $featured_posts->have_posts() )
+					get_template_part( 'no-results', 'index' );
+			?>
 
 		<?php endif; ?>
 
