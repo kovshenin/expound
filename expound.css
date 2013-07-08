@@ -196,6 +196,13 @@ a:hover {
   left: 50%;
   margin-left: -6px;
 }
+.navigation-main ul > .current_page_item a:after:hover,
+.navigation-main ul > .current-menu-item a:after:hover,
+.navigation-main ul > .current-post-ancestor a:after:hover,
+.navigation-main ul > .current-menu-parent a:after:hover,
+.navigation-main ul > .current-post-parent a:after:hover {
+  border-color: #138bcf;
+}
 .navigation-main ul > .current_page_item ~ .current_page_item a:after,
 .navigation-main ul > .current-menu-item ~ .current-menu-item a:after,
 .navigation-main ul > .current-post-ancestor ~ .current-post-ancestor a:after,
