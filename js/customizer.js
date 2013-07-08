@@ -19,7 +19,12 @@
 	// Header text color.
 	wp.customize( 'header_textcolor', function( value ) {
 		value.bind( function( to ) {
-			$( '.site-title a, .site-description' ).css( 'color', to );
+			if ( 'blank' == to ) {
+				$( '.site-title-group' ).hide();
+			} else {
+				$( '.site-title-group' ).show();
+				$( '.site-title a, .site-description' ).css( 'color', to );
+			}
 		} );
 	} );
 } )( jQuery );

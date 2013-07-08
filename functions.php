@@ -164,7 +164,7 @@ function expound_header_style() {
 	<?php else : // not blank ?>
         .site-title a,
         .site-description {
-			color: #<?php echo $color; ?> !important;
+			color: #<?php echo $color; ?>;
         }
 	<?php endif; ?>
 	</style>
