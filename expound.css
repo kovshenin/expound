@@ -473,24 +473,29 @@ h3 {
   font-weight: 600;
 }
 .blog .site-content .has-post-thumbnail .entry-thumbnail,
-.archive .site-content .has-post-thumbnail .entry-thumbnail {
+.archive .site-content .has-post-thumbnail .entry-thumbnail,
+.search .site-content .has-post-thumbnail .entry-thumbnail {
   float: left;
 }
 .blog .site-content .has-post-thumbnail .entry-thumbnail img,
-.archive .site-content .has-post-thumbnail .entry-thumbnail img {
+.archive .site-content .has-post-thumbnail .entry-thumbnail img,
+.search .site-content .has-post-thumbnail .entry-thumbnail img {
   float: left;
 }
 .blog .site-content .has-post-thumbnail .entry-title,
-.archive .site-content .has-post-thumbnail .entry-title {
+.archive .site-content .has-post-thumbnail .entry-title,
+.search .site-content .has-post-thumbnail .entry-title {
   clear: none;
   margin-top: -5px;
 }
 .blog .site-content .has-post-thumbnail .entry-meta,
-.archive .site-content .has-post-thumbnail .entry-meta {
+.archive .site-content .has-post-thumbnail .entry-meta,
+.search .site-content .has-post-thumbnail .entry-meta {
   clear: none;
 }
 .blog .site-content .has-post-thumbnail .entry-meta:after,
-.archive .site-content .has-post-thumbnail .entry-meta:after {
+.archive .site-content .has-post-thumbnail .entry-meta:after,
+.search .site-content .has-post-thumbnail .entry-meta:after {
   display: table;
   content: '';
   line-height: 0;
@@ -498,10 +503,13 @@ h3 {
 }
 .blog .site-content .has-post-thumbnail .entry-header,
 .archive .site-content .has-post-thumbnail .entry-header,
+.search .site-content .has-post-thumbnail .entry-header,
 .blog .site-content .has-post-thumbnail .entry-summary,
 .archive .site-content .has-post-thumbnail .entry-summary,
+.search .site-content .has-post-thumbnail .entry-summary,
 .blog .site-content .has-post-thumbnail .entry-meta,
-.archive .site-content .has-post-thumbnail .entry-meta {
+.archive .site-content .has-post-thumbnail .entry-meta,
+.search .site-content .has-post-thumbnail .entry-meta {
   margin-left: 240px;
 }
 .featured-content article {
@@ -976,7 +984,10 @@ a.wpm-button:hover {
   .blog .site-content .has-post-thumbnail .entry-meta,
   .archive .site-content .has-post-thumbnail .entry-header,
   .archive .site-content .has-post-thumbnail .entry-summary,
-  .archive .site-content .has-post-thumbnail .entry-meta {
+  .archive .site-content .has-post-thumbnail .entry-meta,
+  .search .site-content .has-post-thumbnail .entry-header,
+  .search .site-content .has-post-thumbnail .entry-summary,
+  .search .site-content .has-post-thumbnail .entry-meta {
     margin-left: 0;
     clear: both;
   }

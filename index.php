@@ -15,7 +15,7 @@ get_header(); ?>
 
 	<?php if ( is_home() && ! is_paged() ) : ?>
 		<?php do_action( 'expound_home_title' ); ?>
-	<?php elseif ( is_archive() ) : // home & not paged ?>
+	<?php elseif ( is_archive() || is_search() ) : // home & not paged ?>
 		<header class="page-header">
 			<h1 class="page-title">
 				<?php
@@ -43,6 +43,8 @@ get_header(); ?>
 						printf( __( 'Monthly Archives: %s', 'expound' ), '<span>' . get_the_date( 'F Y' ) . '</span>' );
 					} elseif ( is_year() ) {
 						printf( __( 'Yearly Archives: %s', 'expound' ), '<span>' . get_the_date( 'Y' ) . '</span>' );
+					} elseif ( is_search() ) {
+						printf( __( 'Search Results for: %s', 'expound' ), '<span>' . get_search_query() . '</span>' );
 					} else {
 						_e( 'Archives', 'expound' );
 					}
