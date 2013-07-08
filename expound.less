@@ -48,7 +48,15 @@ a {
 }
 
 .site-header .site-branding {
-	padding: 50px 40px 50px 40px;
+	position: relative;
+	min-height: 154px;
+}
+
+.site-title-group {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 50px 40px 50px 40px;
 }
 
 .site-title {
@@ -69,6 +77,12 @@ a {
 	font: 13px/20px "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: 300;
 	color: lighten(@text,30%);
+}
+
+.expound-custom-header,
+.expound-custom-header img {
+	display: block;
+	float: left
 }
 
 .site-header {
