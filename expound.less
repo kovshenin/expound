@@ -174,6 +174,9 @@ a {
 	ul > .current-post-parent {
 		background: @primary;
 		&:hover { background: lighten(@primary, 5%); }
+		&:hover a:after {
+			border-top-color: lighten(@primary, 5%);
+		}
 	}
 
 	ul > .current_page_item ~ .current_page_item a,
@@ -200,10 +203,6 @@ a {
 		bottom: -6px;
 		left: 50%;
 		margin-left: -6px;
-
-		&:hover {
-			border-color: lighten(@primary, 5%);
-		}
 	}
 
 	ul > .current_page_item ~ .current_page_item a:after,
