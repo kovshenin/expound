@@ -305,7 +305,7 @@ function expound_get_related_posts() {
 function expound_display_credits() {
 	$text = '<a href="http://wordpress.org/" rel="generator">' . sprintf( __( 'Proudly powered by %s', 'expound' ), 'WordPress' ) . '</a>';
 	$text .= '<span class="sep"> | </span>';
-	$text .= sprintf( __( 'Theme: %1$s by %2$s', 'expound' ), 'expound', '<a href="http://kovshenin.com/" rel="designer">Konstantin Kovshenin</a>' );
+	$text .= sprintf( __( 'Theme: %1$s by %2$s', 'expound' ), 'Expound', '<a href="http://kovshenin.com/" rel="designer">Konstantin Kovshenin</a>' );
 	echo apply_filters( 'expound_credits_text', $text );
 }
 add_action( 'expound_credits', 'expound_display_credits' );
