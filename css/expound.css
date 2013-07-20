@@ -49,12 +49,8 @@ a:hover {
 }
 .site-header .site-branding {
   position: relative;
-  min-height: 154px;
 }
 .site-title-group {
-  position: absolute;
-  top: 0;
-  left: 0;
   margin: 50px 40px 50px 40px;
 }
 .site-title {
@@ -80,6 +76,9 @@ a:hover {
 .expound-custom-header img {
   display: block;
   float: left;
+  position: absolute;
+  width: 100%;
+  top: 0;
 }
 .site-header .menu-toggle {
   background: #3a3a3a;

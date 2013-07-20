@@ -16,15 +16,4 @@
 			$( '.site-description' ).text( to );
 		} );
 	} );
-	// Header text color.
-	wp.customize( 'header_textcolor', function( value ) {
-		value.bind( function( to ) {
-			if ( 'blank' == to ) {
-				$( '.site-title-group' ).hide();
-			} else {
-				$( '.site-title-group' ).show();
-				$( '.site-title a, .site-description' ).css( 'color', to );
-			}
-		} );
-	} );
 } )( jQuery );

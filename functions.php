@@ -107,6 +107,9 @@ if ( ! function_exists( 'expound_admin_header_style' ) ) :
 function expound_admin_header_style() {
 	?>
 	<style type="text/css">
+	#headimg {
+		background-position: 50% 0;
+	}
 	#headimg h1 {
 		margin-top: 50px;
 		margin-left: 40px;
@@ -140,8 +143,15 @@ if ( ! function_exists( 'expound_header_style' ) ) :
 function expound_header_style() {
 	$color = get_header_textcolor();
 	$default_color = get_theme_support( 'custom-header', 'default-text-color' );
+	$header_image = get_header_image();
 
-	if ( $color == $default_color )
+			/*<?php if ( ! empty( $header_image ) ) : ?>
+				<a class="expound-custom-header" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+					<img src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="" />
+				</a>
+			<?php endif; ?>*/
+
+	if ( $color == $default_color && empty( $header_image ) )
 		return;
 	?>
 	<style type="text/css">
@@ -153,7 +163,7 @@ function expound_header_style() {
             clip: rect(1px, 1px, 1px, 1px);
         }
 
-        <?php if ( ! get_header_image() ) : // blank *and* no header image ?>
+        <?php if ( empty( $header_image ) ) : // blank *and* no header image ?>
 			.site-header .site-branding {
 				min-height: 0;
 				height: 0;
@@ -167,6 +177,16 @@ function expound_header_style() {
         .site-description {
 			color: #<?php echo $color; ?>;
         }
+	<?php endif; ?>
+
+	<?php if ( ! empty( $header_image ) ) : ?>
+		.site-header .site-branding {
+			background-color: transparent;
+			background-image: url('<?php echo esc_url( $header_image ); ?>');
+			background-position: 50% 0;
+			background-repeat: no-repeat;
+			height: <?php echo absint( get_custom_header()->height ); ?>px;
+		}
 	<?php endif; ?>
 	</style>
 	<?php
