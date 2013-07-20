@@ -25,7 +25,7 @@ function expound_body_classes( $classes ) {
 		$classes[] = 'group-blog';
 	}
 
-	if ( ! is_active_sidebar( 'sidebar-1' ) ) {
+	if ( ! is_active_sidebar( 'sidebar-1' ) || apply_filters( 'expound_force_full_width', false ) ) {
 		$classes[] = 'expound-full-width';
 	}
 
