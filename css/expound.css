@@ -900,12 +900,34 @@ a.wpm-button:hover {
 #commentform label .required {
   color: red;
 }
+/* Full-width Template */
+.expound-full-width #secondary {
+  display: none;
+}
+.expound-full-width #primary {
+  width: 1020px;
+  margin-right: 0;
+}
+.expound-full-width .site-content article {
+  padding-right: 40px;
+}
+.expound-full-width .navigation-paging,
+.expound-full-width .navigation-post {
+  padding-right: 40px;
+}
+.expound-full-width .comments-area {
+  padding-right: 40px;
+}
+/* Media Queries */
 @media (max-width: 1080px) {
   #page {
     width: 960px;
   }
   #primary {
     width: 680px;
+  }
+  .expound-full-width #primary {
+    width: 960px;
   }
   .featured-content-secondary {
     padding-top: 20px;
@@ -943,6 +965,9 @@ a.wpm-button:hover {
   #primary {
     width: 620px;
   }
+  .expound-full-width #primary {
+    width: 900px;
+  }
   .single .site-content .related-content article {
     width: 180px;
   }
@@ -953,6 +978,9 @@ a.wpm-button:hover {
   }
   #primary {
     width: 560px;
+  }
+  .expound-full-width #primary {
+    width: 840px;
   }
   .single .site-content .related-content article {
     width: 160px;
@@ -969,6 +997,9 @@ a.wpm-button:hover {
   #secondary {
     width: 100%;
     margin-left: 0;
+  }
+  .expound-full-width #primary {
+    width: 100%;
   }
   .featured-content .has-post-thumbnail .entry-thumbnail {
     width: 220px;

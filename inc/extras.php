@@ -25,6 +25,10 @@ function expound_body_classes( $classes ) {
 		$classes[] = 'group-blog';
 	}
 
+	if ( ! is_active_sidebar( 'sidebar-1' ) ) {
+		$classes[] = 'expound-full-width';
+	}
+
 	return $classes;
 }
 add_filter( 'body_class', 'expound_body_classes' );
