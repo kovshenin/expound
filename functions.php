@@ -57,7 +57,7 @@ function expound_setup() {
 	/**
 	 * Editor styles for the win
 	 */
-	add_editor_style();
+	add_editor_style( 'css/editor-style.css' );
 
 	/**
 	 * Enable support for Post Thumbnails on posts and pages
@@ -192,8 +192,7 @@ add_action( 'widgets_init', 'expound_widgets_init' );
  * Enqueue scripts and styles
  */
 function expound_scripts() {
-	wp_enqueue_style( 'expound-style', get_stylesheet_uri(), array(), 2 );
-	wp_enqueue_style( 'expound-less', get_template_directory_uri() . '/expound.css', array( 'expound-style' ), 3 );
+	wp_enqueue_style( 'expound-style', get_stylesheet_uri(), array(), 3 );
 
 	wp_enqueue_script( 'expound-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
