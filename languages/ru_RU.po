@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Expound\n"
 "POT-Creation-Date: 2013-06-10 14:23+0400\n"
-"PO-Revision-Date: 2013-06-17 17:40+0400\n"
+"PO-Revision-Date: 2013-07-20 15:53+0400\n"
 "Last-Translator: Konstantin Kovshenin <kovshenin@gmail.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -137,6 +137,10 @@ msgid ""
 "comment</a> or leave a trackback: <a class=\"trackback-link\" href=\"%s\" "
 "title=\"Trackback URL for your post\" rel=\"trackback\">Trackback URL</a>."
 msgstr ""
+"<a class=\"comment-link\" href=\"#respond\" title=\"Оставить комментарийt"
+"\">Напишите комментарий</a> или оставьте трэкбэк: <a class=\"trackback-link"
+"\" href=\"%s\" title=\"Адрес трэкбэк для вашей записи\" rel=\"trackback"
+"\">адрес трэкбэк</a>."
 
 #: ../image.php:106
 #, php-format
@@ -145,12 +149,17 @@ msgid ""
 "\" href=\"%s\" title=\"Trackback URL for your post\" rel=\"trackback"
 "\">Trackback URL</a>."
 msgstr ""
+"Коментирование закрыто, но вы можете оставить трэкбэк: <a class=\"trackback-"
+"link\" href=\"%s\" title=\"Адрес трэкбэк для вашей записи\" rel=\"trackback"
+"\">адрес трэкбэк</a>."
 
 #: ../image.php:108
 msgid ""
 "Trackbacks are closed, but you can <a class=\"comment-link\" href=\"#respond"
 "\" title=\"Post a comment\">post a comment</a>."
 msgstr ""
+"Трэкбэки закрыты, новы можете <a class=\"comment-link\" href=\"#respond\" "
+"title=\"Написать комментарий\">оставить комментарий</a>."
 
 #: ../image.php:110
 msgid "Both comments and trackbacks are currently closed."
@@ -199,6 +208,7 @@ msgstr "Не найдено"
 msgid ""
 "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
 msgstr ""
+"Готовы опубликовать вашу первую запись? <a href=\"%1$s\">Начните здесь</a>."
 
 #: ../no-results.php:23
 msgid ""
@@ -214,7 +224,7 @@ msgstr "Ничего не найдено, попробуйте воспольз�
 
 #: ../related-content.php:4
 msgid "Related posts"
-msgstr "Читайте так же"
+msgstr "Читайте также"
 
 #: ../search.php:16
 #, php-format
