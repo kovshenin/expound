@@ -882,6 +882,27 @@ a.wpm-button {
 	}
 }
 
+/* Widgets */
+
+.widget.widget_calendar {
+	table {
+		margin-bottom: 20px;
+	}
+
+	th, td {
+		padding: 8px 8px;
+		border-bottom: solid 1px @light;
+	}
+
+	tr:hover td {
+		background: lighten(@light, 10%);
+	}
+
+	#today {
+		font-weight: bold;
+	}
+}
+
 /* Full-width Template */
 
 .expound-full-width #secondary {
@@ -972,7 +993,7 @@ a.wpm-button {
 	#page { width: 87%; }
 	#primary { width: 100%; margin-right: 0; }
 	#secondary { width: 100%; margin-left: 0; }
-	.expound-full-width #primary { width: 100%; }
+	.expound-full-width #primary { width: 100%	; }
 
 	.featured-content .has-post-thumbnail .entry-thumbnail {
 		width: 220px;

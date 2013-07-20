@@ -900,6 +900,21 @@ a.wpm-button:hover {
 #commentform label .required {
   color: red;
 }
+/* Widgets */
+.widget.widget_calendar table {
+  margin-bottom: 20px;
+}
+.widget.widget_calendar th,
+.widget.widget_calendar td {
+  padding: 8px 8px;
+  border-bottom: solid 1px #dddddd;
+}
+.widget.widget_calendar tr:hover td {
+  background: #f7f7f7;
+}
+.widget.widget_calendar #today {
+  font-weight: bold;
+}
 /* Full-width Template */
 .expound-full-width #secondary {
   display: none;
@@ -999,7 +1014,7 @@ a.wpm-button:hover {
     margin-left: 0;
   }
   .expound-full-width #primary {
-    width: 100%;
+    width: 100%	;
   }
   .featured-content .has-post-thumbnail .entry-thumbnail {
     width: 220px;
