@@ -10,3 +10,10 @@ For more information about the Underscores (_s) starter theme visit: http://unde
 
 Q: How do you set featured posts?
 A: Use sticky posts: http://codex.wordpress.org/Sticky_Posts or use the Jetpack plugin along with its Featured Content module: http://jetpack.me/support/featured-content/
+
+= Translations =
+
+If you've translated this theme into your language, feel free to send the translation over to kovshenin@gmail.com. Currently the following translations are available:
+
+Russian by Konstantin Kovshenin ( http://kovshenin.com )
+French by Lumière de Lune ( http://lumieredelune.com )
