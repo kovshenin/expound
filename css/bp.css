@@ -8,15 +8,46 @@
     font-size: 1rem;
 }
 
-
-#buddypress div#item-header div#item-header-avatar {
-    float: left;
+.single-item #buddypress div#item-header div#item-header-content {
+    float: none;
 }
 
 #buddypress .activity-list .activity-content .activity-header img.avatar {
     margin: 0 5px -5px 0 !important;
 }
 
+#buddypress .item-body h4,
 #buddypress #item-body .standard-form h4{
+    font-size: 120%;
     margin-bottom: 10px;
+}
+
+#buddypress span.activity,
+.widget.buddypress span.activity{
+    background-color: #F7F7F7;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#buddypress div.dir-search input[type="text"]{
+    padding: 2px 3px 4px;
+}
+
+.group-create .entry-title .button,
+.buddypress h1 a.bp-title-button{
+    background: #FFFFFF;
+    border: 1px solid #CCC;
+    color: #777777;
+    display: inline;
+    padding: 4px 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+#buddypress div#item-header div#item-actions h3{
+    font-size: 90%;
+}
+
+#buddypress .activity-list .activity-content .activity-header, #buddypress .activity-list .activity-content .comment-header{
+    line-height: 100%;
 }
