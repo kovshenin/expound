@@ -1,0 +1,22 @@
+#buddypress .item-list h5 {
+    clear: none;
+}
+
+#buddypress button, #buddypress a.button,
+#buddypress input[type="submit"], #buddypress input[type="button"], #buddypress input[type="reset"],
+#buddypress ul.button-nav li a, #buddypress div.generic-button a, #buddypress .comment-reply-link, a.bp-title-button {
+    font-size: 1rem;
+}
+
+
+#buddypress div#item-header div#item-header-avatar {
+    float: left;
+}
+
+#buddypress .activity-list .activity-content .activity-header img.avatar {
+    margin: 0 5px -5px 0 !important;
+}
+
+#buddypress #item-body .standard-form h4{
+    margin-bottom: 10px;
+}
