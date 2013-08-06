@@ -60,8 +60,13 @@
 /**
  * Activity dir
  */
-#buddypress .activity-list .activity-content .activity-header, #buddypress .activity-list .activity-content .comment-header{
+#buddypress .activity-list .activity-content .activity-header,
+#buddypress .activity-list .activity-content .comment-header{
     line-height: 100%;
+}
+
+#buddypress #activity-stream p{
+    margin-top: 0;
 }
 
 #buddypress .activity-list .activity-content .activity-header img.avatar {
