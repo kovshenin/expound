@@ -1,0 +1,112 @@
+/**
+ * Generic for profiles/groups
+ */
+#buddypress .item-body h4,
+#buddypress #item-body h4{
+    font-size: 120%;
+    margin-bottom: 10px;
+}
+
+#buddypress button, #buddypress a.button,
+#buddypress input[type="submit"], #buddypress input[type="button"], #buddypress input[type="reset"],
+#buddypress ul.button-nav li a, #buddypress div.generic-button a, #buddypress .comment-reply-link, a.bp-title-button {
+    font-size: 1rem;
+}
+
+.single-item #buddypress div#item-header div#item-header-content {
+    float: none;
+}
+
+#buddypress .item-list h5 {
+    clear: none;
+}
+
+/**
+ * Better activity date display
+ */
+#buddypress span.activity,
+.widget.buddypress span.activity{
+    background-color: #F7F7F7;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#buddypress #item-body input[name="s"],
+#buddypress div.dir-search input[type="text"]{
+    padding: 2px 3px 4px;
+}
+
+/**
+ * Buttons in page titles on directories
+ */
+.group-create .entry-title .button,
+.buddypress h1 a.bp-title-button{
+    background: #FFFFFF;
+    border: 1px solid #CCC;
+    color: #777777;
+    display: inline;
+    padding: 4px 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/**
+ * Groups mainly, but generic
+ */
+#buddypress div#item-header div#item-actions h3{
+    font-size: 90%;
+}
+
+/**
+ * Activity dir
+ */
+#buddypress .activity-list .activity-content .activity-header,
+#buddypress .activity-list .activity-content .comment-header{
+    line-height: 100%;
+}
+
+#buddypress #activity-stream p{
+    margin-top: 0;
+}
+
+#buddypress .activity-list .activity-content .activity-header img.avatar {
+    margin: 0 5px -5px 0 !important;
+}
+
+/**
+ * Profile
+ */
+#profile-edit-form ul.button-nav{
+    margin-left: 0;
+}
+
+#buddypress .profile .editfield ul{
+    list-style: none;
+    margin-left: 20px;
+}
+
+/**
+ * Messages
+ */
+#send_message_form ul.first li.friend-tab span a{
+    text-decoration: none;
+}
+
+#close-notice{
+    float: right;
+}
+
+#message-threads .button{
+    display: inline
+}
+
+/**
+ * Forums
+ */
+.bp-user.forums #buddypress #item-body h3{
+    margin: 0;
+}
+
+#bbpress-forums h2{
+    margin-top: 0;
+}

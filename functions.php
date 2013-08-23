@@ -91,6 +91,14 @@ function expound_setup() {
 endif; // expound_setup
 add_action( 'after_setup_theme', 'expound_setup' );
 
+
+/**
+ * BuddyPress styles if BP is installed
+ */
+if( function_exists( 'buddypress' ) ){
+	require( get_template_directory() . '/inc/buddypress.php' );
+}
+
 /**
  * Register widgetized area and update sidebar with default widgets
  */
