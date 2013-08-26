@@ -17,6 +17,12 @@ A: Featured posts is set to do that automatically. If you see your featured post
 Q: Can I remove the sidebar?
 A: Yes. You can create a new page and pick the full-width page template. Or if you prefer to remove the sidebar from all pages, simply remove all widgets from the sidebar in Appearance - Widgets.
 
+Q: Can I use Expound with WordPress.com?
+A: Yes, Expound is available for WordPress.com users. More information: http://theme.wordpress.com/themes/expound
+
+Q: The header image does not resize, but crops instead.
+A: That's true. The header image in Expound is designed to be used as a background image which crops, just like the Twenty Thirteen theme. If you'd like to add your company logo, don't use the header image functionality. Instead, use some custom CSS to add your logo to the site title.
+
 = Translations =
 
 If you've translated this theme into your language, feel free to send the translation over to kovshenin@gmail.com. Currently the following translations are available:
