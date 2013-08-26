@@ -1,4 +1,9 @@
-<?php $related_posts = expound_get_related_posts(); ?>
+<?php 
+/**
+ * @package Expound
+ */
+$related_posts = expound_get_related_posts();
+?>
 <?php if ( $related_posts->have_posts() ) : ?>
 <div class="related-content">
 	<h3 class="related-content-title"><?php _e( 'Related posts', 'expound' ); ?></h3>

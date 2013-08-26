@@ -137,13 +137,13 @@ endif;
  */
 function expound_posted_in() {
 
-        $human_time = human_time_diff( get_the_time( 'U' ), current_time( 'timestamp' ) ) . ' ' . __( 'ago', 'expound' );
-        $regular_time = get_the_time( get_option( 'date_format' ) );
+	$human_time = human_time_diff( get_the_time( 'U' ), current_time( 'timestamp' ) ) . ' ' . __( 'ago', 'expound' );
+	$regular_time = get_the_time( get_option( 'date_format' ) );
 
-        $output_time = sprintf( '%s <span style="display:none;">%s</span>', $human_time, $regular_time );
+	$output_time = sprintf( '%s <span style="display:none;">%s</span>', $human_time, $regular_time );
 
-        if ( current_time( 'timestamp' ) > get_the_time( 'U' ) + 60 * 60 * 24 * 14 )
-                $output_time = $regular_time;
+	if ( current_time( 'timestamp' ) > get_the_time( 'U' ) + 60 * 60 * 24 * 14 )
+			$output_time = $regular_time;
 
 	if ( ! is_single() ) {
 		// translators: 1: when, 2: where (category)
