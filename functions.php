@@ -210,6 +210,17 @@ if ( ! function_exists( 'expound_get_related_posts' ) ) :
 function expound_get_related_posts() {
 	$post = get_post();
 
+	// Support for the Yet Another Related Posts Plugin
+	if ( function_exists( 'yarpp_get_related' ) ) {
+		$related = yarpp_get_related( array(), $post->ID );
+		return new WP_Query( array(
+			'post__in' => wp_list_pluck( $related, 'ID' ),
+			'posts_per_page' => 3,
+			'ignore_sticky_posts' => true,
+			'post__not_in' => array( $post->ID ),
+		) );
+	}
+
 	$args = array(
 		'posts_per_page' => 3,
 		'ignore_sticky_posts' => true,
