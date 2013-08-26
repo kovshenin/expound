@@ -926,6 +926,37 @@ a.wpm-button {
 	padding-right: 30px + 10px;
 }
 
+/* WP-PageNavi Support */
+
+#nav-below {
+	.wp-pagenavi {
+		clear: none;
+	}
+
+	.wp-pagenavi .pages {
+		padding-left: 0;
+	}
+
+	.wp-pagenavi a,
+	.wp-pagenavi span {
+		text-decoration: none;
+		border: none;
+		text-align: center;
+		padding: 5px 10px;
+		margin: 0;
+	}
+
+	.wp-pagenavi .current {
+		background: @primary;
+		font-weight: normal;
+		color: white;
+	}
+
+	.wp-pagenavi a:hover {
+		background: lighten(#f7f7f7, 2%);
+	}
+}
+
 /* Media Queries */
 
 @media (max-width: 1080px) {

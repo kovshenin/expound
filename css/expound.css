@@ -932,6 +932,29 @@ a.wpm-button:hover {
 .expound-full-width .comments-area {
   padding-right: 40px;
 }
+/* WP-PageNavi Support */
+#nav-below .wp-pagenavi {
+  clear: none;
+}
+#nav-below .wp-pagenavi .pages {
+  padding-left: 0;
+}
+#nav-below .wp-pagenavi a,
+#nav-below .wp-pagenavi span {
+  text-decoration: none;
+  border: none;
+  text-align: center;
+  padding: 5px 10px;
+  margin: 0;
+}
+#nav-below .wp-pagenavi .current {
+  background: #117bb8;
+  font-weight: normal;
+  color: white;
+}
+#nav-below .wp-pagenavi a:hover {
+  background: #fcfcfc;
+}
 /* Media Queries */
 @media (max-width: 1080px) {
   #page {
