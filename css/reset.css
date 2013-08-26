@@ -567,3 +567,26 @@ object {
 .infinity-end.neverending .site-footer {
 	display: block;
 }
+
+.infinite-loader {
+	margin: 20px auto;
+	width: 34px;
+	height: 34px;
+}
+
+#infinite-handle {
+	margin-top: 20px;
+	text-align: center;
+}
+
+#infinite-handle span {
+	background-color: #117bb8;
+	border: 0;
+	color: #fff;
+	display: inline-block;
+	vertical-align: top
+}
+
+#infinite-handle span:hover {
+	background-color: #333;
+}
