@@ -171,6 +171,7 @@ function expound_pre_get_posts( $query ) {
 }
 add_action( 'pre_get_posts', 'expound_pre_get_posts' );
 
+if ( ! function_exists( 'expound_get_featured_posts' ) ) :
 /**
  * Returns a new WP_Query with featured posts.
  */
@@ -200,7 +201,9 @@ function expound_get_featured_posts() {
 
 	return new WP_Query( $args );
 }
+endif;
 
+if ( ! function_exists( 'expound_get_related_posts' ) ) :
 /**
  * Returns a new WP_Query with related posts.
  */
@@ -228,6 +231,7 @@ function expound_get_related_posts() {
 
 	return new WP_Query( $args );
 }
+endif;
 
 /**
  * Footer credits.
