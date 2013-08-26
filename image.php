@@ -31,7 +31,6 @@ get_header();
 								get_the_title( $post->post_parent )
 							);
 						?>
-						<?php edit_post_link( __( 'Edit', 'expound' ), '<span class="sep"> | </span> <span class="edit-link">', '</span>' ); ?>
 					</div><!-- .entry-meta -->
 
 					<nav role="navigation" id="image-navigation" class="navigation-image">
@@ -109,7 +108,6 @@ get_header();
 					<?php elseif ( ! comments_open() && ! pings_open() ) : // Comments and trackbacks closed ?>
 						<?php _e( 'Both comments and trackbacks are currently closed.', 'expound' ); ?>
 					<?php endif; ?>
-					<?php edit_post_link( __( 'Edit', 'expound' ), ' <span class="edit-link">', '</span>' ); ?>
 				</footer><!-- .entry-meta -->
 			</article><!-- #post-<?php the_ID(); ?> -->
 
