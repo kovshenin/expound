@@ -36,3 +36,4 @@ If you've translated this theme into your language, feel free to send the transl
 
 Russian by Konstantin Kovshenin ( http://kovshenin.com )
 French by Lumière de Lune ( http://lumieredelune.com )
+Brazilian Portugese by Rafael Funchal ( http://www.rafaelfunchal.com.br )
