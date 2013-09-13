@@ -2,6 +2,7 @@
 /**
  * @package Expound
  */
+do_action( 'expound_related_posts_before' );
 $related_posts = expound_get_related_posts();
 ?>
 <?php if ( $related_posts->have_posts() ) : ?>
@@ -27,3 +28,4 @@ $related_posts = expound_get_related_posts();
 </div>
 <?php wp_reset_postdata(); ?>
 <?php endif; // have_posts() ?>
+<?php do_action( 'expound_related_posts_after' ); ?>
