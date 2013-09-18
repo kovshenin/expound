@@ -13,6 +13,7 @@ var {
   font: 12px/20px Consolas, Monaco, Lucida Console, monospace;
 }
 pre {
+  word-wrap: normal;
   margin-bottom: 20px;
   padding: 15px 20px;
   background: #f5f5f5;
