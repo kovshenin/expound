@@ -42,6 +42,11 @@ function expound_setup() {
 	require( get_template_directory() . '/inc/customizer.php' );
 
 	/**
+	 * Rate on WordPress.org
+	 */
+	require( get_template_directory() . '/inc/rateme.php' );
+
+	/**
 	 * Make theme available for translation
 	 * Translations can be filed in the /languages/ directory
 	 * If you're building a theme based on Mag, use a find and replace
