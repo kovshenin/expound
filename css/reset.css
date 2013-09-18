@@ -309,6 +309,10 @@ a:active {
 /* Text meant only for screen readers */
 .screen-reader-text {
 	clip: rect(1px, 1px, 1px, 1px);
+	cliptop: 1px;
+	clipright: 1px;
+	clipbottom: 1px;
+	clipleft: 1px;
 	position: absolute !important;
 }
 
