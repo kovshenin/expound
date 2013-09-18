@@ -925,17 +925,43 @@ a.wpm-button:hover {
 /* Widgets */
 .widget.widget_calendar table {
   margin-bottom: 20px;
+  border-spacing: 1px;
+  border-collapse: separate;
 }
 .widget.widget_calendar th,
 .widget.widget_calendar td {
-  padding: 8px 8px;
-  border-bottom: solid 1px #dddddd;
+  padding: 6px 6px;
+  text-align: center;
 }
-.widget.widget_calendar tr:hover td {
+.widget.widget_calendar tbody td {
   background: #f7f7f7;
+  position: relative;
+}
+.widget.widget_calendar tbody td.pad,
+.widget.widget_calendar tbody td.pad:hover {
+  background: none;
+}
+.widget.widget_calendar tbody td:hover {
+  background: #dddddd;
+}
+.widget.widget_calendar tbody td a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  line-height: 32px;
+  font-weight: 600;
+  text-decoration: none;
 }
 .widget.widget_calendar #today {
   font-weight: bold;
+}
+.widget.widget_calendar #next {
+  text-align: right;
+}
+.widget.widget_calendar #prev {
+  text-align: left;
 }
 /* Full-width Template */
 .expound-full-width #secondary {

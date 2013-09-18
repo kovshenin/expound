@@ -915,19 +915,44 @@ a.wpm-button {
 .widget.widget_calendar {
 	table {
 		margin-bottom: 20px;
+		border-spacing: 1px;
+		border-collapse: separate;
+
 	}
 
 	th, td {
-		padding: 8px 8px;
-		border-bottom: solid 1px @light;
+		padding: 6px 6px;
+		text-align: center;
 	}
 
-	tr:hover td {
+	tbody td {
 		background: lighten(@light, 10%);
+		position: relative;
+
+		&.pad, &.pad:hover { background: none; }
+		&:hover { background: @light; }
+
+		a {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			line-height: 32px;
+			font-weight: 600;
+			text-decoration: none;
+		}
 	}
 
 	#today {
 		font-weight: bold;
+	}
+
+	#next {
+		text-align: right;
+	}
+	#prev {
+		text-align: left;
 	}
 }
 
