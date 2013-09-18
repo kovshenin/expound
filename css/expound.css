@@ -899,6 +899,10 @@ a.wpm-button:hover {
 #commentform label .required {
   color: red;
 }
+#disqus_thread {
+  margin-top: 40px;
+  margin-left: 40px;
+}
 /* Widgets */
 .widget.widget_calendar table {
   margin-bottom: 20px;
@@ -1057,6 +1061,9 @@ a.wpm-button:hover {
   }
   .comments-area {
     padding-right: 40px;
+  }
+  #disqus_thread {
+    margin-right: 40px;
   }
 }
 @media (max-width: 700px) {
