@@ -178,23 +178,30 @@ if ( ! function_exists( 'expound_get_featured_posts' ) ) :
 function expound_get_featured_posts() {
 	global $wp_query;
 
+	// Default number of featured posts
+	$count = apply_filters( 'expound_featured_posts_count', 5 );
+
 	// Jetpack Featured Content support
 	$sticky = apply_filters( 'expound_get_featured_posts', array() );
-	if ( ! empty( $sticky ) )
+	if ( ! empty( $sticky ) ) {
 		$sticky = wp_list_pluck( $sticky, 'ID' );
+
+		// Let Jetpack override the sticky posts count because it has an option for that.
+		$count = count( $sticky );
+	}
 
 	if ( empty( $sticky ) )
 		$sticky = (array) get_option( 'sticky_posts', array() );
 
 	if ( empty( $sticky ) ) {
 		return new WP_Query( array(
-			'posts_per_page' => 5,
+			'posts_per_page' => $count,
 			'ignore_sticky_posts' => true,
 		) );
 	}
 
 	$args = array(
-		'posts_per_page' => 5,
+		'posts_per_page' => $count,
 		'post__in' => $sticky,
 		'ignore_sticky_posts' => true,
 	);

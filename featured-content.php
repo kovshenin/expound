@@ -53,6 +53,10 @@ $featured_posts = expound_get_featured_posts();
 			</div><!-- .entry-summary -->
 		</article>
 
+		<?php if ( $featured_posts->current_post % 4 == 0 ) : ?>
+			<div style="clear: left; height: 1px; float: left; background: red;"></div>
+		<?php endif; // % 4 ?>
+
 	<?php endwhile; ?>
 </div><!-- .featured-content-secondary -->
 <?php endif; // have_posts() inner ?>
