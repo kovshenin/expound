@@ -728,6 +728,13 @@ article:hover .entry-title a {
   padding-bottom: 0;
   padding-top: 8px;
 }
+.widget-area .widget_nav_menu ul.sub-menu {
+  margin-left: 1.5em;
+}
+.widget-area .widget_nav_menu ul.sub-menu li {
+  padding-bottom: 0;
+  padding-top: 8px;
+}
 input,
 textarea {
   font: 13px/20px "Helvetica Neue", Helvetica, Arial, sans-serif;
