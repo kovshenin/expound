@@ -719,6 +719,15 @@ article:hover .entry-title a {
 .widget-area .widget_twitter .tweets li:last-child {
   border-bottom: none;
 }
+.widget-area .widget_categories ul.children,
+.widget-area .widget_pages ul.children {
+  margin-left: 1.5em;
+}
+.widget-area .widget_categories ul.children li,
+.widget-area .widget_pages ul.children li {
+  padding-bottom: 0;
+  padding-top: 8px;
+}
 input,
 textarea {
   font: 13px/20px "Helvetica Neue", Helvetica, Arial, sans-serif;
