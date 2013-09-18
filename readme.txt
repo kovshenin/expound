@@ -29,6 +29,7 @@ A: That's true. The header image in Expound is designed to be used as a backgrou
 * Jetpack Infinite Scroll
 * Yet Another Related Posts Plugin (YARPP)
 * WP-PageNavi
+* Disqus Comment System
 
 = Translations =
 
