@@ -136,6 +136,8 @@ a:hover {
 }
 .navigation-main ul {
   margin: 0 30px;
+  position: relative;
+  z-index: 9990;
 }
 .navigation-main a {
   color: white;
