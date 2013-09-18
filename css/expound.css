@@ -922,6 +922,12 @@ a.wpm-button:hover {
   margin-top: 40px;
   margin-left: 40px;
 }
+.clear {
+  display: block;
+  clear: both;
+  height: 0px;
+  width: 100%;
+}
 /* Widgets */
 .widget.widget_calendar table {
   margin-bottom: 20px;
