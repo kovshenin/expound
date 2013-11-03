@@ -1,0 +1,300 @@
+# Copyright (C) 2013 Konstantin Kovshenin
+# This file is distributed under the GNU General Public License.
+# Translators:
+# icw_develop, 2013
+msgid ""
+msgstr ""
+"Project-Id-Version: Expound\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/support/theme/expound\n"
+"POT-Creation-Date: 2013-10-29 10:05:52+00:00\n"
+"PO-Revision-Date: 2013-10-31 15:00+0000\n"
+"Last-Translator: icw_develop\n"
+"Language-Team: Italian (Italy) (http://www.transifex.com/projects/p/wp-translations/language/it_IT/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: it_IT\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: 404.php:15
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Oops! Pagina non trovata."
+
+#: 404.php:19
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links"
+" below or a search?"
+msgstr "Sembra non ci sia nulla nel posto in cui stavi cercando. Prova uno dei links in basso o una nuova ricerca."
+
+#: 404.php:27
+msgid "Most Used Categories"
+msgstr "Categorie più utilizzate"
+
+#. translators: %1$s: smiley
+#: 404.php:44
+msgid "Try looking in the monthly archives. %1$s"
+msgstr "Provare a consultare gli archivi mensili. %1$s"
+
+#: comments.php:29
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "Un pensiero su &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s pensieri su &ldquo;%2$s&rdquo;"
+
+#: comments.php:36 comments.php:56
+msgid "Comment navigation"
+msgstr "Navigazione commenti"
+
+#: comments.php:37 comments.php:57
+msgid "&larr; Older Comments"
+msgstr "&larr; Commenti meno recenti"
+
+#: comments.php:38 comments.php:58
+msgid "Newer Comments &rarr;"
+msgstr "Commenti più recenti &rarr;"
+
+#: comments.php:68
+msgid "Comments are closed."
+msgstr "I commenti sono chiusi."
+
+#: content-page.php:18 content-single.php:20 image.php:94
+msgid "Pages:"
+msgstr "Pagine:"
+
+#: featured-content.php:19 featured-content.php:50 related-content.php:22
+msgid "Permalink to %s"
+msgstr "Permalink a %s"
+
+#: featured-content.php:24
+msgid "Continue reading &rarr;"
+msgstr "Continua la lettura &rarr;"
+
+#: functions.php:81
+msgid "Primary Menu"
+msgstr "Menu principale"
+
+#: functions.php:112
+msgid "Sidebar"
+msgstr "Barra laterale"
+
+#: functions.php:263
+msgid "Proudly powered by %s"
+msgstr "Utilizza %s"
+
+#: functions.php:265
+msgid "Theme: %1$s by %2$s"
+msgstr "Tema: %1$s di %2$s"
+
+#: header.php:36
+msgid "Menu"
+msgstr "Menu"
+
+#: header.php:37
+msgid "Skip to content"
+msgstr "Vai al contenuto"
+
+#: image.php:23
+msgid ""
+"Published <span class=\"entry-date\"><time class=\"entry-date\" "
+"datetime=\"%1$s\">%2$s</time></span> at <a href=\"%3$s\" title=\"Link to "
+"full-size image\">%4$s &times; %5$s</a> in <a href=\"%6$s\" title=\"Return "
+"to %7$s\" rel=\"gallery\">%8$s</a>"
+msgstr "Pubblicato <span class=\"entry-date\"><time class=\"entry-date\" datetime=\"%1$s\">%2$s</time></span> alle <a href=\"%3$s\" title=\"Link to full-size image\">%4$s &times; %5$s</a> in <a href=\"%6$s\" title=\"torna a %7$s\" rel=\"gallery\">%8$s</a>"
+
+#: image.php:37
+msgid "<span class=\"meta-nav\">&larr;</span> Previous"
+msgstr "<span class=\"meta-nav\">&larr;</span> Precedenti"
+
+#: image.php:38
+msgid "Next <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Successivi <span class=\"meta-nav\">&rarr;</span>"
+
+#: image.php:103
+msgid ""
+"<a class=\"comment-link\" href=\"#respond\" title=\"Post a comment\">Post a "
+"comment</a> or leave a trackback: <a class=\"trackback-link\" href=\"%s\" "
+"title=\"Trackback URL for your post\" rel=\"trackback\">Trackback URL</a>."
+msgstr "<a class=\"comment-link\" href=\"#respond\" title=\"Scrivi un commento\">Scrivi un commento</a> o lascia un trackback: <a class=\"trackback-link\" href=\"%s\" title=\"Trackback URL per il tuo post\" rel=\"trackback\">Trackback URL</a>."
+
+#: image.php:105
+msgid ""
+"Comments are closed, but you can leave a trackback: <a class=\"trackback-"
+"link\" href=\"%s\" title=\"Trackback URL for your post\" "
+"rel=\"trackback\">Trackback URL</a>."
+msgstr "I commenti sono chiusi, ma puoi lasciare un trackback: <a class=\"trackback-link\" href=\"%s\" title=\"Trackback URL del tuo post\" rel=\"trackback\">Trackback URL</a>."
+
+#: image.php:107
+msgid ""
+"Trackbacks are closed, but you can <a class=\"comment-link\" "
+"href=\"#respond\" title=\"Post a comment\">post a comment</a>."
+msgstr "I Trackback sono chiusi, ma puoi <a class=\"comment-link\" href=\"#respond\" title=\"Scrivi un commento\">scrivere un commento</a>."
+
+#: image.php:109
+msgid "Both comments and trackbacks are currently closed."
+msgstr "Sia i commenti che i trackback sono chiusi."
+
+#: inc/extras.php:70
+msgid "Page %s"
+msgstr "Pagina %s"
+
+#: inc/rateme.php:21
+msgid ""
+"Thank you for using Expound! If you like the theme, please consider giving "
+"it a <a target=\"_blank\" href=\"%s\">high rating on WordPress.org</a>. "
+"Thank you! <a href=\"%s\">(hide this message)</a>"
+msgstr "Ti ringraziamo per aver utilizzato Expound! Se il tema è di tuo gradimento, dai una  <a target=\"_blank\" href=\"%s\">valutazione alta su WordPress.org</a>. Grazie! <a href=\"%s\">(nascondi questo messaggio)</a>"
+
+#: inc/template-tags.php:34
+msgid "Post navigation"
+msgstr "Navigazione articolo"
+
+#: inc/template-tags.php:42
+msgctxt "Previous post link"
+msgid "&larr;"
+msgstr "&larr;"
+
+#: inc/template-tags.php:43
+msgctxt "Next post link"
+msgid "&rarr;"
+msgstr "&rarr;"
+
+#: inc/template-tags.php:48
+msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+msgstr "<span class=\"meta-nav\">&larr;</span> Articoli più vecchi"
+
+#: inc/template-tags.php:52
+msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Articoli più recenti <span class=\"meta-nav\">&rarr;</span>"
+
+#: inc/template-tags.php:75
+msgid "Pingback:"
+msgstr "Pingback:"
+
+#: inc/template-tags.php:75 inc/template-tags.php:96
+msgid "Edit"
+msgstr "Modifica"
+
+#: inc/template-tags.php:85
+msgid "%s <span class=\"says\">says:</span>"
+msgstr "%s <span class=\"says\">scrive:</span>"
+
+#: inc/template-tags.php:88
+msgid "Your comment is awaiting moderation."
+msgstr "Il commento è in attesa di moderazione."
+
+#: inc/template-tags.php:94
+msgctxt "1: date, 2: time"
+msgid "%1$s at %2$s"
+msgstr "%1$s alle %2$s"
+
+#: inc/template-tags.php:123 inc/template-tags.php:144
+msgid "ago"
+msgstr "fa"
+
+#. translators: 1: who, 2: when
+#: inc/template-tags.php:132
+msgid "%1$s / %2$s"
+msgstr "%1$s / %2$s"
+
+#. translators: 1: when, 2: where (category)
+#: inc/template-tags.php:154 inc/template-tags.php:160
+msgid "%1$s in %2$s."
+msgstr "%1$s in %2$s."
+
+#: inc/template-tags.php:166
+msgid "Tags: "
+msgstr "Tag:"
+
+#: index.php:23
+msgid "%s"
+msgstr "%s"
+
+#: index.php:26
+msgid "Tag Archives: %s"
+msgstr "Archivio tag: %s"
+
+#: index.php:33
+msgid "Author Archives: %s"
+msgstr "Archivio dell'autore: %s"
+
+#: index.php:41
+msgid "Daily Archives: %s"
+msgstr "Archivi giornalieri: %s"
+
+#: index.php:43
+msgid "Monthly Archives: %s"
+msgstr "Archivio mensile:%s"
+
+#: index.php:45
+msgid "Yearly Archives: %s"
+msgstr "Archivi annuali: %s"
+
+#: index.php:47
+msgid "Search Results for: %s"
+msgstr "Risultati della ricerca di: %s"
+
+#: index.php:49
+msgid "Archives"
+msgstr "Archivi"
+
+#: no-results.php:13
+msgid "Nothing Found"
+msgstr "Nessun risultato"
+
+#: no-results.php:19
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "Sei pronto a pubblicare il tuo primo articolo? <a href=\"%1$s\">Comincia da qui</a>."
+
+#: no-results.php:23
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr "Spiacente, nessuna corrispondenza con i termini di ricerca che haiindicato. Prova con termini diversi."
+
+#: no-results.php:28
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr "Sembra impossibile trovare quello che stavi cercando. Forse una ricerca specifica potrebbe aiutarti."
+
+#: related-content.php:10
+msgid "Related posts"
+msgstr "Articoli correlati"
+
+#: searchform.php:9
+msgctxt "assistive text"
+msgid "Search"
+msgstr "Cerca"
+
+#: searchform.php:10
+msgctxt "placeholder"
+msgid "Search &hellip;"
+msgstr "Cerca &hellip;"
+
+#: searchform.php:11
+msgctxt "submit button"
+msgid "Search"
+msgstr "Cerca"
+
+#. Theme Name of the plugin/theme
+msgid "Expound"
+msgstr "Expound"
+
+#. Description of the plugin/theme
+msgid ""
+"An awesome magazine theme for your WordPress site. Responsive layout, post "
+"thumbnails support, featured posts and more."
+msgstr "Un tema fantastico per il vostro sito WordPress in stile rivista /magazine. Layout responsive, supporto per le miniature, post in evidenza e molto di più."
+
+#. Author of the plugin/theme
+msgid "Konstantin Kovshenin"
+msgstr "Konstantin Kovshenin"
+
+#. Author URI of the plugin/theme
+msgid "http://kovshenin.com"
+msgstr "http://kovshenin.com"
+
+#. Template Name of the plugin/theme
+msgid "Full-width Template"
+msgstr "Template a piena larghezza"
