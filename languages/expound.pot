@@ -1,299 +1,313 @@
-# Copyright (C) 2013 Konstantin Kovshenin
-# This file is distributed under the GNU General Public License.
-# Translators:
 msgid ""
 msgstr ""
 "Project-Id-Version: Expound\n"
-"Report-Msgid-Bugs-To: http://wordpress.org/support/theme/expound\n"
-"POT-Creation-Date: 2013-10-29 10:05:52+00:00\n"
-"PO-Revision-Date: 2013-10-29 10:13+0000\n"
-"Last-Translator: Francois-Xavier Bénard <traductions@fxbenard.com>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2013-06-17 17:41+0400\n"
+"PO-Revision-Date: 2013-06-17 17:41+0400\n"
+"Last-Translator: Konstantin Kovshenin <kovshenin@gmail.com>\n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: en_US\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-KeywordsList: _n:1,2;_;gettext;gettext_noop;__;_e;_x;esc_attr_e;"
+"_nx:1,2,4c\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
 
-#: 404.php:15
+#: ../404.php:15
 msgid "Oops! That page can&rsquo;t be found."
-msgstr "Oops! That page can&rsquo;t be found."
+msgstr ""
 
-#: 404.php:19
+#: ../404.php:19
 msgid ""
-"It looks like nothing was found at this location. Maybe try one of the links"
-" below or a search?"
-msgstr "It looks like nothing was found at this location. Maybe try one of the links below or a search?"
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
 
-#: 404.php:27
+#: ../404.php:27
 msgid "Most Used Categories"
-msgstr "Most Used Categories"
+msgstr ""
 
-#. translators: %1$s: smiley
-#: 404.php:44
+#: ../404.php:44
+#, php-format
 msgid "Try looking in the monthly archives. %1$s"
-msgstr "Try looking in the monthly archives. %1$s"
+msgstr ""
 
-#: comments.php:29
+#: ../comments.php:29
+#, php-format
 msgctxt "comments title"
 msgid "One thought on &ldquo;%2$s&rdquo;"
 msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
-msgstr[0] "One thought on &ldquo;%2$s&rdquo;"
-msgstr[1] "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 
-#: comments.php:36 comments.php:56
+#: ../comments.php:36 ../comments.php:56
 msgid "Comment navigation"
-msgstr "Comment navigation"
+msgstr ""
 
-#: comments.php:37 comments.php:57
+#: ../comments.php:37 ../comments.php:57
 msgid "&larr; Older Comments"
-msgstr "&larr; Older Comments"
+msgstr ""
 
-#: comments.php:38 comments.php:58
+#: ../comments.php:38 ../comments.php:58
 msgid "Newer Comments &rarr;"
-msgstr "Newer Comments &rarr;"
+msgstr ""
 
-#: comments.php:68
+#: ../comments.php:68
 msgid "Comments are closed."
-msgstr "Comments are closed."
+msgstr ""
 
-#: content-page.php:18 content-single.php:20 image.php:94
+#: ../content-page.php:18 ../content-single.php:20 ../image.php:95
 msgid "Pages:"
-msgstr "Pages:"
+msgstr ""
 
-#: featured-content.php:19 featured-content.php:50 related-content.php:22
+#: ../featured-content.php:14 ../featured-content.php:43
+#: ../related-content.php:16
+#, php-format
 msgid "Permalink to %s"
-msgstr "Permalink to %s"
+msgstr ""
 
-#: featured-content.php:24
+#: ../featured-content.php:19
 msgid "Continue reading &rarr;"
-msgstr "Continue reading &rarr;"
+msgstr ""
 
-#: functions.php:81
+#: ../functions.php:71
 msgid "Primary Menu"
-msgstr "Primary Menu"
+msgstr ""
 
-#: functions.php:112
+#: ../functions.php:92
 msgid "Sidebar"
-msgstr "Sidebar"
+msgstr ""
 
-#: functions.php:263
+#: ../functions.php:207
+#, php-format
 msgid "Proudly powered by %s"
-msgstr "Proudly powered by %s"
+msgstr ""
 
-#: functions.php:265
+#: ../functions.php:209
+#, php-format
 msgid "Theme: %1$s by %2$s"
-msgstr "Theme: %1$s by %2$s"
+msgstr ""
 
-#: header.php:36
+#: ../header.php:34
 msgid "Menu"
-msgstr "Menu"
+msgstr ""
 
-#: header.php:37
+#: ../header.php:35
 msgid "Skip to content"
-msgstr "Skip to content"
+msgstr ""
 
-#: image.php:23
+#: ../image.php:23
+#, php-format
 msgid ""
-"Published <span class=\"entry-date\"><time class=\"entry-date\" "
-"datetime=\"%1$s\">%2$s</time></span> at <a href=\"%3$s\" title=\"Link to "
-"full-size image\">%4$s &times; %5$s</a> in <a href=\"%6$s\" title=\"Return "
-"to %7$s\" rel=\"gallery\">%8$s</a>"
-msgstr "Published <span class=\"entry-date\"><time class=\"entry-date\" datetime=\"%1$s\">%2$s</time></span> at <a href=\"%3$s\" title=\"Link to full-size image\">%4$s &times; %5$s</a> in <a href=\"%6$s\" title=\"Return to %7$s\" rel=\"gallery\">%8$s</a>"
+"Published <span class=\"entry-date\"><time class=\"entry-date\" datetime="
+"\"%1$s\">%2$s</time></span> at <a href=\"%3$s\" title=\"Link to full-size "
+"image\">%4$s &times; %5$s</a> in <a href=\"%6$s\" title=\"Return to %7$s\" "
+"rel=\"gallery\">%8$s</a>"
+msgstr ""
 
-#: image.php:37
+#: ../image.php:34 ../image.php:112 ../inc/template-tags.php:71
+#: ../inc/template-tags.php:92
+msgid "Edit"
+msgstr ""
+
+#: ../image.php:38
 msgid "<span class=\"meta-nav\">&larr;</span> Previous"
-msgstr "<span class=\"meta-nav\">&larr;</span> Previous"
+msgstr ""
 
-#: image.php:38
+#: ../image.php:39
 msgid "Next <span class=\"meta-nav\">&rarr;</span>"
-msgstr "Next <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
 
-#: image.php:103
+#: ../image.php:104
+#, php-format
 msgid ""
 "<a class=\"comment-link\" href=\"#respond\" title=\"Post a comment\">Post a "
 "comment</a> or leave a trackback: <a class=\"trackback-link\" href=\"%s\" "
 "title=\"Trackback URL for your post\" rel=\"trackback\">Trackback URL</a>."
-msgstr "<a class=\"comment-link\" href=\"#respond\" title=\"Post a comment\">Post a comment</a> or leave a trackback: <a class=\"trackback-link\" href=\"%s\" title=\"Trackback URL for your post\" rel=\"trackback\">Trackback URL</a>."
+msgstr ""
 
-#: image.php:105
+#: ../image.php:106
+#, php-format
 msgid ""
-"Comments are closed, but you can leave a trackback: <a class=\"trackback-"
-"link\" href=\"%s\" title=\"Trackback URL for your post\" "
-"rel=\"trackback\">Trackback URL</a>."
-msgstr "Comments are closed, but you can leave a trackback: <a class=\"trackback-link\" href=\"%s\" title=\"Trackback URL for your post\" rel=\"trackback\">Trackback URL</a>."
+"Comments are closed, but you can leave a trackback: <a class=\"trackback-link"
+"\" href=\"%s\" title=\"Trackback URL for your post\" rel=\"trackback"
+"\">Trackback URL</a>."
+msgstr ""
 
-#: image.php:107
+#: ../image.php:108
 msgid ""
-"Trackbacks are closed, but you can <a class=\"comment-link\" "
-"href=\"#respond\" title=\"Post a comment\">post a comment</a>."
-msgstr "Trackbacks are closed, but you can <a class=\"comment-link\" href=\"#respond\" title=\"Post a comment\">post a comment</a>."
+"Trackbacks are closed, but you can <a class=\"comment-link\" href=\"#respond"
+"\" title=\"Post a comment\">post a comment</a>."
+msgstr ""
 
-#: image.php:109
+#: ../image.php:110
 msgid "Both comments and trackbacks are currently closed."
-msgstr "Both comments and trackbacks are currently closed."
+msgstr ""
 
-#: inc/extras.php:70
-msgid "Page %s"
-msgstr "Page %s"
-
-#: inc/rateme.php:21
-msgid ""
-"Thank you for using Expound! If you like the theme, please consider giving "
-"it a <a target=\"_blank\" href=\"%s\">high rating on WordPress.org</a>. "
-"Thank you! <a href=\"%s\">(hide this message)</a>"
-msgstr "Thank you for using Expound! If you like the theme, please consider giving it a <a target=\"_blank\" href=\"%s\">high rating on WordPress.org</a>. Thank you! <a href=\"%s\">(hide this message)</a>"
-
-#: inc/template-tags.php:34
-msgid "Post navigation"
-msgstr "Post navigation"
-
-#: inc/template-tags.php:42
-msgctxt "Previous post link"
-msgid "&larr;"
-msgstr "&larr;"
-
-#: inc/template-tags.php:43
-msgctxt "Next post link"
-msgid "&rarr;"
-msgstr "&rarr;"
-
-#: inc/template-tags.php:48
-msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
-msgstr "<span class=\"meta-nav\">&larr;</span> Older posts"
-
-#: inc/template-tags.php:52
-msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
-msgstr "Newer posts <span class=\"meta-nav\">&rarr;</span>"
-
-#: inc/template-tags.php:75
-msgid "Pingback:"
-msgstr "Pingback:"
-
-#: inc/template-tags.php:75 inc/template-tags.php:96
-msgid "Edit"
-msgstr "Edit"
-
-#: inc/template-tags.php:85
-msgid "%s <span class=\"says\">says:</span>"
-msgstr "%s <span class=\"says\">says:</span>"
-
-#: inc/template-tags.php:88
-msgid "Your comment is awaiting moderation."
-msgstr "Your comment is awaiting moderation."
-
-#: inc/template-tags.php:94
-msgctxt "1: date, 2: time"
-msgid "%1$s at %2$s"
-msgstr "%1$s at %2$s"
-
-#: inc/template-tags.php:123 inc/template-tags.php:144
-msgid "ago"
-msgstr "ago"
-
-#. translators: 1: who, 2: when
-#: inc/template-tags.php:132
-msgid "%1$s / %2$s"
-msgstr "%1$s / %2$s"
-
-#. translators: 1: when, 2: where (category)
-#: inc/template-tags.php:154 inc/template-tags.php:160
-msgid "%1$s in %2$s."
-msgstr "%1$s in %2$s."
-
-#: inc/template-tags.php:166
-msgid "Tags: "
-msgstr "Tags: "
-
-#: index.php:23
+#: ../index.php:23
+#, php-format
 msgid "%s"
-msgstr "%s"
+msgstr ""
 
-#: index.php:26
+#: ../index.php:26
+#, php-format
 msgid "Tag Archives: %s"
-msgstr "Tag Archives: %s"
+msgstr ""
 
-#: index.php:33
+#: ../index.php:33
+#, php-format
 msgid "Author Archives: %s"
-msgstr "Author Archives: %s"
+msgstr ""
 
-#: index.php:41
+#: ../index.php:41
+#, php-format
 msgid "Daily Archives: %s"
-msgstr "Daily Archives: %s"
+msgstr ""
 
-#: index.php:43
+#: ../index.php:43
+#, php-format
 msgid "Monthly Archives: %s"
-msgstr "Monthly Archives: %s"
+msgstr ""
 
-#: index.php:45
+#: ../index.php:45
+#, php-format
 msgid "Yearly Archives: %s"
-msgstr "Yearly Archives: %s"
+msgstr ""
 
-#: index.php:47
-msgid "Search Results for: %s"
-msgstr "Search Results for: %s"
-
-#: index.php:49
+#: ../index.php:47 ../sidebar.php:17
 msgid "Archives"
-msgstr "Archives"
+msgstr ""
 
-#: no-results.php:13
+#: ../no-results.php:13
 msgid "Nothing Found"
-msgstr "Nothing Found"
+msgstr ""
 
-#: no-results.php:19
-msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
-msgstr "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+#: ../no-results.php:19
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
 
-#: no-results.php:23
+#: ../no-results.php:23
 msgid ""
 "Sorry, but nothing matched your search terms. Please try again with some "
 "different keywords."
-msgstr "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr ""
 
-#: no-results.php:28
+#: ../no-results.php:28
 msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 "searching can help."
-msgstr "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr ""
 
-#: related-content.php:10
+#: ../related-content.php:4
 msgid "Related posts"
-msgstr "Related posts"
+msgstr ""
 
-#: searchform.php:9
-msgctxt "assistive text"
-msgid "Search"
-msgstr "Search"
+#: ../search.php:16
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
 
-#: searchform.php:10
-msgctxt "placeholder"
-msgid "Search &hellip;"
-msgstr "Search &hellip;"
+#: ../sidebar.php:24
+msgid "Meta"
+msgstr ""
 
-#: searchform.php:11
-msgctxt "submit button"
-msgid "Search"
-msgstr "Search"
+#: ../inc/extras.php:66
+#, php-format
+msgid "Page %s"
+msgstr ""
 
-#. Theme Name of the plugin/theme
-msgid "Expound"
-msgstr "Expound"
+#: ../inc/template-tags.php:34
+msgid "Post navigation"
+msgstr ""
 
-#. Description of the plugin/theme
-msgid ""
-"An awesome magazine theme for your WordPress site. Responsive layout, post "
-"thumbnails support, featured posts and more."
-msgstr "An awesome magazine theme for your WordPress site. Responsive layout, post thumbnails support, featured posts and more."
+#: ../inc/template-tags.php:38
+msgid "&larr;"
+msgstr ""
 
-#. Author of the plugin/theme
-msgid "Konstantin Kovshenin"
-msgstr "Konstantin Kovshenin"
+#: ../inc/template-tags.php:39
+msgid "&rarr;"
+msgstr ""
 
-#. Author URI of the plugin/theme
-msgid "http://kovshenin.com"
-msgstr "http://kovshenin.com"
+#: ../inc/template-tags.php:44
+msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+msgstr ""
 
-#. Template Name of the plugin/theme
-msgid "Full-width Template"
-msgstr "Full-width Template"
+#: ../inc/template-tags.php:48
+msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: ../inc/template-tags.php:71
+msgid "Pingback:"
+msgstr ""
+
+#: ../inc/template-tags.php:81
+#, php-format
+msgid "%s <span class=\"says\">says:</span>"
+msgstr ""
+
+#: ../inc/template-tags.php:84
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: ../inc/template-tags.php:90
+#, php-format
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: ../inc/template-tags.php:119 ../inc/template-tags.php:140
+msgid "ago"
+msgstr ""
+
+#: ../inc/template-tags.php:128
+#, php-format
+msgid "%1$s / %2$s"
+msgstr ""
+
+#: ../inc/template-tags.php:150 ../inc/template-tags.php:156
+#, php-format
+msgid "%1$s in %2$s."
+msgstr ""
+
+#: ../inc/template-tags.php:162
+msgid "Tags: "
+msgstr ""
+
+#~ msgid "&larr; Previous"
+#~ msgstr "&larr; Назад"
+
+#~ msgid "Next &rarr;"
+#~ msgstr "Вперёд &rarr;"
+
+#~ msgid "Search"
+#~ msgstr "Поиск"
+
+#~ msgid "Search &hellip;"
+#~ msgstr "Поиск &hellip;"
+
+#~ msgid "(Edit)"
+#~ msgstr "(Редактировать)"
+
+#~ msgid ", "
+#~ msgstr ", "
+
+#~ msgid "Posted in %1$s"
+#~ msgstr "Опубликовано в %1$s"
+
+#~ msgid "Tagged %1$s"
+#~ msgstr "Метки: %1$s"
+
+#~ msgid "Leave a comment"
+#~ msgstr "Оставить комментарий"
+
+#~ msgid "1 Comment"
+#~ msgstr "1 комментарий"
+
+#~ msgid "% Comments"
+#~ msgstr "Комментариев: %"
+
+#~ msgid "Category Archives: %s"
+#~ msgstr "Архивы рубрики: %s"
