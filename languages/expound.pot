@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Expound\n"
-"POT-Creation-Date: 2013-06-17 17:41+0400\n"
-"PO-Revision-Date: 2013-06-17 17:41+0400\n"
+"POT-Creation-Date: 2013-11-16 01:08+0400\n"
+"PO-Revision-Date: 2013-11-16 01:08+0400\n"
 "Last-Translator: Konstantin Kovshenin <kovshenin@gmail.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -58,43 +58,43 @@ msgstr ""
 msgid "Comments are closed."
 msgstr ""
 
-#: ../content-page.php:18 ../content-single.php:20 ../image.php:95
+#: ../content-page.php:18 ../content-single.php:20 ../image.php:94
 msgid "Pages:"
 msgstr ""
 
-#: ../featured-content.php:14 ../featured-content.php:43
-#: ../related-content.php:16
+#: ../featured-content.php:19 ../featured-content.php:50
+#: ../related-content.php:22
 #, php-format
 msgid "Permalink to %s"
 msgstr ""
 
-#: ../featured-content.php:19
+#: ../featured-content.php:24
 msgid "Continue reading &rarr;"
 msgstr ""
 
-#: ../functions.php:71
+#: ../functions.php:81
 msgid "Primary Menu"
 msgstr ""
 
-#: ../functions.php:92
+#: ../functions.php:112
 msgid "Sidebar"
 msgstr ""
 
-#: ../functions.php:207
+#: ../functions.php:264
 #, php-format
 msgid "Proudly powered by %s"
 msgstr ""
 
-#: ../functions.php:209
+#: ../functions.php:266
 #, php-format
 msgid "Theme: %1$s by %2$s"
 msgstr ""
 
-#: ../header.php:34
+#: ../header.php:36
 msgid "Menu"
 msgstr ""
 
-#: ../header.php:35
+#: ../header.php:37
 msgid "Skip to content"
 msgstr ""
 
@@ -107,20 +107,15 @@ msgid ""
 "rel=\"gallery\">%8$s</a>"
 msgstr ""
 
-#: ../image.php:34 ../image.php:112 ../inc/template-tags.php:71
-#: ../inc/template-tags.php:92
-msgid "Edit"
-msgstr ""
-
-#: ../image.php:38
+#: ../image.php:37
 msgid "<span class=\"meta-nav\">&larr;</span> Previous"
 msgstr ""
 
-#: ../image.php:39
+#: ../image.php:38
 msgid "Next <span class=\"meta-nav\">&rarr;</span>"
 msgstr ""
 
-#: ../image.php:104
+#: ../image.php:103
 #, php-format
 msgid ""
 "<a class=\"comment-link\" href=\"#respond\" title=\"Post a comment\">Post a "
@@ -128,7 +123,7 @@ msgid ""
 "title=\"Trackback URL for your post\" rel=\"trackback\">Trackback URL</a>."
 msgstr ""
 
-#: ../image.php:106
+#: ../image.php:105
 #, php-format
 msgid ""
 "Comments are closed, but you can leave a trackback: <a class=\"trackback-link"
@@ -136,13 +131,13 @@ msgid ""
 "\">Trackback URL</a>."
 msgstr ""
 
-#: ../image.php:108
+#: ../image.php:107
 msgid ""
 "Trackbacks are closed, but you can <a class=\"comment-link\" href=\"#respond"
 "\" title=\"Post a comment\">post a comment</a>."
 msgstr ""
 
-#: ../image.php:110
+#: ../image.php:109
 msgid "Both comments and trackbacks are currently closed."
 msgstr ""
 
@@ -176,7 +171,12 @@ msgstr ""
 msgid "Yearly Archives: %s"
 msgstr ""
 
-#: ../index.php:47 ../sidebar.php:17
+#: ../index.php:47
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: ../index.php:49
 msgid "Archives"
 msgstr ""
 
@@ -202,77 +202,122 @@ msgid ""
 "searching can help."
 msgstr ""
 
-#: ../related-content.php:4
+#: ../related-content.php:10
 msgid "Related posts"
 msgstr ""
 
-#: ../search.php:16
-#, php-format
-msgid "Search Results for: %s"
-msgstr ""
-
-#: ../sidebar.php:24
-msgid "Meta"
-msgstr ""
-
-#: ../inc/extras.php:66
+#: ../inc/extras.php:70
 #, php-format
 msgid "Page %s"
+msgstr ""
+
+#: ../inc/rateme.php:21
+#, php-format
+msgid ""
+"Thank you for using Expound! If you like the theme, please consider giving "
+"it a <a target=\"_blank\" href=\"%s\">high rating on WordPress.org</a>. "
+"Thank you! <a href=\"%s\">(hide this message)</a>"
 msgstr ""
 
 #: ../inc/template-tags.php:34
 msgid "Post navigation"
 msgstr ""
 
-#: ../inc/template-tags.php:38
+#: ../inc/template-tags.php:42
 msgid "&larr;"
 msgstr ""
 
-#: ../inc/template-tags.php:39
+#: ../inc/template-tags.php:43
 msgid "&rarr;"
 msgstr ""
 
-#: ../inc/template-tags.php:44
+#: ../inc/template-tags.php:48
 msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
 msgstr ""
 
-#: ../inc/template-tags.php:48
+#: ../inc/template-tags.php:52
 msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
 msgstr ""
 
-#: ../inc/template-tags.php:71
+#: ../inc/template-tags.php:75
 msgid "Pingback:"
 msgstr ""
 
-#: ../inc/template-tags.php:81
+#: ../inc/template-tags.php:75 ../inc/template-tags.php:96
+msgid "Edit"
+msgstr ""
+
+#: ../inc/template-tags.php:85
 #, php-format
 msgid "%s <span class=\"says\">says:</span>"
 msgstr ""
 
-#: ../inc/template-tags.php:84
+#: ../inc/template-tags.php:88
 msgid "Your comment is awaiting moderation."
 msgstr ""
 
-#: ../inc/template-tags.php:90
+#: ../inc/template-tags.php:94
 #, php-format
 msgid "%1$s at %2$s"
 msgstr ""
 
-#: ../inc/template-tags.php:119 ../inc/template-tags.php:140
+#: ../inc/template-tags.php:123 ../inc/template-tags.php:198
 msgid "ago"
 msgstr ""
 
-#: ../inc/template-tags.php:128
+#: ../inc/template-tags.php:132
 #, php-format
 msgid "%1$s / %2$s"
 msgstr ""
 
-#: ../inc/template-tags.php:150 ../inc/template-tags.php:156
+#: ../inc/template-tags.php:161
+#, php-format
+msgid "%s min ago"
+msgid_plural "%s mins ago"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../inc/template-tags.php:166
+#, php-format
+msgid "%s hour ago"
+msgid_plural "%s hours ago"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../inc/template-tags.php:171
+#, php-format
+msgid "%s day ago"
+msgid_plural "%s days ago"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../inc/template-tags.php:176
+#, php-format
+msgid "%s week ago"
+msgid_plural "%s weeks ago"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../inc/template-tags.php:181
+#, php-format
+msgid "%s month ago"
+msgid_plural "%s months ago"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../inc/template-tags.php:186
+#, php-format
+msgid "%s year ago"
+msgid_plural "%s years ago"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../inc/template-tags.php:208 ../inc/template-tags.php:214
 #, php-format
 msgid "%1$s in %2$s."
 msgstr ""
 
-#: ../inc/template-tags.php:162
+#: ../inc/template-tags.php:220
 msgid "Tags: "
 msgstr ""
 
