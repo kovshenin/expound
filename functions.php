@@ -225,7 +225,7 @@ function expound_get_related_posts() {
 
 	// Support for the Yet Another Related Posts Plugin
 	if ( function_exists( 'yarpp_get_related' ) ) {
-		$related = yarpp_get_related( array(), $post->ID );
+		$related = yarpp_get_related( array( 'limit' => 3 ), $post->ID );
 		return new WP_Query( array(
 			'post__in' => wp_list_pluck( $related, 'ID' ),
 			'posts_per_page' => 3,
