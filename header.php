@@ -23,7 +23,7 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
-	<?php do_action( 'before' ); ?>
+	<?php do_action( 'expound_header_before' ); ?>
 	<header id="masthead" class="site-header" role="banner">
 		<div class="site-branding">
 			<div class="site-title-group">
@@ -40,5 +40,6 @@
 			<?php do_action( 'expound_navigation_after' ); ?>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
+	<?php do_action( 'expound_header_after' ); ?>
 
 	<div id="main" class="site-main">

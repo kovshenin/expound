@@ -6,6 +6,7 @@
  */
 ?>
 	<div id="secondary" class="widget-area" role="complementary">
-		<?php do_action( 'before_sidebar' ); ?>
+		<?php do_action( 'expound_sidebar_before' ); ?>
 		<?php dynamic_sidebar( 'sidebar-1' ); ?>
+		<?php do_action( 'expound_sidebar_after' ); ?>
 	</div><!-- #secondary -->
