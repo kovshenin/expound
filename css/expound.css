@@ -660,7 +660,8 @@ article:hover .entry-title a {
 .wp-caption {
   border: none;
 }
-.wp-caption .wp-caption-text {
+.wp-caption .wp-caption-text,
+.wp-caption-dd {
   max-width: 98%;
   width: 100%;
   display: block;

@@ -1,10 +1,11 @@
-@import url('style.css');
-@import url('expound.css');
+@import url('reset.css');
+@import url('expound.css?v=20131116');
 
 body {
-	background: none;
+	background: #f3f3f3 url('../images/editor-style-bg.png') 0 0 repeat-y;
 	margin: 40px;
 	max-width: 700px;
+	padding: 0;
 }
 
 .mceItemTable,
@@ -19,4 +20,32 @@ img.mce-wp-nextpage,
 img.mce-wp-more {
 	width: 100%;
 	margin: 20px 0;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.wp-caption {
+	max-width: 100%;
+	text-align: center;
+	background: none;
+	padding: 0;
+	-border-radius: none;
+	-webkit-border-radius: none;
+	margin: 0;
+	margin-bottom: 1.5em;
+}
+
+.wp-caption-dd {
+	font-size: 100%;
+}
+
+.wp-caption img {
+	max-width: 98%;
+}
+
+p {
+	margin-top: 0;
 }
