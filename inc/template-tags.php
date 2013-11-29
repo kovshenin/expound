@@ -39,8 +39,8 @@ function expound_content_nav( $nav_id ) {
 
 	<?php elseif ( is_single() ) : // navigation links for single posts ?>
 
-		<?php previous_post_link( '<div class="nav-previous">%link</div>', '<span class="meta-nav">' . _x( '&larr;', 'Previous post link', 'expound' ) . '</span> %title' ); ?>
-		<?php next_post_link( '<div class="nav-next">%link</div>', '%title <span class="meta-nav">' . _x( '&rarr;', 'Next post link', 'expound' ) . '</span>' ); ?>
+		<?php previous_post_link( '<div class="nav-previous">%link</div>', '<span class="meta-nav">' . _x( '&larr;', 'Previous post link', 'expound' ) . '</span>&nbsp;%title' ); ?>
+		<?php next_post_link( '<div class="nav-next">%link</div>', '%title&nbsp;<span class="meta-nav">' . _x( '&rarr;', 'Next post link', 'expound' ) . '</span>' ); ?>
 
 	<?php elseif ( $wp_query->max_num_pages > 1 && ( is_home() || is_archive() || is_search() ) ) : // navigation links for home, archive, and search pages ?>
 
