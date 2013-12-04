@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Expound v1.6\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2013-12-04 09:06+0800\n"
+"PO-Revision-Date: 2013-12-04 09:13+0800\n"
 "Last-Translator: chengn <truecn@gmail.com>\n"
 "Language-Team: Daniela Richter <mail@addiscomedia.de>\n"
 "MIME-Version: 1.0\n"
@@ -50,7 +50,7 @@ msgctxt "comments title"
 msgid "One thought on &ldquo;%2$s&rdquo;"
 msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
 msgstr[0] "《%2$s》有%s条评论"
-msgstr[1] "《%2$s》有%s个想法"
+msgstr[1] "《%2$s》有%s条评论"
 
 # @ expound
 #: comments.php:36 comments.php:56
