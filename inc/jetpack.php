@@ -21,7 +21,7 @@ function expound_infinite_scroll_setup() {
 	// Featured Content: http://jetpack.me/support/featured-content/
 	add_theme_support( 'featured-content', array(
 		'featured_content_filter' => 'expound_get_featured_posts',
-		'max_posts' => 26,
+		'max_posts' => 5,
 	) );
 }
 add_action( 'after_setup_theme', 'expound_infinite_scroll_setup' );
