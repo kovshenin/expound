@@ -26,11 +26,12 @@ A: That's true. The header image in Expound is designed to be used as a backgrou
 = Additional Plugin Support =
 
 * BuddyPress
-* Jetpack Infinite Scroll
+* Jetpack: Infinite Scroll, Featured Content, Sharing
 * Yet Another Related Posts Plugin (YARPP)
 * WP-PageNavi
 * Disqus Comment System
 * Columns
+* Yandex.Share
 
 = Translations =
 
@@ -39,3 +40,4 @@ If you've translated this theme into your language, feel free to send the transl
 Russian by Konstantin Kovshenin ( http://kovshenin.com )
 French by Lumière de Lune ( http://lumieredelune.com )
 Brazilian Portugese by Rafael Funchal ( http://www.rafaelfunchal.com.br )
+Italian by Fx Bénard ( https://github.com/fxbenard )
