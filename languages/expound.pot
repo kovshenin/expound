@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Expound\n"
-"POT-Creation-Date: 2013-11-16 01:08+0400\n"
-"PO-Revision-Date: 2013-11-16 01:08+0400\n"
+"POT-Creation-Date: 2013-12-12 20:23+0400\n"
+"PO-Revision-Date: 2013-12-12 20:23+0400\n"
 "Last-Translator: Konstantin Kovshenin <kovshenin@gmail.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -261,10 +261,6 @@ msgstr ""
 msgid "%1$s at %2$s"
 msgstr ""
 
-#: ../inc/template-tags.php:123 ../inc/template-tags.php:198
-msgid "ago"
-msgstr ""
-
 #: ../inc/template-tags.php:132
 #, php-format
 msgid "%1$s / %2$s"
@@ -311,6 +307,10 @@ msgid "%s year ago"
 msgid_plural "%s years ago"
 msgstr[0] ""
 msgstr[1] ""
+
+#: ../inc/template-tags.php:198
+msgid "ago"
+msgstr ""
 
 #: ../inc/template-tags.php:208 ../inc/template-tags.php:214
 #, php-format
