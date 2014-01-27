@@ -37,6 +37,13 @@
 			<div class="screen-reader-text skip-link"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'expound' ); ?>"><?php _e( 'Skip to content', 'expound' ); ?></a></div>
 
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'depth' => 3 ) ); ?>
+			<?php wp_nav_menu( array(
+				'theme_location' => 'social',
+				'depth' => 1,
+				'container_id' => 'expound-social',
+				'link_before' => '<span>',
+				'link_after' => '</span>',
+			) ); ?>
 			<?php do_action( 'expound_navigation_after' ); ?>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->

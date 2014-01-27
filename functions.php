@@ -74,6 +74,7 @@ function expound_setup() {
 	 */
 	register_nav_menus( array(
 		'primary' => __( 'Primary Menu', 'expound' ),
+		'social' => __( 'Social Menu', 'expound' ),
 	) );
 
 	/**
@@ -131,6 +132,10 @@ function expound_scripts() {
 
 	if ( is_singular() && wp_attachment_is_image() ) {
 		wp_enqueue_script( 'expound-keyboard-image-navigation', get_template_directory_uri() . '/js/keyboard-image-navigation.js', array( 'jquery' ), '20120202' );
+	}
+
+	if ( has_nav_menu( 'social' ) ) {
+		wp_enqueue_style( 'expound-genericons', get_template_directory_uri() . '/css/genericons.css', array(), '20140127' );
 	}
 }
 add_action( 'wp_enqueue_scripts', 'expound_scripts' );
