@@ -23,6 +23,9 @@ A: Yes, Expound is available for WordPress.com users. More information: http://t
 Q: The header image does not resize, but crops instead.
 A: That's true. The header image in Expound is designed to be used as a background image which crops, just like the Twenty Thirteen theme. If you'd like to add your company logo, don't use the header image functionality. Instead, use some custom CSS to add your logo to the site title.
 
+Q: How do you add social buttons to the navigation menu?
+A: Easy. Go to Appearance - Menus. Create a new menu, add your social profiles links to the new menu, then assign the menu to the "Social" location. Expound will figure out which icon to show based on the URL.
+
 = Additional Plugin Support =
 
 * BuddyPress
