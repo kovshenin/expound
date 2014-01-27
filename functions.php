@@ -120,7 +120,7 @@ add_action( 'widgets_init', 'expound_widgets_init' );
  */
 function expound_scripts() {
 	// Don't forget to bump the version numbers in style.css and editor-style.css
-	wp_enqueue_style( 'expound-style', get_stylesheet_uri(), array(), 20131116 );
+	wp_enqueue_style( 'expound-style', get_stylesheet_uri(), array(), 20140127 );
 
 	wp_enqueue_script( 'expound-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
