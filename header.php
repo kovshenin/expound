@@ -43,6 +43,7 @@
 				'container_id' => 'expound-social',
 				'link_before' => '<span>',
 				'link_after' => '</span>',
+				'fallback_cb' => '',
 			) ); ?>
 			<?php do_action( 'expound_navigation_after' ); ?>
 		</nav><!-- #site-navigation -->
