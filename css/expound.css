@@ -303,8 +303,9 @@ a:hover {
   background: none;
 }
 #expound-social a span {
-  text-indent: -9000px;
-  display: inline-block;
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
 }
 #expound-social li a::before {
   opacity: 0.3;
