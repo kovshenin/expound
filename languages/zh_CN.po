@@ -1,118 +1,117 @@
-# Translation of Expound in Portuguese (Brazil)
+# Translation of Expound in Chinese (China)
 # This file is distributed under the same license as the Expound package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2014-01-29 12:01:56+0000\n"
+"PO-Revision-Date: 2014-01-29 11:59:42+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: GlotPress/0.1\n"
 "Project-Id-Version: Expound\n"
 
 #: ../404.php:15
 msgid "Oops! That page can&rsquo;t be found."
-msgstr "Oops! Essa página não foi encontrada."
+msgstr "真遗憾，我尽然没有找到这个页面"
 
 #: ../404.php:19
 msgid "It looks like nothing was found at this location. Maybe try one of the links below or a search?"
-msgstr "Parece que nada foi encontrado nesse endereço. Talvez um dos links abaixo ou a pesquisa ajude?"
+msgstr "找不到指定连接，请试试下面的或者去搜索一下"
 
 #: ../404.php:27
 msgid "Most Used Categories"
-msgstr "Categorias Mais Usadas"
+msgstr "常用分类"
 
 #: ../404.php:44
 msgid "Try looking in the monthly archives. %1$s"
-msgstr "Tente pesquisar nos arquivos mensais. %1$s"
+msgstr "查找每月文章: %1$s"
 
 #: ../comments.php:29
 msgctxt "comments title"
 msgid "One thought on &ldquo;%2$s&rdquo;"
 msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
-msgstr[0] "Um comentário em &ldquo;%2$s&rdquo;"
-msgstr[1] "%1$s comentários em\t &ldquo;%2$s&rdquo;"
+msgstr[0] "《%2$s》有%1$s条评论"
 
 #: ../comments.php:36 ../comments.php:56
 msgid "Comment navigation"
-msgstr "Navegação do comentário"
+msgstr "评论导航"
 
 #: ../comments.php:37 ../comments.php:57
 msgid "&larr; Older Comments"
-msgstr "&larr; Comentários Antigos"
+msgstr "&larr; 以前评论"
 
 #: ../comments.php:38 ../comments.php:58
 msgid "Newer Comments &rarr;"
-msgstr "Comentários Recentes &rarr;"
+msgstr "最新评论 &rarr;"
 
 #: ../comments.php:68
 msgid "Comments are closed."
-msgstr "Comentários não permitidos."
+msgstr "评论被关闭."
 
 #: ../content-page.php:18 ../content-single.php:20 ../image.php:94
 msgid "Pages:"
-msgstr "Páginas:"
+msgstr "页面"
 
 #: ../featured-content.php:19 ../featured-content.php:50
 #: ../related-content.php:22
 msgid "Permalink to %s"
-msgstr "Link permanente para %s"
+msgstr "永久链接到 %s"
 
 #: ../featured-content.php:24
 msgid "Continue reading &rarr;"
-msgstr "Continue lendo &rarr;"
+msgstr "阅读更多 &rarr;"
 
 #: ../functions.php:81
 msgid "Primary Menu"
-msgstr "Menu Principal"
+msgstr "原始菜单"
 
 #: ../functions.php:112
 msgid "Sidebar"
-msgstr "Barra Lateral"
+msgstr "侧栏"
 
 #: ../functions.php:264
 msgid "Proudly powered by %s"
-msgstr "Orgulhosamente desenvolvido com %s"
+msgstr "使用 %s 搭建"
 
 #: ../functions.php:266
 msgid "Theme: %1$s by %2$s"
-msgstr "Tema: %1$s por %2$s"
+msgstr "主题: %1$s 制作: %2$s"
 
 #: ../header.php:36
 msgid "Menu"
-msgstr "Menu"
+msgstr "菜单"
 
 #: ../header.php:37
 msgid "Skip to content"
-msgstr "Pular para o conteúdo"
+msgstr "跳到内容"
 
 #: ../image.php:23
 msgid "Published <span class=\"entry-date\"><time class=\"entry-date\" datetime=\"%1$s\">%2$s</time></span> at <a href=\"%3$s\" title=\"Link to full-size image\">%4$s &times; %5$s</a> in <a href=\"%6$s\" title=\"Return to %7$s\" rel=\"gallery\">%8$s</a>"
-msgstr "Publicado <span class=\"entry-date\"><time class=\"entry-date\" datetime=\"%1$s\">%2$s</time></span> em <a href=\"%3$s\" title=\"Link para a imagem completa\">%4$s &times; %5$s</a> em <a href=\"%6$s\" title=\"Voltar para %7$s\" rel=\"gallery\">%8$s</a>"
+msgstr "发布 <span class=\"entry-date\"><time class=\"entry-date\" datetime=\"%1$s\">%2$s</time></span> 于 <a href=\"%3$s\" title=\"Link zum Bild in voller Größe\">%4$s &times; %5$s</a> 在 <a href=\"%6$s\" title=\"返回到 %7$s\" rel=\"gallery\">%8$s</a>"
 
 #: ../image.php:37
 msgid "<span class=\"meta-nav\">&larr;</span> Previous"
-msgstr "<span class=\"meta-nav\">&larr;</span> Anterior"
+msgstr "<span class=\"meta-nav\">&larr;</span> 上一个"
 
 #: ../image.php:38
 msgid "Next <span class=\"meta-nav\">&rarr;</span>"
-msgstr "Próximo <span class=\"meta-nav\">&rarr;</span>"
+msgstr "下一个 <span class=\"meta-nav\">&rarr;</span>"
 
 #: ../image.php:103
 msgid "<a class=\"comment-link\" href=\"#respond\" title=\"Post a comment\">Post a comment</a> or leave a trackback: <a class=\"trackback-link\" href=\"%s\" title=\"Trackback URL for your post\" rel=\"trackback\">Trackback URL</a>."
-msgstr "<a class=\"comment-link\" href=\"#respond\" title=\"Deixe um comentário\">Deixe um comentário</a> ou uma referência: <a class=\"trackback-link\" href=\"%s\" title=\"Url para o seu post\" rel=\"trackback\">Url da referência</a>."
+msgstr "<a class=\"comment-link\" href=\"#respond\" title=\"发表评论\">发表评论</a>或添加引用: <a class=\"trackback-link\" href=\"%s\" title=\"引用地址URL\" rel=\"trackback\">Trackback URL</a>."
 
 #: ../image.php:105
 msgid "Comments are closed, but you can leave a trackback: <a class=\"trackback-link\" href=\"%s\" title=\"Trackback URL for your post\" rel=\"trackback\">Trackback URL</a>."
-msgstr "Comentários não permitidos, mas você pode fazer uma referência: <a class=\"trackback-link\" href=\"%s\" title=\"Url para o seu post\" rel=\"trackback\">Url da referência</a>."
+msgstr "评论已关闭，但是你可以添加引用: <a class=\"trackback-link\" href=\"%s\" title=\"引用URL\" rel=\"trackback\">引用URL</a>."
 
 #: ../image.php:107
 msgid "Trackbacks are closed, but you can <a class=\"comment-link\" href=\"#respond\" title=\"Post a comment\">post a comment</a>."
-msgstr "Referências não permitidas, mas você pode <a class=\"comment-link\" href=\"#respond\" title=\"Deixar um comentário\">deixar um comentário</a>."
+msgstr "引用已经被关闭，不过你可以 <a class=\"comment-link\" href=\"#respond\" title=\"发表评论\">发表评论</a>."
 
 #: ../image.php:109
 msgid "Both comments and trackbacks are currently closed."
-msgstr "Comentários e referências não permitidos."
+msgstr "评论和引用都已禁用"
 
 #: ../index.php:23
 msgid "%s"
@@ -120,99 +119,99 @@ msgstr "%s"
 
 #: ../index.php:26
 msgid "Tag Archives: %s"
-msgstr "Arquivos de Tags: %s"
+msgstr "标签文章: %s"
 
 #: ../index.php:33
 msgid "Author Archives: %s"
-msgstr "Arquivos do Autor: %s"
+msgstr "作者文章: %s"
 
 #: ../index.php:41
 msgid "Daily Archives: %s"
-msgstr "Arquivos Diários: %s"
+msgstr "当日文章: %s"
 
 #: ../index.php:43
 msgid "Monthly Archives: %s"
-msgstr "Arquivos Mensais: %s"
+msgstr "本月文章: %s"
 
 #: ../index.php:45
 msgid "Yearly Archives: %s"
-msgstr "Arquivos Anuais: %s"
+msgstr "本年文章: %s"
 
 #: ../index.php:47
 msgid "Search Results for: %s"
-msgstr "Resultados da Pesquisa por: %s"
+msgstr "%s 的查询结果"
 
 #: ../index.php:49
 msgid "Archives"
-msgstr "Arquivos"
+msgstr "文章"
 
 #: ../no-results.php:13
 msgid "Nothing Found"
-msgstr "Nada Encontrado"
+msgstr "哎呀，怎么啥都没有发现呀！！！"
 
 #: ../no-results.php:19
 msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
-msgstr "Pronto para publicar seu primeiro post? <a href=\"%1$s\">Comece aqui</a>."
+msgstr "准备发表第一篇? <a href=\"%1$s\">从这儿开始</a>."
 
 #: ../no-results.php:23
 msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
-msgstr "Desculpe, mas nada foi encontrado com os termos de sua pesquisa. Por favor, tente novamente com palavras diferentes."
+msgstr "不好意思，没有对应的查找内容。不过不要气馁，可以试试其他关键字"
 
 #: ../no-results.php:28
 msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
-msgstr "Parece que não encontramos o que você estava procurando. Talvez uma pesquisa possa ajudar."
+msgstr "不好意思，找不到你要的，不过使用查找可能会帮助你"
 
 #: ../related-content.php:10
 msgid "Related posts"
-msgstr "Posts Relacionados"
+msgstr "最近发布"
 
 #: ../inc/extras.php:70
 msgid "Page %s"
-msgstr "Página %s"
+msgstr "页面 %s"
 
 #: ../inc/rateme.php:21
 msgid "Thank you for using Expound! If you like the theme, please consider giving it a <a target=\"_blank\" href=\"%s\">high rating on WordPress.org</a>. Thank you! <a href=\"%s\">(hide this message)</a>"
-msgstr ""
+msgstr "感谢你使用 Expound主题!如果你觉得不错，请给我们一个赞<a target=\"_blank\" href=\"%s\">在WordPress.org</a>. 非常感谢! <a href=\"%s\">(隐藏此消息)</a>"
 
 #: ../inc/template-tags.php:34
 msgid "Post navigation"
-msgstr "Navegação do post"
+msgstr "发布文章导航"
 
 #: ../inc/template-tags.php:42
 msgid "&larr;"
-msgstr ""
+msgstr "&larr;"
 
 #: ../inc/template-tags.php:43
 msgid "&rarr;"
-msgstr ""
+msgstr "&rarr;"
 
 #: ../inc/template-tags.php:48
 msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
-msgstr "<span class=\"meta-nav\">&larr;</span> Posts Anteriores"
+msgstr "<span class=\"meta-nav\">&larr;</span> 早期发布"
 
 #: ../inc/template-tags.php:52
 msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
-msgstr "Posts Recentes <span class=\"meta-nav\">&rarr;</span>"
+msgstr "最近发布 <span class=\"meta-nav\">&rarr;</span>"
 
 #: ../inc/template-tags.php:75
 msgid "Pingback:"
-msgstr "Pingback:"
+msgstr "通告:"
 
 #: ../inc/template-tags.php:75 ../inc/template-tags.php:96
 msgid "Edit"
-msgstr "Editar"
+msgstr "编辑"
 
 #: ../inc/template-tags.php:85
 msgid "%s <span class=\"says\">says:</span>"
-msgstr "%s <span class=\"says\">disse:</span>"
+msgstr "%s <span class=\"says\">说:</span>"
 
 #: ../inc/template-tags.php:88
 msgid "Your comment is awaiting moderation."
-msgstr "Seu comentário está aguardando moderação."
+msgstr "您的评论正在审核."
 
 #: ../inc/template-tags.php:94
 msgid "%1$s at %2$s"
-msgstr ""
+msgstr "%1$s 于 %2$s"
 
 #: ../inc/template-tags.php:132
 msgid "%1$s / %2$s"
@@ -221,47 +220,41 @@ msgstr "%1$s / %2$s"
 #: ../inc/template-tags.php:161
 msgid "%s min ago"
 msgid_plural "%s mins ago"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%s分钟前"
 
 #: ../inc/template-tags.php:166
 msgid "%s hour ago"
 msgid_plural "%s hours ago"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%s小时前"
 
 #: ../inc/template-tags.php:171
 msgid "%s day ago"
 msgid_plural "%s days ago"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%s天前"
 
 #: ../inc/template-tags.php:176
 msgid "%s week ago"
 msgid_plural "%s weeks ago"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%s周前"
 
 #: ../inc/template-tags.php:181
 msgid "%s month ago"
 msgid_plural "%s months ago"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%s个月前"
 
 #: ../inc/template-tags.php:186
 msgid "%s year ago"
 msgid_plural "%s years ago"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%s年前"
 
 #: ../inc/template-tags.php:198
 msgid "ago"
-msgstr "atrás"
+msgstr "前"
 
 #: ../inc/template-tags.php:208 ../inc/template-tags.php:214
 msgid "%1$s in %2$s."
-msgstr "%1$s em %2$s."
+msgstr "%1$s 在 %2$s."
 
 #: ../inc/template-tags.php:220
 msgid "Tags: "
-msgstr "Tags: "
+msgstr "标签:"

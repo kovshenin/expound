@@ -1,53 +1,53 @@
-# Translation of Expound in Portuguese (Brazil)
+# Translation of Expound in Spanish (Spain)
 # This file is distributed under the same license as the Expound package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2014-01-29 12:01:56+0000\n"
+"PO-Revision-Date: 2014-01-29 11:59:02+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: GlotPress/0.1\n"
 "Project-Id-Version: Expound\n"
 
 #: ../404.php:15
 msgid "Oops! That page can&rsquo;t be found."
-msgstr "Oops! Essa página não foi encontrada."
+msgstr "Oooh!! La página no existe"
 
 #: ../404.php:19
 msgid "It looks like nothing was found at this location. Maybe try one of the links below or a search?"
-msgstr "Parece que nada foi encontrado nesse endereço. Talvez um dos links abaixo ou a pesquisa ajude?"
+msgstr "Parece que no se encuentra la página que busca. Tal vez deba usar los enlaces de abajo o realizar una busqueda"
 
 #: ../404.php:27
 msgid "Most Used Categories"
-msgstr "Categorias Mais Usadas"
+msgstr "Categorías más usadas"
 
 #: ../404.php:44
 msgid "Try looking in the monthly archives. %1$s"
-msgstr "Tente pesquisar nos arquivos mensais. %1$s"
+msgstr "Intente buscar en los archivos mensuales. %1$s"
 
 #: ../comments.php:29
 msgctxt "comments title"
 msgid "One thought on &ldquo;%2$s&rdquo;"
 msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
-msgstr[0] "Um comentário em &ldquo;%2$s&rdquo;"
-msgstr[1] "%1$s comentários em\t &ldquo;%2$s&rdquo;"
+msgstr[0] "Un comentario de &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s comentarios de  &ldquo;%2$s&rdquo;"
 
 #: ../comments.php:36 ../comments.php:56
 msgid "Comment navigation"
-msgstr "Navegação do comentário"
+msgstr "Navigación en los comentarios"
 
 #: ../comments.php:37 ../comments.php:57
 msgid "&larr; Older Comments"
-msgstr "&larr; Comentários Antigos"
+msgstr "Comentarios antiguos"
 
 #: ../comments.php:38 ../comments.php:58
 msgid "Newer Comments &rarr;"
-msgstr "Comentários Recentes &rarr;"
+msgstr "Comentarios nuevos &rarr;"
 
 #: ../comments.php:68
 msgid "Comments are closed."
-msgstr "Comentários não permitidos."
+msgstr "Los comentarios han sido cerrados."
 
 #: ../content-page.php:18 ../content-single.php:20 ../image.php:94
 msgid "Pages:"
@@ -56,15 +56,15 @@ msgstr "Páginas:"
 #: ../featured-content.php:19 ../featured-content.php:50
 #: ../related-content.php:22
 msgid "Permalink to %s"
-msgstr "Link permanente para %s"
+msgstr "Enlace permanente para %s"
 
 #: ../featured-content.php:24
 msgid "Continue reading &rarr;"
-msgstr "Continue lendo &rarr;"
+msgstr "Continuar leyendo &rarr;"
 
 #: ../functions.php:81
 msgid "Primary Menu"
-msgstr "Menu Principal"
+msgstr "Menú Principal"
 
 #: ../functions.php:112
 msgid "Sidebar"
@@ -72,23 +72,23 @@ msgstr "Barra Lateral"
 
 #: ../functions.php:264
 msgid "Proudly powered by %s"
-msgstr "Orgulhosamente desenvolvido com %s"
+msgstr "Con la tecnología de %s"
 
 #: ../functions.php:266
 msgid "Theme: %1$s by %2$s"
-msgstr "Tema: %1$s por %2$s"
+msgstr "Tema: %1$s von %2$s"
 
 #: ../header.php:36
 msgid "Menu"
-msgstr "Menu"
+msgstr "Menú"
 
 #: ../header.php:37
 msgid "Skip to content"
-msgstr "Pular para o conteúdo"
+msgstr "Ir al contenido"
 
 #: ../image.php:23
 msgid "Published <span class=\"entry-date\"><time class=\"entry-date\" datetime=\"%1$s\">%2$s</time></span> at <a href=\"%3$s\" title=\"Link to full-size image\">%4$s &times; %5$s</a> in <a href=\"%6$s\" title=\"Return to %7$s\" rel=\"gallery\">%8$s</a>"
-msgstr "Publicado <span class=\"entry-date\"><time class=\"entry-date\" datetime=\"%1$s\">%2$s</time></span> em <a href=\"%3$s\" title=\"Link para a imagem completa\">%4$s &times; %5$s</a> em <a href=\"%6$s\" title=\"Voltar para %7$s\" rel=\"gallery\">%8$s</a>"
+msgstr "Publicado <span class=\"entry-date\"><time class=\"entry-date\" datetime=\"%1$s\">%2$s</time></span> en <a href=\"%3$s\" title=\"Enlace para la imagen a tamaño completo\">%4$s &times; %5$s</a> en <a href=\"%6$s\" title=\"Volver a %7$s\" rel=\"gallery\">%8$s</a>"
 
 #: ../image.php:37
 msgid "<span class=\"meta-nav\">&larr;</span> Previous"
@@ -96,23 +96,23 @@ msgstr "<span class=\"meta-nav\">&larr;</span> Anterior"
 
 #: ../image.php:38
 msgid "Next <span class=\"meta-nav\">&rarr;</span>"
-msgstr "Próximo <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Siguiente <span class=\"meta-nav\">&rarr;</span>"
 
 #: ../image.php:103
 msgid "<a class=\"comment-link\" href=\"#respond\" title=\"Post a comment\">Post a comment</a> or leave a trackback: <a class=\"trackback-link\" href=\"%s\" title=\"Trackback URL for your post\" rel=\"trackback\">Trackback URL</a>."
-msgstr "<a class=\"comment-link\" href=\"#respond\" title=\"Deixe um comentário\">Deixe um comentário</a> ou uma referência: <a class=\"trackback-link\" href=\"%s\" title=\"Url para o seu post\" rel=\"trackback\">Url da referência</a>."
+msgstr "<a class=\"comment-link\" href=\"#respond\" title=\"Deje un comentario\">Deje un comentario</a> o deje un Trackback: <a class=\"trackback-link\" href=\"%s\" title=\"Trackback URL para su comentario\" rel=\"trackback\">Trackback URL</a>."
 
 #: ../image.php:105
 msgid "Comments are closed, but you can leave a trackback: <a class=\"trackback-link\" href=\"%s\" title=\"Trackback URL for your post\" rel=\"trackback\">Trackback URL</a>."
-msgstr "Comentários não permitidos, mas você pode fazer uma referência: <a class=\"trackback-link\" href=\"%s\" title=\"Url para o seu post\" rel=\"trackback\">Url da referência</a>."
+msgstr "Los comentarios están cerrados pero ud. puede dejar referencias: <a class=\"trackback-link\" href=\"%s\" title=\"enlace a referencial\" rel=\"trackback\">URL de la referencia</a>."
 
 #: ../image.php:107
 msgid "Trackbacks are closed, but you can <a class=\"comment-link\" href=\"#respond\" title=\"Post a comment\">post a comment</a>."
-msgstr "Referências não permitidas, mas você pode <a class=\"comment-link\" href=\"#respond\" title=\"Deixar um comentário\">deixar um comentário</a>."
+msgstr "Referencias cerradas, pero ud. puede  <a class=\"comment-link\" href=\"#respond\" title=\"dejar su comentario\">dejar su comentario</a>."
 
 #: ../image.php:109
 msgid "Both comments and trackbacks are currently closed."
-msgstr "Comentários e referências não permitidos."
+msgstr "Comentarios y referencias están cerrados."
 
 #: ../index.php:23
 msgid "%s"
@@ -120,79 +120,79 @@ msgstr "%s"
 
 #: ../index.php:26
 msgid "Tag Archives: %s"
-msgstr "Arquivos de Tags: %s"
+msgstr "Etiquetas de las publicaciones: %s"
 
 #: ../index.php:33
 msgid "Author Archives: %s"
-msgstr "Arquivos do Autor: %s"
+msgstr "Autor de la publicación: %s"
 
 #: ../index.php:41
 msgid "Daily Archives: %s"
-msgstr "Arquivos Diários: %s"
+msgstr "Publicación por días: %s"
 
 #: ../index.php:43
 msgid "Monthly Archives: %s"
-msgstr "Arquivos Mensais: %s"
+msgstr "Publicaciones mensuales: %s"
 
 #: ../index.php:45
 msgid "Yearly Archives: %s"
-msgstr "Arquivos Anuais: %s"
+msgstr "Publicaciones por años: %s"
 
 #: ../index.php:47
 msgid "Search Results for: %s"
-msgstr "Resultados da Pesquisa por: %s"
+msgstr "Resultado de la busqueda: %s"
 
 #: ../index.php:49
 msgid "Archives"
-msgstr "Arquivos"
+msgstr "Ficheros"
 
 #: ../no-results.php:13
 msgid "Nothing Found"
-msgstr "Nada Encontrado"
+msgstr "No se encuentra nada"
 
 #: ../no-results.php:19
 msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
-msgstr "Pronto para publicar seu primeiro post? <a href=\"%1$s\">Comece aqui</a>."
+msgstr "Preparado para publicar tu primer artículo? <a href=\"%1$s\">Fange hier an</a>."
 
 #: ../no-results.php:23
 msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
-msgstr "Desculpe, mas nada foi encontrado com os termos de sua pesquisa. Por favor, tente novamente com palavras diferentes."
+msgstr "Lo sentimos pero no encontramos nada con esos términos. Inténtelo con otras palabras"
 
 #: ../no-results.php:28
 msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
-msgstr "Parece que não encontramos o que você estava procurando. Talvez uma pesquisa possa ajudar."
+msgstr "Parece que no encuentra lo que está buscando. Tal vez la busqueda le pueda ayudar."
 
 #: ../related-content.php:10
 msgid "Related posts"
-msgstr "Posts Relacionados"
+msgstr "Artículos relacionados"
 
 #: ../inc/extras.php:70
 msgid "Page %s"
-msgstr "Página %s"
+msgstr "Páginas %s"
 
 #: ../inc/rateme.php:21
 msgid "Thank you for using Expound! If you like the theme, please consider giving it a <a target=\"_blank\" href=\"%s\">high rating on WordPress.org</a>. Thank you! <a href=\"%s\">(hide this message)</a>"
-msgstr ""
+msgstr "Gracias por usar Expound! Si te gusta este Tema, por favor considera <a target=\"_blank\" href=\"%s\">votar positivamente en WordPress.org</a> Gracias! <a href=\"%s\">(ocultar este mensaje)</a>"
 
 #: ../inc/template-tags.php:34
 msgid "Post navigation"
-msgstr "Navegação do post"
+msgstr "Navegación por artículos"
 
 #: ../inc/template-tags.php:42
 msgid "&larr;"
-msgstr ""
+msgstr "&larr; "
 
 #: ../inc/template-tags.php:43
 msgid "&rarr;"
-msgstr ""
+msgstr "&rarr; "
 
 #: ../inc/template-tags.php:48
 msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
-msgstr "<span class=\"meta-nav\">&larr;</span> Posts Anteriores"
+msgstr "<span class=\"meta-nav\">&larr;</span> Artículo anterior"
 
 #: ../inc/template-tags.php:52
 msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
-msgstr "Posts Recentes <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Nuevo artículo <span class=\"meta-nav\">&rarr;</span>"
 
 #: ../inc/template-tags.php:75
 msgid "Pingback:"
@@ -204,15 +204,15 @@ msgstr "Editar"
 
 #: ../inc/template-tags.php:85
 msgid "%s <span class=\"says\">says:</span>"
-msgstr "%s <span class=\"says\">disse:</span>"
+msgstr "%s <span class=\"dice\">dice:</span>"
 
 #: ../inc/template-tags.php:88
 msgid "Your comment is awaiting moderation."
-msgstr "Seu comentário está aguardando moderação."
+msgstr "Su comentario está a la espera de moderación"
 
 #: ../inc/template-tags.php:94
 msgid "%1$s at %2$s"
-msgstr ""
+msgstr "%1$s en %2$s"
 
 #: ../inc/template-tags.php:132
 msgid "%1$s / %2$s"
@@ -221,47 +221,47 @@ msgstr "%1$s / %2$s"
 #: ../inc/template-tags.php:161
 msgid "%s min ago"
 msgid_plural "%s mins ago"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Hace %s minuto"
+msgstr[1] "Hace %s minutos"
 
 #: ../inc/template-tags.php:166
 msgid "%s hour ago"
 msgid_plural "%s hours ago"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Hace %s hora"
+msgstr[1] "Hace %s horas"
 
 #: ../inc/template-tags.php:171
 msgid "%s day ago"
 msgid_plural "%s days ago"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Hace %s dia"
+msgstr[1] "Hace %s dias"
 
 #: ../inc/template-tags.php:176
 msgid "%s week ago"
 msgid_plural "%s weeks ago"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Hace %s semana"
+msgstr[1] "Hace %s semanas"
 
 #: ../inc/template-tags.php:181
 msgid "%s month ago"
 msgid_plural "%s months ago"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Hace %s mes"
+msgstr[1] "Hace %s meses"
 
 #: ../inc/template-tags.php:186
 msgid "%s year ago"
 msgid_plural "%s years ago"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Hace %s año"
+msgstr[1] "Hace %s años"
 
 #: ../inc/template-tags.php:198
 msgid "ago"
-msgstr "atrás"
+msgstr "hace"
 
 #: ../inc/template-tags.php:208 ../inc/template-tags.php:214
 msgid "%1$s in %2$s."
-msgstr "%1$s em %2$s."
+msgstr "%1$s de %2$s."
 
 #: ../inc/template-tags.php:220
 msgid "Tags: "
-msgstr "Tags: "
+msgstr "Etiquetas: "
