@@ -44,3 +44,9 @@ Russian by Konstantin Kovshenin ( http://kovshenin.com )
 French by Lumière de Lune ( http://lumieredelune.com )
 Brazilian Portugese by Rafael Funchal ( http://www.rafaelfunchal.com.br )
 Italian by Fx Bénard ( https://github.com/fxbenard )
+Chinese (Taiwan)
+Chinese (China)
+Polish
+Bulgarian
+German
+Spanish
