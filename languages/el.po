@@ -1,0 +1,383 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Expound Greek Translation \n"
+"POT-Creation-Date: 2013-12-12 20:23+0400\n"
+"PO-Revision-Date: 2014-05-09 18:00+0200\n"
+"Last-Translator: Pramnos Hosting Ltd <info@pramhost.com>\n"
+"Language-Team: Pramnos Hosting Ltd. <info@pramnoshosting.gr>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-KeywordsList: _n:1,2;_;gettext;gettext_noop;__;_e;_x;esc_attr_e;"
+"_nx:1,2,4c\n"
+"X-Poedit-Basepath: .\n"
+"Language: Greek\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../404.php:15
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Oops! Αυτή η σελίδα δεν μπορεί να βρεθεί."
+
+#: ../404.php:19
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+"Από ότι φαίνεται δεν βρέθηκε τίποτα σε αυτή τη θέση. Μήπως να δοκίμαζες "
+"κάποιο από τα παρακάτω links ή μια αναζήτηση;"
+
+#: ../404.php:27
+msgid "Most Used Categories"
+msgstr "Πιο συχνές κατηγορίες"
+
+#: ../404.php:44
+#, php-format
+msgid "Try looking in the monthly archives. %1$s"
+msgstr "Δοκιμάστε να δείτε το μηνιαίο αρχείο. %1$s"
+
+#: ../comments.php:29
+#, php-format
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "Μια σκέψη σχετικά με το &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s σκέψεις σχετικά με το &ldquo;%2$s&rdquo;"
+
+#: ../comments.php:36 ../comments.php:56
+msgid "Comment navigation"
+msgstr "Περιήγηση στα σχόλια"
+
+#: ../comments.php:37 ../comments.php:57
+msgid "&larr; Older Comments"
+msgstr "&larr; Παλιότερα Σχόλια"
+
+#: ../comments.php:38 ../comments.php:58
+msgid "Newer Comments &rarr;"
+msgstr "Νεώτερα Σχόλια &rarr;"
+
+#: ../comments.php:68
+msgid "Comments are closed."
+msgstr "Τα σχόλια είναι κλειδωμένα."
+
+#: ../content-page.php:18 ../content-single.php:20 ../image.php:94
+msgid "Pages:"
+msgstr "Σελίδες:"
+
+#: ../featured-content.php:19 ../featured-content.php:50
+#: ../related-content.php:22
+#, php-format
+msgid "Permalink to %s"
+msgstr "Μόνιμος σύνδεσμος προς: %s"
+
+#: ../featured-content.php:24
+msgid "Continue reading &rarr;"
+msgstr "Συνέχεια Ανάγνωσης &rarr;"
+
+#: ../functions.php:81
+msgid "Primary Menu"
+msgstr "Κυρίως Μενού"
+
+#: ../functions.php:112
+msgid "Sidebar"
+msgstr "Πλαϊνή μπάρα"
+
+#: ../functions.php:264
+#, php-format
+msgid "Proudly powered by %s"
+msgstr "Proudly powered by %s"
+
+#: ../functions.php:266
+#, php-format
+msgid "Theme: %1$s by %2$s"
+msgstr "Θέμα: %1$s από %2$s"
+
+#: ../header.php:36
+msgid "Menu"
+msgstr "Μενού"
+
+#: ../header.php:37
+msgid "Skip to content"
+msgstr "Παράκαμψη προς το περιεχόμενο"
+
+#: ../image.php:23
+#, php-format
+msgid ""
+"Published <span class=\"entry-date\"><time class=\"entry-date\" datetime="
+"\"%1$s\">%2$s</time></span> at <a href=\"%3$s\" title=\"Link to full-size "
+"image\">%4$s &times; %5$s</a> in <a href=\"%6$s\" title=\"Return to %7$s\" "
+"rel=\"gallery\">%8$s</a>"
+msgstr ""
+"Δημοσίευση: <span class=\"entry-date\"><time class=\"entry-date\" datetime="
+"\"%1$s\">%2$s</time></span> at <a href=\"%3$s\" title=\"Link to full-size "
+"image\">%4$s &times; %5$s</a>. Κατηγορία: <a href=\"%6$s\" title=\"Επιστροφή "
+"σε %7$s\" rel=\"gallery\">%8$s</a>"
+
+#: ../image.php:37
+msgid "<span class=\"meta-nav\">&larr;</span> Previous"
+msgstr "<span class=\"meta-nav\">&larr;</span> Προηγούμενο"
+
+#: ../image.php:38
+msgid "Next <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Επόμενο <span class=\"meta-nav\">&rarr;</span>"
+
+#: ../image.php:103
+#, php-format
+msgid ""
+"<a class=\"comment-link\" href=\"#respond\" title=\"Post a comment\">Post a "
+"comment</a> or leave a trackback: <a class=\"trackback-link\" href=\"%s\" "
+"title=\"Trackback URL for your post\" rel=\"trackback\">Trackback URL</a>."
+msgstr ""
+"<a class=\"comment-link\" href=\"#respond\" title=\"Δημοσίευση σχολίου"
+"\">Δημοσίευσε ένα σχόλιο</a> ή άφησε ένα σύνδεσμο: <a class=\"trackback-link"
+"\" href=\"%s\" title=\"Διεύθυνση συνδέσμου για το άρθρο\" rel=\"trackback"
+"\">Διεύθυνση Συνδέσμου</a>."
+
+#: ../image.php:105
+#, php-format
+msgid ""
+"Comments are closed, but you can leave a trackback: <a class=\"trackback-link"
+"\" href=\"%s\" title=\"Trackback URL for your post\" rel=\"trackback"
+"\">Trackback URL</a>."
+msgstr ""
+"Τα σχόλια είναι κλειδωμένα, αλλά μπορείς να αφήσεις ένα σύνδεσμο: <a class="
+"\"trackback-link\" href=\"%s\" title=\"Διεύθυνση συνδέσμου για το άρθρο\" "
+"rel=\"trackback\">Διεύθυνση Συνδέσμου</a>."
+
+#: ../image.php:107
+msgid ""
+"Trackbacks are closed, but you can <a class=\"comment-link\" href=\"#respond"
+"\" title=\"Post a comment\">post a comment</a>."
+msgstr ""
+"Οι σύνδεσμοι είναι κλειδωμένοι, αλλά μπορείς να αφήσεις <a class=\"comment-"
+"link\" href=\"#respond\" title=\"Δημοσίευση σχολίου\">ένα σχόλιο</a>."
+
+#: ../image.php:109
+msgid "Both comments and trackbacks are currently closed."
+msgstr "Τα σχόλια και οι σύνδεσμοι είναι κλειδωμένοι."
+
+#: ../index.php:23
+#, php-format
+msgid "%s"
+msgstr "%s"
+
+#: ../index.php:26
+#, php-format
+msgid "Tag Archives: %s"
+msgstr "Αρχείο Ετικέτας: %s"
+
+#: ../index.php:33
+#, php-format
+msgid "Author Archives: %s"
+msgstr "Αρχείο Συντάκτη: %s"
+
+#: ../index.php:41
+#, php-format
+msgid "Daily Archives: %s"
+msgstr "Αρχείο Ημέρας: %s"
+
+#: ../index.php:43
+#, php-format
+msgid "Monthly Archives: %s"
+msgstr "Αρχείο Μήνα: %s"
+
+#: ../index.php:45
+#, php-format
+msgid "Yearly Archives: %s"
+msgstr "Αρχείο Έτους: %s"
+
+#: ../index.php:47
+#, php-format
+msgid "Search Results for: %s"
+msgstr "Αποτελέσματα αναζήτησης: %s"
+
+#: ../index.php:49
+msgid "Archives"
+msgstr "Αρχεία"
+
+#: ../no-results.php:13
+msgid "Nothing Found"
+msgstr "Δεν βρέθηκε τίποτα."
+
+#: ../no-results.php:19
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+"Έτοιμος για να κάνεις την πρώτη σου δημοσίευση; <a href=\"%1$s\">Ξεκίνα εδώ</"
+"a>."
+
+#: ../no-results.php:23
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"Λυπούμαστε, τίποτα δεν ταιριάζει με την αναζήτησή σας. Κάντε μια δοκιμή με "
+"διαφορετικές λέξεις κλειδιά."
+
+#: ../no-results.php:28
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+"Από ότι φαίνεται, δεν μπορούμε να βρούμε τι ψάχνεις. Ίσως μια αναζήτηση να "
+"βοηθούσε."
+
+#: ../related-content.php:10
+msgid "Related posts"
+msgstr "Σχετικές δημοσιεύσεις"
+
+#: ../inc/extras.php:70
+#, php-format
+msgid "Page %s"
+msgstr "Σελίδα  %s"
+
+#: ../inc/rateme.php:21
+#, php-format
+msgid ""
+"Thank you for using Expound! If you like the theme, please consider giving "
+"it a <a target=\"_blank\" href=\"%s\">high rating on WordPress.org</a>. "
+"Thank you! <a href=\"%s\">(hide this message)</a>"
+msgstr ""
+"Ευχαριστούμε για τη χρήστη του Expound! Αν σας αρέσει το θέμα, δώστε του μια "
+"<a target=\"_blank\" href=\"%s\">ψηλή βαθμολογία στο WordPress.org</a>. "
+"Ευχαριστούμε! <a href=\"%s\">(απόκρυψη μηνύματος)</a>"
+
+#: ../inc/template-tags.php:34
+msgid "Post navigation"
+msgstr "Περιήγηση Δημοσιεύσεων"
+
+#: ../inc/template-tags.php:42
+msgid "&larr;"
+msgstr "&larr;"
+
+#: ../inc/template-tags.php:43
+msgid "&rarr;"
+msgstr "&rarr;"
+
+#: ../inc/template-tags.php:48
+msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+msgstr "<span class=\"meta-nav\">&larr;</span> Παλιότερες δημοσιεύσεις"
+
+#: ../inc/template-tags.php:52
+msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Νεώτερες δημοσιεύσεις <span class=\"meta-nav\">&rarr;</span>"
+
+#: ../inc/template-tags.php:75
+msgid "Pingback:"
+msgstr "Απάντηση:"
+
+#: ../inc/template-tags.php:75 ../inc/template-tags.php:96
+msgid "Edit"
+msgstr "Επεξεργασία"
+
+#: ../inc/template-tags.php:85
+#, php-format
+msgid "%s <span class=\"says\">says:</span>"
+msgstr "%s <span class=\"says\">είπε:</span>"
+
+#: ../inc/template-tags.php:88
+msgid "Your comment is awaiting moderation."
+msgstr "Το σχόλιο σας είναι σε αναμονή για έγκριση."
+
+#: ../inc/template-tags.php:94
+#, php-format
+msgid "%1$s at %2$s"
+msgstr "%1$s στις %2$s"
+
+#: ../inc/template-tags.php:132
+#, php-format
+msgid "%1$s / %2$s"
+msgstr "%1$s / %2$s"
+
+#: ../inc/template-tags.php:161
+#, php-format
+msgid "%s min ago"
+msgid_plural "%s mins ago"
+msgstr[0] "%s λεπτό πριν"
+msgstr[1] "%s λεπτά πριν"
+
+#: ../inc/template-tags.php:166
+#, php-format
+msgid "%s hour ago"
+msgid_plural "%s hours ago"
+msgstr[0] "%s ώρα πριν"
+msgstr[1] "%s ώρες πριν"
+
+#: ../inc/template-tags.php:171
+#, php-format
+msgid "%s day ago"
+msgid_plural "%s days ago"
+msgstr[0] "%s μέρα πριν"
+msgstr[1] "%s μέρες πριν"
+
+#: ../inc/template-tags.php:176
+#, php-format
+msgid "%s week ago"
+msgid_plural "%s weeks ago"
+msgstr[0] "%s εβδομάδα πριν"
+msgstr[1] "%s εβδομάδες πριν"
+
+#: ../inc/template-tags.php:181
+#, php-format
+msgid "%s month ago"
+msgid_plural "%s months ago"
+msgstr[0] "πριν από %s μήνα"
+msgstr[1] "πριν από %s μήνες"
+
+#: ../inc/template-tags.php:186
+#, php-format
+msgid "%s year ago"
+msgid_plural "%s years ago"
+msgstr[0] "Πριν από %s έτος"
+msgstr[1] "Πριν από %s έτη"
+
+#: ../inc/template-tags.php:198
+msgid "ago"
+msgstr "πριν"
+
+#: ../inc/template-tags.php:208 ../inc/template-tags.php:214
+#, php-format
+msgid "%1$s in %2$s."
+msgstr "%1$s στην κατηγορία %2$s."
+
+#: ../inc/template-tags.php:220
+msgid "Tags: "
+msgstr "Ετικέτες: "
+
+msgid "&larr; Previous"
+msgstr "&larr; Προηγούμενο"
+
+msgid "Next &rarr;"
+msgstr "Επόμενο &rarr;"
+
+msgid "Search"
+msgstr "Αναζήτηση"
+
+msgid "Search &hellip;"
+msgstr "Αναζήτηση  &hellip;"
+
+msgid "(Edit)"
+msgstr "(επεξεργασία)"
+
+msgid ", "
+msgstr ", "
+
+msgid "Posted in %1$s"
+msgstr "Δημοσιεύτηκε στην κατηγορία %1$s"
+
+msgid "Tagged %1$s"
+msgstr "Ετικέτες: %1$s"
+
+msgid "Leave a comment"
+msgstr "Αφήστε ένα σχόλιο"
+
+msgid "1 Comment"
+msgstr "1 Σχόλιο"
+
+msgid "% Comments"
+msgstr "% Σχόλια"
+
+msgid "Category Archives: %s"
+msgstr "Αρχείο Κατηγορίας: %s"
