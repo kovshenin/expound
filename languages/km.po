@@ -1,0 +1,329 @@
+# Copyright (C) 2014 Konstantin Kovshenin
+# This file is distributed under the GNU General Public License.
+# Translators:
+# Seng Sutha <sutha@open.org.kh>, 2014
+# Sovichet Tep, 2014
+msgid ""
+msgstr ""
+"Project-Id-Version: Expound\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/support/theme/expound\n"
+"POT-Creation-Date: 2014-02-04 21:42:13+00:00\n"
+"PO-Revision-Date: 2015-03-21 23:09+0000\n"
+"Last-Translator: Sovichet Tep\n"
+"Language-Team: Khmer (http://www.transifex.com/projects/p/expound/language/km/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: km\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: 404.php:15
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "អូ៎! រក​មិន​ឃើញ​ទំព័រ​នោះ​ទេ។"
+
+#: 404.php:19
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links"
+" below or a search?"
+msgstr "រក​មិន​ឃើញ​អ្វី​ឡើង​នៅ​ទីតាំង​នេះ​ទេ។ ព្យាយាម​តំណ​មួយ​ផ្សេង​ទៀត​នៅ​ខាងក្រោម ឬ​ស្វែងរក?"
+
+#: 404.php:27
+msgid "Most Used Categories"
+msgstr "ប្រភេទ​ដែល​បាន​ប្រើ​ច្រើន​បំផុត"
+
+#. translators: %1$s: smiley
+#: 404.php:44
+msgid "Try looking in the monthly archives. %1$s"
+msgstr "ព្យាយាម​រក​មើល​នៅ​ក្នុង​ប័ណ្ណសារ​ប្រចាំខែ។ %1$s"
+
+#: comments.php:29
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "មតិ​យោបល់ %1$s នៅ​លើ &ldquo;%2$s&rdquo;"
+
+#: comments.php:36 comments.php:56
+msgid "Comment navigation"
+msgstr "ការ​រកមើល​មតិ​យោបល់"
+
+#: comments.php:37 comments.php:57
+msgid "&larr; Older Comments"
+msgstr "&larr; មតិ​យោបល់​ចាស់"
+
+#: comments.php:38 comments.php:58
+msgid "Newer Comments &rarr;"
+msgstr "មតិ​យោបល់​ថ្មី &rarr;"
+
+#: comments.php:68
+msgid "Comments are closed."
+msgstr "បាន​បិទ​ការ​បញ្ចេញ​មតិ។"
+
+#: content-page.php:18 content-single.php:20 image.php:94
+msgid "Pages:"
+msgstr "ទំព័រ៖"
+
+#: featured-content.php:19 featured-content.php:50 related-content.php:22
+msgid "Permalink to %s"
+msgstr "តំណ​អចិន្ត្រៃយ៍​ចំពោះ %s"
+
+#: featured-content.php:24
+msgid "Continue reading &rarr;"
+msgstr "បន្ត​ការ​អាន &rarr;"
+
+#: functions.php:76
+msgid "Primary Menu"
+msgstr "ម៉ឺនុយ​ចម្បង"
+
+#: functions.php:77
+msgid "Social Menu"
+msgstr "ម៉ឹនុយ​សង្គម"
+
+#: functions.php:108
+msgid "Sidebar"
+msgstr "របារ​ចំហៀង"
+
+#: functions.php:264
+msgid "Proudly powered by %s"
+msgstr "ឧបត្ថម្ភ​ដោយ %s"
+
+#: functions.php:266
+msgid "Theme: %1$s by %2$s"
+msgstr "រូបរាង៖ %1$s ដោយ %2$s"
+
+#: header.php:36
+msgid "Menu"
+msgstr "ម៉ឺនុយ"
+
+#: header.php:37
+msgid "Skip to content"
+msgstr "រំលង​ទៅ​មាតិកា"
+
+#: image.php:23
+msgid ""
+"Published <span class=\"entry-date\"><time class=\"entry-date\" "
+"datetime=\"%1$s\">%2$s</time></span> at <a href=\"%3$s\" title=\"Link to "
+"full-size image\">%4$s &times; %5$s</a> in <a href=\"%6$s\" title=\"Return "
+"to %7$s\" rel=\"gallery\">%8$s</a>"
+msgstr "បាន​ផ្សាយ <span class=\"entry-date\"><time class=\"entry-date\" datetime=\"%1$s\">%2$s</time></span> at <a href=\"%3$s\" title=\"តំណ​ទៅ​រូបភាព​ទំហំ​ពេញ\">%4$s &times; %5$s</a> in <a href=\"%6$s\" title=\"Return to %7$s\" rel=\"gallery\">%8$s</a>"
+
+#: image.php:37
+msgid "<span class=\"meta-nav\">&larr;</span> Previous"
+msgstr "<span class=\"meta-nav\">&larr;</span> មុន"
+
+#: image.php:38
+msgid "Next <span class=\"meta-nav\">&rarr;</span>"
+msgstr "បន្ទាប់ <span class=\"meta-nav\">&rarr;</span>"
+
+#: image.php:103
+msgid ""
+"<a class=\"comment-link\" href=\"#respond\" title=\"Post a comment\">Post a "
+"comment</a> or leave a trackback: <a class=\"trackback-link\" href=\"%s\" "
+"title=\"Trackback URL for your post\" rel=\"trackback\">Trackback URL</a>."
+msgstr "<a class=\"comment-link\" href=\"#respond\" title=\"Post a comment\">ប្រកាស​មតិ​យោបល់</a> ឬ​ទុក trackback: <a class=\"trackback-link\" href=\"%s\" title=\"Trackback URL for your post\" rel=\"trackback\">Trackback URL</a> ។"
+
+#: image.php:105
+msgid ""
+"Comments are closed, but you can leave a trackback: <a class=\"trackback-"
+"link\" href=\"%s\" title=\"Trackback URL for your post\" "
+"rel=\"trackback\">Trackback URL</a>."
+msgstr "មតិយោបល់​ត្រូវ​បាន​បិទ។ ប៉ុន្តែ​អ្នក​អាច​ទុក trackback ៖ <a class=\"trackback-link\" href=\"%s\" title=\"Trackback URL for your post\" rel=\"trackback\">Trackback URL</a> ។"
+
+#: image.php:107
+msgid ""
+"Trackbacks are closed, but you can <a class=\"comment-link\" "
+"href=\"#respond\" title=\"Post a comment\">post a comment</a>."
+msgstr "Trackbacks ត្រូវ​បាន​បិទ, ប៉ុន្តែ​អ្នក​អាច <a class=\"comment-link\" href=\"#respond\" title=\"Post a comment\">ប្រកាស​មតិយោបល់</a> ។"
+
+#: image.php:109
+msgid "Both comments and trackbacks are currently closed."
+msgstr "ទាំង​មតិយោបល់ និង trackbacks បច្ចុប្បន្ន​ត្រូវ​បាន​បិទ។"
+
+#: inc/extras.php:70
+msgid "Page %s"
+msgstr "ទំព័រ %s"
+
+#: inc/template-tags.php:34
+msgid "Post navigation"
+msgstr "ការ​រក​មើល​ប្រកាស"
+
+#: inc/template-tags.php:42
+msgctxt "Previous post link"
+msgid "&larr;"
+msgstr "&larr;"
+
+#: inc/template-tags.php:43
+msgctxt "Next post link"
+msgid "&rarr;"
+msgstr "&rarr;"
+
+#: inc/template-tags.php:48
+msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+msgstr "<span class=\"meta-nav\">&larr;</span> ប្រកាស​ចាស់ៗ"
+
+#: inc/template-tags.php:52
+msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+msgstr "ប្រកាស​ថ្មីៗ <span class=\"meta-nav\">&rarr;</span>"
+
+#: inc/template-tags.php:75
+msgid "Pingback:"
+msgstr "ភីង​ត្រឡប់៖"
+
+#: inc/template-tags.php:75 inc/template-tags.php:96
+msgid "Edit"
+msgstr "កែប្រែ"
+
+#: inc/template-tags.php:85
+msgid "%s <span class=\"says\">says:</span>"
+msgstr "%s <span class=\"says\">និយាយ​ថា៖</span>"
+
+#: inc/template-tags.php:88
+msgid "Your comment is awaiting moderation."
+msgstr "មតិ​របស់​អ្នក​កំពុង​ស្ថិត​ក្នុង​ការ​សម្របសម្រួល។"
+
+#: inc/template-tags.php:94
+msgctxt "1: date, 2: time"
+msgid "%1$s at %2$s"
+msgstr "%1$s នៅ %2$s"
+
+#. translators: 1: who, 2: when
+#: inc/template-tags.php:132
+msgid "%1$s / %2$s"
+msgstr "%1$s / %2$s"
+
+#. translators: min=minute
+#: inc/template-tags.php:161
+msgid "%s min ago"
+msgid_plural "%s mins ago"
+msgstr[0] "%s នាទី​មុន"
+
+#: inc/template-tags.php:166
+msgid "%s hour ago"
+msgid_plural "%s hours ago"
+msgstr[0] "%s ម៉ោង​មុន"
+
+#: inc/template-tags.php:171
+msgid "%s day ago"
+msgid_plural "%s days ago"
+msgstr[0] "%s ថ្ងៃ​មុន"
+
+#: inc/template-tags.php:176
+msgid "%s week ago"
+msgid_plural "%s weeks ago"
+msgstr[0] "%s សប្ដាហ៍​មុន"
+
+#: inc/template-tags.php:181
+msgid "%s month ago"
+msgid_plural "%s months ago"
+msgstr[0] "%s ខែ​មុន"
+
+#: inc/template-tags.php:186
+msgid "%s year ago"
+msgid_plural "%s years ago"
+msgstr[0] "%s ឆ្នាំ​មុន"
+
+#: inc/template-tags.php:198
+msgid "ago"
+msgstr "មុន"
+
+#. translators: 1: when, 2: where (category)
+#: inc/template-tags.php:208 inc/template-tags.php:214
+msgid "%1$s in %2$s."
+msgstr "%1$s ក្នុង %2$s។"
+
+#: inc/template-tags.php:220
+msgid "Tags: "
+msgstr "ស្លាក៖"
+
+#: index.php:23
+msgid "%s"
+msgstr "%s"
+
+#: index.php:26
+msgid "Tag Archives: %s"
+msgstr "បណ្ណសារ​ស្លាក៖ %s"
+
+#: index.php:33
+msgid "Author Archives: %s"
+msgstr "បណ្ណសារ​អ្នក​និពន្ធ៖ %s"
+
+#: index.php:41
+msgid "Daily Archives: %s"
+msgstr "បណ្ណសារ​ប្រចាំ​ថ្ងៃ៖ %s"
+
+#: index.php:43
+msgid "Monthly Archives: %s"
+msgstr "បណ្ណសារ​ប្រចាំ​ខែ៖ %s"
+
+#: index.php:45
+msgid "Yearly Archives: %s"
+msgstr "បណ្ណសារ​ប្រចាំ​ឆ្នាំ៖ %s"
+
+#: index.php:47
+msgid "Search Results for: %s"
+msgstr "លទ្ធផល​ស្វែងរក​សម្រាប់៖ %s"
+
+#: index.php:49
+msgid "Archives"
+msgstr "បណ្ណសារ"
+
+#: no-results.php:13
+msgid "Nothing Found"
+msgstr "រក​មិន​ឃើញ​អ្វី​ទេ"
+
+#: no-results.php:19
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "ត្រៀម​ខ្លួន​ផ្សាយ​ប្រកាស​ដំបូង​របស់​អ្នក​ហើយ​ឬ​នៅ? <a href=\"%1$s\">ចាប់​ផ្ដើម​នៅ​ទីនេះ</a>។"
+
+#: no-results.php:23
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr "សូម​ទោស, មិន​មាន​អ្វី​ដែល​ត្រូវ​នឹង​ពាក្យ​ស្វែងរក​របស់​អ្នក​ទេ។ សូម​សាកល្បង​ប្រើ​ពាក្យ​គន្លឹះ​ដទៃ​ទៀត។"
+
+#: no-results.php:28
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr "យើង​រក​មិន​ឃើញ​អ្វី​ដែល​អ្នក​កំពុង​រក​ទេ។ ប្រហែល​ការ​ស្វែងរក​អាច​ជួយ​អ្នក​បាន។"
+
+#: related-content.php:10
+msgid "Related posts"
+msgstr "ប្រកាស​ដែល​ទាក់ទង"
+
+#: searchform.php:9
+msgctxt "assistive text"
+msgid "Search"
+msgstr "ស្វែងរក"
+
+#: searchform.php:10
+msgctxt "placeholder"
+msgid "Search &hellip;"
+msgstr "ស្វែងរក &hellip;"
+
+#: searchform.php:11
+msgctxt "submit button"
+msgid "Search"
+msgstr "ស្វែងរក"
+
+#. Theme Name of the plugin/theme
+msgid "Expound"
+msgstr "Expound"
+
+#. Description of the plugin/theme
+msgid ""
+"An awesome magazine theme for your WordPress site. Responsive layout, post "
+"thumbnails support, featured posts, an easy-to-use social menu and much "
+"more."
+msgstr "សំបក​រូបរាង​ទស្សនាវដ្ដី​ដ៏​ប្រសើរ​មួយ​សម្រាប់​វេបសាយ WordPress របស់​អ្នក។ សណ្ឋាន​រីករួម, មាន​រូបភាព​តូចៗ​នៃ​ប្រកាស, ប្រកាស​សំខាន់ៗ, ម៉ឺនុយ​បណ្ដាញ​សង្គម​ដែល​ងាយ​ស្រួល​ប្រើ ព្រម​ទាំង​អ្វីៗ​ជា​ច្រើន​ទៀត។"
+
+#. Author of the plugin/theme
+msgid "Konstantin Kovshenin"
+msgstr "Konstantin Kovshenin"
+
+#. Author URI of the plugin/theme
+msgid "http://kovshenin.com"
+msgstr "http://kovshenin.com"
+
+#. Template Name of the plugin/theme
+msgid "Full-width Template"
+msgstr "ទំព័រ​គំរូ​ទទឹង​ពេញ"
