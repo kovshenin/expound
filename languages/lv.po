@@ -1,0 +1,342 @@
+# Copyright (C) 2014 Konstantin Kovshenin
+# This file is distributed under the GNU General Public License.
+# Translators:
+# Deina <afrique87@gmail.com>, 2015
+msgid ""
+msgstr ""
+"Project-Id-Version: Expound\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/support/theme/expound\n"
+"POT-Creation-Date: 2014-02-04 21:42:13+00:00\n"
+"PO-Revision-Date: 2015-03-21 23:09+0000\n"
+"Last-Translator: Deina <afrique87@gmail.com>\n"
+"Language-Team: Latvian (http://www.transifex.com/projects/p/expound/language/lv/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: lv\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : 2);\n"
+
+#: 404.php:15
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Opā! Tāda lapa nav atrodama."
+
+#: 404.php:19
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links"
+" below or a search?"
+msgstr "Izskatās, ka šeit nekas netika atrasts. Varbūt izmantojiet meklēšanu?"
+
+#: 404.php:27
+msgid "Most Used Categories"
+msgstr "Biežāk lietotās tēmas"
+
+#. translators: %1$s: smiley
+#: 404.php:44
+msgid "Try looking in the monthly archives. %1$s"
+msgstr "Pamēģiniet meklēt ikmēneša arhīvos. %1$s"
+
+#: comments.php:29
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] "%1$s komentāru par &ldquo;%2$s&rdquo;"
+
+#: comments.php:36 comments.php:56
+msgid "Comment navigation"
+msgstr "Komentāru navigācija"
+
+#: comments.php:37 comments.php:57
+msgid "&larr; Older Comments"
+msgstr "&larr; Vecāki komentāri"
+
+#: comments.php:38 comments.php:58
+msgid "Newer Comments &rarr;"
+msgstr "Jaunāki komentāri &rarr;"
+
+#: comments.php:68
+msgid "Comments are closed."
+msgstr "Komentāri ir slēgti."
+
+#: content-page.php:18 content-single.php:20 image.php:94
+msgid "Pages:"
+msgstr "Lapas:"
+
+#: featured-content.php:19 featured-content.php:50 related-content.php:22
+msgid "Permalink to %s"
+msgstr "Paliekošā saite: %s"
+
+#: featured-content.php:24
+msgid "Continue reading &rarr;"
+msgstr "Turpināt lasīt &rarr;"
+
+#: functions.php:76
+msgid "Primary Menu"
+msgstr "Galvenā izvēlne"
+
+#: functions.php:77
+msgid "Social Menu"
+msgstr "Sociālā izvēlne"
+
+#: functions.php:108
+msgid "Sidebar"
+msgstr "Sānu sleja"
+
+#: functions.php:264
+msgid "Proudly powered by %s"
+msgstr "Lepni darbina %s"
+
+#: functions.php:266
+msgid "Theme: %1$s by %2$s"
+msgstr "Tēma: %1$s no %2$s"
+
+#: header.php:36
+msgid "Menu"
+msgstr "Izvēlne"
+
+#: header.php:37
+msgid "Skip to content"
+msgstr "Doties uz saturu"
+
+#: image.php:23
+msgid ""
+"Published <span class=\"entry-date\"><time class=\"entry-date\" "
+"datetime=\"%1$s\">%2$s</time></span> at <a href=\"%3$s\" title=\"Link to "
+"full-size image\">%4$s &times; %5$s</a> in <a href=\"%6$s\" title=\"Return "
+"to %7$s\" rel=\"gallery\">%8$s</a>"
+msgstr "Publicēts <span class=\"entry-date\"><time class=\"entry-date\" datetime=\"%1$s\">%2$s</time></span>  <a href=\"%3$s\" title=\"Link to full-size image\">%4$s &times; %5$s</a> iekš <a href=\"%6$s\" title=\"Return to %7$s\" rel=\"gallery\">%8$s</a>"
+
+#: image.php:37
+msgid "<span class=\"meta-nav\">&larr;</span> Previous"
+msgstr "<span class=\"meta-nav\">&larr;</span> Iepriekšējais"
+
+#: image.php:38
+msgid "Next <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Nākamais <span class=\"meta-nav\">&rarr;</span>"
+
+#: image.php:103
+msgid ""
+"<a class=\"comment-link\" href=\"#respond\" title=\"Post a comment\">Post a "
+"comment</a> or leave a trackback: <a class=\"trackback-link\" href=\"%s\" "
+"title=\"Trackback URL for your post\" rel=\"trackback\">Trackback URL</a>."
+msgstr "<a class=\"comment-link\" href=\"#respond\" title=\"Post a comment\">Ievietot komentāru</a> vai atstāt atsauces paziņojumu: <a class=\"trackback-link\" href=\"%s\" title=\"Trackback URL for your post\" rel=\"trackback\">Atsauces paziņojuma URL</a>."
+
+#: image.php:105
+msgid ""
+"Comments are closed, but you can leave a trackback: <a class=\"trackback-"
+"link\" href=\"%s\" title=\"Trackback URL for your post\" "
+"rel=\"trackback\">Trackback URL</a>."
+msgstr "Nav iespējams atstāt komentāru, bet jūs varat atstāt atsauces paziņojumu: <a class=\"trackback-link\" href=\"%s\" title=\"Trackback URL for your post\" rel=\"trackback\">Atsauces paziņojuma URL</a>."
+
+#: image.php:107
+msgid ""
+"Trackbacks are closed, but you can <a class=\"comment-link\" "
+"href=\"#respond\" title=\"Post a comment\">post a comment</a>."
+msgstr "Nav iespējams atstāt atsauces paziņojumu, bet jūs varat <a class=\"comment-link\" href=\"#respond\" title=\"Post a comment\">atstāt komentāru</a>."
+
+#: image.php:109
+msgid "Both comments and trackbacks are currently closed."
+msgstr "Nevar atstāt ne komentāru, ne atsauces paziņojumu."
+
+#: inc/extras.php:70
+msgid "Page %s"
+msgstr "Lapa %s"
+
+#: inc/template-tags.php:34
+msgid "Post navigation"
+msgstr "Rakstu navigācija"
+
+#: inc/template-tags.php:42
+msgctxt "Previous post link"
+msgid "&larr;"
+msgstr "&larr;"
+
+#: inc/template-tags.php:43
+msgctxt "Next post link"
+msgid "&rarr;"
+msgstr "&rarr;"
+
+#: inc/template-tags.php:48
+msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+msgstr "<span class=\"meta-nav\">&larr;</span> Vecāki ieraksti"
+
+#: inc/template-tags.php:52
+msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Jaunākie ieraksti <span class=\"meta-nav\">&rarr;</span>"
+
+#: inc/template-tags.php:75
+msgid "Pingback:"
+msgstr "Atpings:"
+
+#: inc/template-tags.php:75 inc/template-tags.php:96
+msgid "Edit"
+msgstr "Labot"
+
+#: inc/template-tags.php:85
+msgid "%s <span class=\"says\">says:</span>"
+msgstr "%s <span class=\"says\">saka:</span>"
+
+#: inc/template-tags.php:88
+msgid "Your comment is awaiting moderation."
+msgstr "Jūsu komentārs gaida apstiprinājumu."
+
+#: inc/template-tags.php:94
+msgctxt "1: date, 2: time"
+msgid "%1$s at %2$s"
+msgstr "%1$s %2$s"
+
+#. translators: 1: who, 2: when
+#: inc/template-tags.php:132
+msgid "%1$s / %2$s"
+msgstr "%1$s / %2$s"
+
+#. translators: min=minute
+#: inc/template-tags.php:161
+msgid "%s min ago"
+msgid_plural "%s mins ago"
+msgstr[0] "nupat"
+msgstr[1] "pirms %s minūtes"
+msgstr[2] "pirms %ām minūtēm"
+
+#: inc/template-tags.php:166
+msgid "%s hour ago"
+msgid_plural "%s hours ago"
+msgstr[0] "nupat"
+msgstr[1] "pirms %s stundas"
+msgstr[2] "pirms %ām stundām"
+
+#: inc/template-tags.php:171
+msgid "%s day ago"
+msgid_plural "%s days ago"
+msgstr[0] "nupat"
+msgstr[1] "pirms %s dienas"
+msgstr[2] "pirms %ām dienām"
+
+#: inc/template-tags.php:176
+msgid "%s week ago"
+msgid_plural "%s weeks ago"
+msgstr[0] "nupat"
+msgstr[1] "pirms %s nedēļas"
+msgstr[2] "pirms %ām nedēļām"
+
+#: inc/template-tags.php:181
+msgid "%s month ago"
+msgid_plural "%s months ago"
+msgstr[0] "nupat"
+msgstr[1] "pirms %s mēneša"
+msgstr[2] "pirms %iem mēnešiem"
+
+#: inc/template-tags.php:186
+msgid "%s year ago"
+msgid_plural "%s years ago"
+msgstr[0] "nupat"
+msgstr[1] "pirms %a gada"
+msgstr[2] "pirms %iem gadiem"
+
+#: inc/template-tags.php:198
+msgid "ago"
+msgstr "pirms"
+
+#. translators: 1: when, 2: where (category)
+#: inc/template-tags.php:208 inc/template-tags.php:214
+msgid "%1$s in %2$s."
+msgstr "%1$s iekš %2$s"
+
+#: inc/template-tags.php:220
+msgid "Tags: "
+msgstr "Birkas:"
+
+#: index.php:23
+msgid "%s"
+msgstr "%s"
+
+#: index.php:26
+msgid "Tag Archives: %s"
+msgstr "Birku arhīvs: %s"
+
+#: index.php:33
+msgid "Author Archives: %s"
+msgstr "Autora arhīvs: %s"
+
+#: index.php:41
+msgid "Daily Archives: %s"
+msgstr "Dienas arhīvs: %s"
+
+#: index.php:43
+msgid "Monthly Archives: %s"
+msgstr "Mēneša arhīvs: %s"
+
+#: index.php:45
+msgid "Yearly Archives: %s"
+msgstr "Gada arhīvs: %s"
+
+#: index.php:47
+msgid "Search Results for: %s"
+msgstr "Meklēšanas rezultāti: %s"
+
+#: index.php:49
+msgid "Archives"
+msgstr "Arhīvi"
+
+#: no-results.php:13
+msgid "Nothing Found"
+msgstr "Nekas nav atrasts"
+
+#: no-results.php:19
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "Esat gatavi publicēt savu pirmo rakstu? <a href=\"%1$s\">Sāciet te</a>."
+
+#: no-results.php:23
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr "Diemžēl, bet nekas netika atrasts. Mēģiniet vēlreiz izmantojot citus atslēgvārdus."
+
+#: no-results.php:28
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr "Izskatās, ka mēs nevaram atrast to ko meklējat. Iespējams meklēšana var palīdzēt."
+
+#: related-content.php:10
+msgid "Related posts"
+msgstr "Līdzīgi ieraksti"
+
+#: searchform.php:9
+msgctxt "assistive text"
+msgid "Search"
+msgstr "Meklēt"
+
+#: searchform.php:10
+msgctxt "placeholder"
+msgid "Search &hellip;"
+msgstr "Meklēt &hellip;"
+
+#: searchform.php:11
+msgctxt "submit button"
+msgid "Search"
+msgstr "Meklēt"
+
+#. Theme Name of the plugin/theme
+msgid "Expound"
+msgstr "Expound"
+
+#. Description of the plugin/theme
+msgid ""
+"An awesome magazine theme for your WordPress site. Responsive layout, post "
+"thumbnails support, featured posts, an easy-to-use social menu and much "
+"more."
+msgstr "Lieliska žurnāla tēma jūsu WordPress mājaslapai. Pielāgojams izkārtojums, ieraksta kopsavilkuma iespējamība, līdzīgu ierakstu grupēšana, viegli lietojama izvēlne un vēl daudz kas cits."
+
+#. Author of the plugin/theme
+msgid "Konstantin Kovshenin"
+msgstr "Konstantin Kovshenin"
+
+#. Author URI of the plugin/theme
+msgid "http://kovshenin.com"
+msgstr "http://kovshenin.com"
+
+#. Template Name of the plugin/theme
+msgid "Full-width Template"
+msgstr "Pilna izmēra šablons"
